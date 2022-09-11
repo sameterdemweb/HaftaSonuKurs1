@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+
+
+    <script>
+        /*  var sayi = 1; //  Değişken oluşturma işlemi 
+          console.log(sayi); //Ekrana Yazdırma 
+  
+          var Ad = "Samet"; //Metinsel ifadeler tanımlanırken veri tipi string olur
+          var Soyad = "Erdem";
+          var toplam = Ad + " " + Soyad; //Metinsel ifadelerde toplama işlemi sağlanırken birleştirme uygular.
+          console.log(toplam); // Ekrana Yazdırma 
+  
+  
+          var yiyecekIsmi = "Köfte";
+          var icecekIsmi = "Ayran";
+          var tatliIsmi = "Künefe";
+          var menuFiyat = 100;
+  
+          var Menu = "Menünüz Yiyecek:" + yiyecekIsmi + " İçecek:" + icecekIsmi + " Tatlı:" + tatliIsmi + " FİYAT: " + menuFiyat;
+  
+          console.log(Menu);
+  
+  
+          var isimler = ["Samet Erdem", "Özge Ulusoy", "Mehmet Ulusoy", "Ege Ali Erdem"];  // DİZİ DEĞİŞKEN OLUŞTURMA - index değerleri sıfırdan başlayarak ekrana yazdırılır. 
+          console.log(isimler[1]);  // Dizi ekrana yazdırma..
+  
+  
+          sayi = 2022;
+          if (sayi < 10) { // Koşul doğru olduğu zaman çalışır.
+              console.log("Sayı 10dan küçüktür");
+          } else if (sayi > 10) {
+              console.log("Sayı 10dan büyüktür.");
+          } else {
+              console.log("Sayı 10'a eşittir.");
+          }
+  
+  
+          // Soru 1: Vize notunun %30 ve final notunun &70 alarak ortalamasını  hesaplayan ve Ortalamaa 60tan büyük veya eşit ise geçti değil ise kaldı yazan program.
+  
+  
+          var vize = 80;
+          var final = 90;
+  
+          var vizeSonuc = (vize * 30) / 100;
+          var finalSonuc = (final * 70) / 100;
+  
+          var ortalamaPuan = vizeSonuc + finalSonuc;
+  
+          if (ortalamaPuan >= 60) {
+              console.log("Geçti");
+          } else {
+              console.log("Kaldın");
+          }
+  
+          */
+        /* DÖNGÜLER */
+/*
+        sayi = 1;
+        while (sayi < 5) {
+            console.log(sayi);
+            sayi = sayi + 1;
+        }*/
+
+        // var numara=... değişkenine 0 ile 100 arasında atanan sayı değeri 50 den küçük ise atanan değerden 0'a kadar değil ise atanan değerden 100e kadar arttıran uygulama.
+
+/*
+        var numara = 45;
+
+        if(numara<50){
+            while(numara>=0){
+                console.log(numara);
+                numara--;
+            }
+        }
+        else{
+            while(numara<=100){
+                console.log(numara);
+                numara++;
+            }
+        }*/
+
+
+// var numara2 degiskenine atanan sayı ya kadar 0dan başlayarak çift sayıları ekrana yazdıran program.
+/*
+var numara2=90;
+var donguSayisi=0;
+var sonuc=0;
+while(donguSayisi<=numara2){
+    sonuc= donguSayisi % 2;
+    if(sonuc==0){
+        console.log(donguSayisi);
+    }
+    donguSayisi++;
+}*/
+
+
+// var numara3=... değişkenine atanan sayıdan 0 rakamına kadar tek sayıları ekrana yazdıran uygulama.
+/*var numara3=90;
+var modSonucu;
+
+while(numara3>=0){
+    modSonucu=numara3 % 2;
+    if(modSonucu==1)
+    {
+        console.log(numara3);
+    }
+    numara3--;
+}*/
+
+
+// 33 ve 99 sayıların arasındaki çift sayıların toplamlarını bulan program.
+
+    /*var sayim=33;
+    var sayim2=100;
+    var toplam=0;
+    while(sayim<=sayim2){
+        var ModSonucu=sayim % 2;
+        if(ModSonucu==0){
+            toplam=toplam+sayim;
+        }
+        sayim++;
+      
+    }
+    console.log(toplam);
+*/
+
+
+    // sayi1 ve sayi2 değişkenlerine tanımlanan sayıların arasındaki çift sayıların karesini ekrana yazdıran program.
+
+/*
+    var sayi1=10;
+    var sayi2=30;
+
+    while(sayi1<=sayi2){
+        if((sayi1%2)==0){
+            console.log(sayi1*sayi1);
+        }
+        sayi1++;
+    }
+*/
+/*
+    var degerim=10;
+    while(degerim<5){
+        degerim--; 
+    }
+*/
+
+// DO WHİLE ÖRNEĞİ
+  /*  
+do{
+        degerim--; 
+    }
+    while(degerim<5)
+*/
+
+
+//1. İlk gün 50 sayfa okuduğumuz 900 sayfalık bir kitabı, daha sonra her gün 30 sayfa okuyarak kaç günde bitiririz diye hesaplayan program.
+/*
+var ilkGunOkunan=50;
+var kitapToplamSayfa=900;
+var herGunOkunan=30;
+
+var kalanSayfa=kitapToplamSayfa-ilkGunOkunan;
+var gun=1;
+
+while(kalanSayfa>0){
+    kalanSayfa=kalanSayfa-herGunOkunan;
+    gun++;
+}
+
+console.log(kitapToplamSayfa+ " sayfalık bir kitabı ilk gün "+ilkGunOkunan+"  sayfa okunduktan sonra, her gün "+herGunOkunan+" sayfa okunursa "+gun+" gün sonra biter.");
+*/
+
+
+//2.  50 ile 100 arasındaki 3e tam bölünebilen sayıların toplamını hesaplayan program.
+/*
+var baslanacakSayi=50;
+var donguSayi=baslanacakSayi;
+var bitecekSayi=100;
+var ucMod=0;
+var sayilarToplami=0;
+while(donguSayi<bitecekSayi){
+    ucMod=donguSayi % 3;
+    if(ucMod==0){
+        sayilarToplami=sayilarToplami+donguSayi;
+    }
+    donguSayi++;
+}
+
+console.log(baslanacakSayi+ " ile "+ bitecekSayi + " arasındaki 3'e tam bölünebilen sayıların toplamı:"+sayilarToplami+ " dır." );
+*/
+
+
+
+// 3.  Değişkene atanan ürün fiyatını değişkene atanan ürün adeti ile çarpıp, KDV(%18) ekleyerek ekrana yazdıran program.
+
+/*
+var urunAdi="Logitech G930 Kulaklık";
+var urunFiyat=1000;
+var urunAdet=3;
+var kdvBilgisi=18;
+
+var toplamFiyat=urunAdet*urunFiyat;
+var kdv18=(toplamFiyat/100)*kdvBilgisi;
+var genelToplam=toplamFiyat+kdv18;
+
+console.log(urunAdi+ " isimli ürünün adet fiyatı "+urunFiyat+ " tl. "+urunAdet+" adet alınırsa toplam Fiyat:"+toplamFiyat+ "tl + KDV "+ kdv18+ " tl , Genel Toplam:"+ genelToplam+ " TL dir.");
+*/
+
+
+
+// FOR DÖNGÜSÜNE GİRİŞ
+/*
+var sayi=20;
+while(sayi<=30){
+    console.log(sayi);
+    sayi++;
+}
+
+
+for(i=1;i<=10;i++){
+    console.log(i);
+}*/
+
+
+//2.  50 ile 100 arasındaki 3e tam bölünebilen sayıların toplamını hesaplayan program.
+/*
+var modHesap=0;
+var toplam=0;
+for(i=50;i<=100;i++){
+    modHesap=i % 3;
+    if(modHesap==0){
+        toplam=toplam+i;
+    }
+}
+
+console.log("50 ile 100 arasındaki 3'e tam bölünebilen sayıların toplamı:"+toplam+ " dır." );*/
+
+//1. İlk gün 50 sayfa okuduğumuz 900 sayfalık bir kitabı, daha sonra her gün 30 sayfa okuyarak kaç günde bitiririz diye hesaplayan program. FOR KULLANARAK
+/*
+var ilkGunOkunan=50;
+var kitapToplamSayfa=900;
+var herGunOkunan=30;
+var kalanSayfa=kitapToplamSayfa-ilkGunOkunan;
+var gun=1;
+for(i=kalanSayfa;i>0;i=i-herGunOkunan){
+    gun++;
+}
+console.log(kitapToplamSayfa+ " sayfalık bir kitabı ilk gün "+ilkGunOkunan+"  sayfa okunduktan sonra, her gün "+herGunOkunan+" sayfa okunursa "+gun+" gün sonra biter.");
+
+*/
+// FUNCTİONLARA GİRİŞ
+
+//Parametresiz Function
+function MerhabaDe(){
+    console.log("Merhaba Dünya");
+}
+
+//MerhabaDe();
+
+//PARAMETRELİ Function KONTROL MEKANİZMASI OLDUĞU İÇİN HATA VERMEZ.
+function ToplamaIslemi(sayi1,sayi2){
+    if(sayi1!=null && sayi2!=null){ //Kontrol mekanizması
+        toplam=sayi1+sayi2;
+        console.log(toplam)
+    }
+}
+
+//ToplamaIslemi(20, 20);
+
+//PARAMETRELİ DEFAULT PARAMETRELİ Function
+function ToplamaIslemi2(sayi1=0,sayi2=0){
+    toplam=sayi1+sayi2;
+    console.log(toplam)
+}
+//ToplamaIslemi2(50,85);
+
+
+//1. İlk gün ..... sayfa okuduğumuz .... sayfalık bir kitabı, daha sonra her gün .... sayfa okuyarak kaç günde bitiririz diye hesaplayan program.FUNCTİON KULLANARAK !
+
+function KacGundeBiter(kitapAdi,toplamSayfaSayisi, ilkGunOkunanSayfa, herGunOkunanSayfa)
+{
+    var KalanSayfa=toplamSayfaSayisi-ilkGunOkunanSayfa;
+    var gun=1;
+
+    while(KalanSayfa>0){
+        KalanSayfa=KalanSayfa-herGunOkunanSayfa;
+        gun++;
+    }
+
+    console.log(kitapAdi+" isimli kitabın toplam sayfa sayısı "+toplamSayfaSayisi+ " dır. İlk gün "+ilkGunOkunanSayfa+"  sayfa okunduktan sonra, her gün "+herGunOkunanSayfa+" sayfa okunursa kitap "+gun+" gün sonra biter.");
+}
+
+//KacGundeBiter("Yüzüklerin Efendisi - Yüzük Kardeşliği",520,30,30);
+
+
+//2.  .... ile .... arasındaki .....e tam bölünebilen sayıların toplamını hesaplayan program. FUNCTİON KULLANARAK !
+
+
+function tamBolunebilenleriBul(ilkSayi,sonSayi,bolunecekSayi){
+    var kalan=0;
+    var toplam=0;
+    var toplamYanaYazdir="";
+    for(i=ilkSayi;i<=sonSayi;i++){
+        kalan=i % bolunecekSayi;
+        if(kalan==0){
+            toplam+=i;
+            toplamYanaYazdir+=" "+i;
+        }
+    }
+    console.log(ilkSayi+ " ile "+sonSayi+" arasındaki "+bolunecekSayi+"'e' tam bölünebilen sayılar: "+toplamYanaYazdir);
+    console.log(ilkSayi+ " ile "+sonSayi+" arasındaki "+bolunecekSayi+"'e tam bölünebilen sayıların toplamı:"+toplam+ " dır." );
+}
+
+//tamBolunebilenleriBul(1,32,5);
+  
+
+
+// DEĞER DÖNDÜREN function
+function MerhabaEkle(isim){
+    isim="Merhaba, "+isim;
+    return isim;
+}
+var isim=MerhabaEkle("Samet Erdem");
+// console.log(isim);
+
+
+
+// 3.  Değişkene atanan ürün fiyatını değişkene atanan ürün adeti ile çarpıp, KDV(%18) veya %8 KDV hesaplayan ekrana yazdıran program. FUNCTİON KULLANARAK !
+
+function Kdv8Bul(birimFiyat){
+    var sonuc = ((birimFiyat/100)*8)+birimFiyat;
+    return sonuc;
+}
+
+function Kdv18Bul(birimFiyat){
+    var sonuc = ((birimFiyat/100)*18)+birimFiyat;
+    return sonuc;
+}
+
+function Kdv10Bul(birimFiyat){
+    var sonuc = ((birimFiyat/100)*10)+birimFiyat;
+    return sonuc;
+}
+
+
+function UrunFiyatHesapla(urunAdi,urunFiyat, urunBirim, kdvOran){
+    if(kdvOran=="Sekiz"){
+       var kdvliFiyat = Kdv8Bul(urunFiyat);
+    }else if(kdvOran=="On"){
+       var kdvliFiyat = Kdv10Bul(urunFiyat);
+    }
+    else{
+       var kdvliFiyat = Kdv18Bul(urunFiyat);
+    }
+    var toplamFiyat=urunBirim*kdvliFiyat;
+
+    console.log(urunAdi+" Ürünün birim fiyatı "+urunBirim+", kdvli birim fiyat:"+kdvliFiyat+", "+urunBirim+" adet alırsanız toplam Fiyat Bilgisi: "+toplamFiyat);
+}
+
+UrunFiyatHesapla("Elma",100,2,"Sekiz");
+UrunFiyatHesapla("Kitap",200,3,"OnSekiz");
+UrunFiyatHesapla("Yazılım Web site",10000,1,"On");
+
+
+
+</script>
+
+</body>
+
+</html>
