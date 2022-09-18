@@ -465,16 +465,101 @@
             var cevre=(uzunKenar+kisakenar)*2;
             console.log("Uzun kenarı "+uzunKenar+" kısa kenarı "+kisakenar+" olan dikdörtgenin alanı "+alan+" çevresi "+cevre+" dır")
         }
-        DikdortgenHesaplari(10,5);
+        //DikdortgenHesaplari(10,5);
 
 
 
 
         // ÖDEV SORU 1 : Bir function'a gönderilen 2 sayının arasındaki tam sayıların çarpımını ekrana yazdıran uygulama. 
 
+        function TamSayiCarp(sayi1,sayi2){
+            var carpim=1;
+            sayi1++;
+            for(i=sayi1;i<sayi2;i++){
+                carpim=carpim*i;
+            }
+            console.log((sayi1-1)+" sayısı ile "+sayi2+" sayısı arasında bulunan tam sayıların çarpımı "+carpim+" sayısına eşittir");
+        }
+
+       // TamSayiCarp(2,5)
+
+
         // ÖDEV SORU 2 : Bir function'a gönderilen vize ve final notunun ortalamasını alıp 55 ten küçükse kaldı, 70 ve 70 ten büyükse geçti 55 ile 70 arasında ise Büte kaldı yazan uygulama.
 
+        function NotHesaplama(vizeNotu,finalNotu){
+         var ortalama=(vizeNotu+finalNotu)/2
+            if(ortalama>=70){
+                console.log("Geçti, ortalaması: "+ortalama)
+            }
+            else if(ortalama>55){
+                console.log("Büte Kaldı, ortalaması: "+ortalama)
+            }else{
+                console.log("Kaldı, ortalaması: "+ortalama)
+            }
+
+        }
+       // NotHesaplama(50,80)
+
         // ÖDEV SORU 3 : EnKucukSayiBul isimli function'a gönderilen 3 adet sayı değerinden, sayıların en küçüğünü bulup ekrana yazdıran uygulama.
+        function EnKucukSayiBul(sayi1,sayi2,sayi3){
+            if(sayi1<sayi2 && sayi1<sayi3){
+                console.log(sayi1+" "+ sayi2+" "+sayi3 +"sayilarin arasındaki en küçük sayi "+sayi1)
+            }else if(sayi2<sayi1 && sayi2<sayi3){
+                console.log(sayi1+" "+ sayi2+" "+sayi3 +"sayilarin arasındaki en küçük sayi "+sayi2)
+            }else if(sayi3<sayi2 && sayi3<sayi1){
+                console.log(sayi1+" "+ sayi2+" "+sayi3 +"sayilarin arasındaki en küçük sayi "+sayi3)
+            }else{
+                console.log(sayi1+" "+ sayi2+" "+sayi3 + " Sayilari birbirine eşittir")
+            }
+            
+        }
+       // EnKucukSayiBul(-4,10,20);
+
+
+
+        // NESNE TABANLI DEĞİŞKENLER
+
+        var kisi1={
+            ad:"Samet",
+            soyad:"Erdem",
+            yas:30
+        }
+
+
+        //console.log(kisi1.ad + " " + kisi1.soyad + " " + kisi1.yas);
+
+
+
+        var kisi2={
+            ad:"Samet",
+            soyad:"Erdem",
+            yas:30,
+            arkadaslari:["Ahmet","Mehmet","Ali","İsmail","Cem"],
+            SelamVer:function (){
+                console.log("Merhaba "+kisi2.ad);
+            }
+        }
+
+        console.log(kisi2);
+        //console.log(kisi2.arkadaslari[0]);
+        //kisi2.SelamVer();
+
+        // FOR İLE DİZİ DEĞİŞKEN LİSTELEME KULLANIM
+        /*    
+        for(i=0;i<kisi2.arkadaslari.length;i++){
+            console.log(kisi2.arkadaslari[i]);
+        }*/
+
+        // WHİLE İLE DİZİ DEĞİŞKEN LİSTELEME KULLANIM
+        /*var kisiSayisi=kisi2.arkadaslari.length;
+        var diziDeger=0;
+        while(diziDeger<kisiSayisi){
+            console.log(kisi2.arkadaslari[diziDeger]);
+            diziDeger++;
+        }*/
+
+
+
     </script>
 
 </body>
