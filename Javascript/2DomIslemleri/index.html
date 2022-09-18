@@ -12,19 +12,22 @@
     <hr />
     
     <h3>Formdan Veri Çekme</h3>
-   
-    <form class="mt-4 mb-4">
+    <form class="mt-4 mb-4" action="#" method="POST">
         <div>
             <label for="sayibir">Sayı 1 Giriniz</label>
-            <input type="text" id="sayibir" value="20" name="sayi1">
+            <input type="text" id="sayibir" value="" name="sayi1">
         </div>
         <div>
             <label for="sayiiki">Sayı 1 Giriniz</label>
-            <input type="text" id="sayiiki"  value="30" name="sayi2">
+            <input type="text" id="sayiiki"  value="" name="sayi2">
         </div>
         <div>
-            <input type="button"  class="btn btn-success" value="Hesapla"/>
+            <input type="button" id="Toplama" class="btn btn-success" value="Topla"/>
+            <input type="button" id="Cikarma" class="btn btn-warning" value="Çıkart"/>
         </div>
+        <h1 id="SonucGelecek">
+
+        </h1>
     </form>
    
 
