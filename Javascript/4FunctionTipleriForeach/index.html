@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="tr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Functions & Foreach</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    h1 {
+      text-align: center;
+    }
+
+    .renkSec {
+      height: 67px !important;
+    }
+
+    .ulasBana {
+      font-size: 50px;
+      color: purple;
+      text-decoration: underline;
+      cursor: crosshair;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <form>
+      <h1 id="sehirGelecek"></h1>
+      <h1 id="sayiUlas" class="ulasBana">124512412 411 </h1>
+
+      <div class="mb-3">
+        <label for="renk" class="form-label">Renk Seçiniz</label>
+        <input type="color" class="form-control renkSec" id="renk" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">Seçmiş olduğunuz renk Şehir başlığını değiştirecek.</div>
+      </div>
+
+      <button type="button" id="btnRenkUygula" class="btn btn-primary">Rengi Uygula</button>
+      <button type="button" onclick="RenkDegistir();" class="btn btn-success">Renk Değiştir 2</button>
+
+    </form>
+  </div>
+  
+  <div class="container mt-5">
+    <div>
+      <button type="button" class="btn btn-info" onclick="Goster();">Göster</button>
+      <button type="button" class="btn btn-danger" onclick="Gizle();">Gizle</button>
+
+    </div>
+    <div id="gizleBunu">
+      <div class="row mt-5 mb-5 ">
+        <div class="col-md-3">
+          <div class="card">
+            <img
+              src="https://bangkokpartyrentals.com/wp-content/uploads/2021/06/Canada-%E2%80%93-Sports-Car-Sales-Figures.png"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img
+              src="https://bangkokpartyrentals.com/wp-content/uploads/2021/06/Canada-%E2%80%93-Sports-Car-Sales-Figures.png"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img
+              src="https://bangkokpartyrentals.com/wp-content/uploads/2021/06/Canada-%E2%80%93-Sports-Car-Sales-Figures.png"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img
+              src="https://bangkokpartyrentals.com/wp-content/uploads/2021/06/Canada-%E2%80%93-Sports-Car-Sales-Figures.png"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div>
+ 
+ 
+  <form class="container">
+    <h1 id="h1Sonuc"></h1>
+    <div class="mb-3">
+      <label for="sayibir" class="form-label">Sayı 1 Giriniz</label>
+      <input type="text" class="form-control" id="sayibir">
+    </div>
+    <div class="mb-3">
+      <label for="sayiiki" class="form-label">Sayı 2 Giriniz</label>
+      <input type="text" class="form-control" id="sayiiki">
+    </div>
+    <button type="button" onclick="Hesapla()" class="btn btn-primary">Hesapla</button>
+  </form>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/site.js"></script>
+</body>
+
+</html>
