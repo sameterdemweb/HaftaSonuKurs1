@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MaxVolmer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/maxvolmer.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="position-relative">
+            <div class="text-center NavLogoTutucu container">
+                <img src="/img/MaxvolmerLogo.svg" width="135px" height="50px" />
+            </div>
+            <div class="HeaderIconlar">
+                <div class="HIcon"><img src="/img/MenuIcon.svg"></div>
+                <div class="HIcon mrUser"><img src="/img/KullaniciIcon.svg"></div>
+                <div class="HIcon "><img src="/img/SepetIcon.svg"></div>
+                <div class="HIcon "><img src="/img/FavoriIcon.svg"></div>
+                <div class="temizle"></div>
+            </div>
+        </nav>
+    </header>
+
+
+    <article class="container">
+        <div class="SayfaBaslik">
+            CHECKOUT
+        </div>
+
+        <div>
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#" class="BreadLink">Cart</a></li>
+                    <li class="breadcrumb-item"><a href="Information.html" class="BreadLink KalinYaz">Information</a></li>
+                    <li class="breadcrumb-item"><a href="Shipping.html" class="BreadLink">Shipping</a></li>
+                    <li class="breadcrumb-item"><a href="Payment.html" class="BreadLink">Payment</a></li>
+                    <li class="breadcrumb-item"><a href="#" class="BreadLink">Review</a></li>
+                </ol>
+            </nav>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="ChecoutBaslik">Contact Information</div>
+                <div class="CheckBgBaslik">Billing details</div>
+                <div class="row">
+                    <div class="col-12 CheckOutFormTutucu">
+                        <input type="email" class="form-control CheckForm" placeholder="Email*" id="email">
+                    </div>
+                    <div class="col-12 CheckOutFormTutucu">
+                        <select class="form-select CheckForm" aria-label="Country/Region*">
+                            <option selected>Country/Region*</option>
+                            <option value="1">Turkey</option>
+                            <option value="2">ABD</option>
+                            <option value="3">Germany</option>
+                        </select>
+                    </div>
+                    <div class="col-6 CheckOutFormTutucu">
+                        <input type="email" class="form-control CheckForm" placeholder="First name*" id="First">
+                    </div>
+                    <div class="col-6 CheckOutFormTutucu">
+                        <input type="text" class="form-control CheckForm" placeholder="Last name*" id="Last">
+                    </div>
+                    <div class="col-12 CheckOutFormTutucu">
+                        <input type="text" class="form-control CheckForm" placeholder="Address*" id="Address">
+                    </div>
+                    <div class="col-12 CheckOutFormTutucu">
+                        <input type="text" class="form-control CheckForm"
+                            placeholder="Apartment, suite, etc. (optional)" id="Apartment">
+                    </div>
+                    <div class="col-6 CheckOutFormTutucu">
+                        <input type="text" class="form-control CheckForm" placeholder="Post code / ZIP*" id="Post">
+                    </div>
+
+                    <div class="col-6 CheckOutFormTutucu">
+                        <input type="text" class="form-control CheckForm" placeholder="City*" id="City">
+                    </div>
+                    <div class="col-12 CheckOutFormTutucu">
+                        <input type="text" class="form-control CheckForm" placeholder="Phone*" id="Phone">
+                    </div>
+                </div>
+
+                <div class="CheckBgBaslik mt-3"> <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    &nbsp;&nbsp;Deliver to a different address?</div>
+
+                <div class="row ButtonlariTut">
+                    <div class="col-6 d-flex align-items-center">
+                        <a href="" class="BackButton">
+                            < Return to cart</a>
+                    </div>
+                    <div class="col-6">
+                        <button type="button" class="btn btn-dark w-100 SiyahButton">CONTINUE TO SHIPPING</button>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col-md-6">
+                <div class="checkOutSolBg">
+                    <div class="SepetTutucu">
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="SepetResimTutucu">
+                                    <div class="SepetUrunAdet">1</div>
+                                    <img src="/img/Urun1.jpg" class="w-100" />
+                                </div>
+                            </div>
+                            <div class="col-6 ">
+                                <div class="SepetUrunAdi">JEZEBEL 100 ml</div>
+                            </div>
+                            <div class="col-3">
+                                <div class="SepetUrunFiyat">$125.00</div>
+                            </div>
+                        </div>
+
+
+                        <div class="row mt-4    ">
+                            <div class="col-3">
+                                <div class="SepetResimTutucu">
+                                    <div class="SepetUrunAdet">3</div>
+                                    <img src="/img/Urun2.jpg" class="w-100" />
+                                </div>
+                            </div>
+                            <div class="col-6 ">
+                                <div class="SepetUrunAdi">SAVOUR 100 ml</div>
+                            </div>
+                            <div class="col-3">
+                                <div class="SepetUrunFiyat">$375.00</div>
+                            </div>
+                        </div>
+
+                        <div class="FiyatTut">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="Tutar">Subtotal</div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="Fiyat">$500.00</div>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-6">
+                                    <div class="Tutar">Shipping</div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="Fiyat">Free</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-4">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="Toplam">Total</div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="ToplamFiyat">$500.00</div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </article>
+
+
+    <footer>
+        <div class="footerTutucu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="footerBaslik">
+                            MAX VOLMER
+                        </div>
+                        <div>
+                            <a class="footerLink" href="#">
+                                About
+                            </a>
+                        </div>
+                        <div>
+                            <a class="footerLink" href="#">
+                                Shop
+                            </a>
+                        </div>
+                        <div>
+                            <a class="footerLink" href="#">
+                                Become Partner
+                            </a>
+                        </div>
+                        <div>
+                            <a class="footerLink" href="#">
+                                Contact
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footerBaslik">
+                            PERFUMES
+                        </div>
+                        <div>
+                            <a class="footerLink" href="#">
+                                Max Volmer Pour Homme
+
+                            </a>
+                        </div>
+                        <div>
+                            <a class="footerLink" href="#">
+                                Max Volmer Pour Femme
+
+                            </a>
+                        </div>
+                        <div>
+                            <a class="footerLink" href="#">
+                                Jezebel
+                            </a>
+                        </div>
+                        <div>
+                            <a class="footerLink" href="#">
+                                Savour
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footerBaslik">
+                            LEGAL
+                        </div>
+                        <div>
+                            <a class="footerLink" href="#">
+                                Terms & Conditions
+
+                            </a>
+                        </div>
+                        <div>
+                            <a class="footerLink" href="#">
+                                Privacy Policy
+                            </a>
+                        </div>
+                        <div>
+                            <a class="footerLink" href="#">
+                                Cookie Policy
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footerBaslik">
+                            FOLLOW US
+                        </div>
+                        <p class="footerLink">
+                            for exclusive news and updates:
+                        </p>
+                        <div>
+                            <img src="/img/whatsappicon.svg" alt="">
+                            <img src="/img/instagramicon.svg" alt="">
+                            <img src="/img/facebokicon.svg" alt="">
+                            <img src="/img/twittericon.svg" alt="">
+                            <img src="/img/youtubeicon.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="footerCopy">
+                    Copyright © 2019 Max Volmer All rights reserved.
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

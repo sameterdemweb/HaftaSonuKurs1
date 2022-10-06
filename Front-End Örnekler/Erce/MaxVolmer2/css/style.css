@@ -1,0 +1,291 @@
+
+
+
+
+
+
+.logo{
+    margin-top: 35px;
+    text-align: center;
+        
+}   
+.borderBosluk{
+    margin-top: 50px;
+    margin-bottom: 27px;
+    color: #AFAFB2;
+}
+.menu{
+    margin-left: 43px;
+    margin-right: 44px;
+}
+.SagaYasla{
+    float: right;
+}
+.menu2{
+    margin-left: 12px;
+}
+.border{
+    margin-top: 82px;
+    border: 1px ;
+    margin-bottom: 27px;
+    margin-left: 42px;
+    margin-right: 42px;
+}
+
+.borderYukseklik{
+    margin-top: 50px;
+}
+.h1{
+    color: #BEAC80;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 27px;
+    font-family: 'Raleway', sans-serif;
+
+}
+.breadcrumb-ayarla{
+    padding: 11px;
+    font-size: 12px;
+    text-decoration: none;
+    color: #7D7D7F;
+    font-family: 'Raleway', sans-serif;
+}
+
+.breadAltıH2{
+    color: #7D7D7F;
+    margin-top: 36px;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.button1{
+    background-color: #BEAC80;
+    padding-top: 11px;
+    padding-left: 12px;
+    padding-bottom: 12px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+}
+.email{
+    padding: 12px;
+    border: 1px solid 0px;
+    border-radius: 0px;
+    font-family: 'Raleway', sans-serif;
+}
+.bosluk2{
+    margin-top: 23px;
+}
+.bosluk3{
+    margin-top: 31px;
+    font-family: 'Raleway', sans-serif;
+}
+.radio{
+    border-radius: 0px;
+    margin-right: 11px;
+}
+.return{
+    color: #AFAFB2;
+    font-family: 'Raleway', sans-serif;
+}
+.shoppingGo{
+    background-color: black;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 43px;
+    padding-right: 43px;
+    color: white;
+    font-size: 12px;
+    font-family: 'Raleway', sans-serif;
+}
+.shoppingGo2{
+    background-color: white;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 43px;
+    padding-right: 43px;
+    font-size: 12px;
+    font-family: 'Raleway', sans-serif;
+}
+.BgColor1{
+    background-color: #F7F7F7;
+    height: 723px;
+}
+.Parfum{
+    margin-top: 46px;
+    margin-left: 41px;
+}
+.yazi1{
+    margin-top: 68px;
+    font-family: 'Raleway', sans-serif;
+}
+.SoldanBosluk{
+    margin-left: 43px;
+}
+.border2{
+    width: 25px;
+    height: 25px;
+    background-color: #7D7D7F;
+    border-radius: 30px;
+    position: absolute;
+    top: 50px;
+    left: 100px;
+}
+.Relative{
+    position: relative;
+}
+.Absolute{
+    position: absolute;
+}
+.yazi2{
+    font-family: 'Raleway', sans-serif;
+}
+.checkout{
+    color: #BEAC80;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+.BorderAltıSubtotal{
+    margin-left: 43px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+}
+.BorderAltıSubtotal2{
+    float: right;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+
+}
+.border5{
+    margin-top: 30px;
+    border: 1px ;
+    margin-bottom: 27px;
+    margin-left: 42px;
+    margin-right: 42px;
+}
+.footer{
+    margin-top: 231px;
+    background: url(/img/Group\ 124.svg);
+}
+.p{
+    color: white;
+    top: 80px;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    color: #B4A47E;
+    padding: 0px;
+    float: right;
+}
+.paragraf2{
+    color: white;
+    top: 100px;
+}
+.text-uppercase{
+    color: #B4A47E;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.color{
+    color: white;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+}
+.text-center{
+    color: white;
+}
+.adet{
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: #7D7D7F;
+    padding-right: 12px;
+    color: white;
+    top: 33px;
+    left: 120px;
+}
+.Tablo{
+    border: 80px;
+    color: #7D7D7F;
+}
+.color2{
+    color: #7D7D7F;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    padding: 13px;
+    
+}
+.border3{
+    border: 1px solid;
+    color: #AFAFB2;
+}
+.color3{
+    color: #7D7D7F;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    padding: 13px;
+    margin-left: 57px;
+}
+.p5{
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    color: #7D7D7F;
+    margin-top: 30px;
+}
+.radioButton{
+    margin-right: 17px;
+    background-color: #707070;
+}
+.BorderTopYok{
+    border-top: none;
+}
+.border-color{
+    border-color: #707070;
+    background-color: #707070;
+}
+.p6{
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    color: #7D7D7F;
+    margin-top: 31px;
+}
+.p7{
+    margin-top: 12px;
+    font-size: 10px;
+    font-family: 'Raleway', sans-serif;
+    color: #7D7D7F;
+}
+.ArkaPlan{
+    background-color: #F7F7F7;
+}
+.form-control{
+    border-radius: 0px;
+    padding: 12px;
+}
+.form-check2{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.border8{
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    border: 1px solid;
+    width: 20px;
+    height: 25px;
+    border-radius: 20px;
+}
+.SagdanBosluk{
+    margin-right: 20px;
+}
+.bosluk10{
+    margin-right: 20px;
+}
+.color:hover{
+    color: white;
+}

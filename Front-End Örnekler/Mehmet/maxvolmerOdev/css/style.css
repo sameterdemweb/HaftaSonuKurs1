@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+/*
+font-family: 'Cormorant Garamond', serif;
+font-family: 'Raleway', sans-serif;
+*/
+.logo {
+    margin-top: 35px;
+    margin-bottom: 50px;
+}
+
+.menuIconlar {
+    float: right;
+    right: 0px;
+}
+
+.menuIconMarginRight {
+    margin-right: 2.625rem;
+}
+
+.hrMarginBottom {
+    margin-bottom: 27px;
+}
+
+.chechOutBaslik {
+    font-family: 'Cormorant Garamond', serif;
+    color: #BEAC80;
+    font-size: 40px;
+    letter-spacing: 10px;
+    margin-bottom: 18px;
+}
+
+.navYazilar {
+    font-family: 'Raleway', sans-serif;
+    color: #7D7D7F !important;
+    font-size: 12px;
+    line-height: 15px;
+    padding-right: 11px;
+    text-decoration: none !important;
+}
+
+a {
+    font-family: 'Raleway', sans-serif;
+    color: #7D7D7F !important;
+    font-weight: bold;
+    line-height: 12px;
+    font-size: 12px;
+    text-decoration: none;
+
+}
+
+.BeyazYazi {
+    font-family: 'Raleway', sans-serif;
+    line-height: 12px;
+    font-weight: 500;
+    font-size: 12px;
+    color: white !important;
+}
+
+.navYazilar:hover {
+    color: #707070;
+    font-weight: bold;
+}
+
+.navYazilarHref {
+    text-decoration: none;
+    color: #7D7D7F !important;
+}
+
+.breadcrumb-item .active {
+    color: #707070 !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+}
+
+
+.InformationBaslik {
+    font-family: 'Raleway', sans-serif;
+    color: #7D7D7F;
+}
+
+.BlingBaslik {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    border: 5px;
+    background-color: #BEAC80;
+    color: white;
+    height: 44px;
+    padding: 12px;
+}
+
+.formlar {
+    margin-top: 22px;
+    margin-bottom: 22px;
+}
+
+.textBoxlar {
+    border-radius: 0px;
+    height: 44px;
+}
+
+.Padding0 {
+    padding: 0px;
+}
+
+.returnTo {
+    font-family: 'Raleway', sans-serif;
+    color: #7D7D7F !important;
+    font-weight: bold;
+    line-height: 12px;
+    font-size: 12px;
+    margin-top: 56px;
+
+}
+
+.contineToButton {
+    margin-top: 38px;
+    font-family: 'Raleway', sans-serif;
+    color: #F9F8F4;
+    text-align: center;
+    font-size: 12px;
+    height: 44px;
+    padding: 12px;
+    background-color: #000000;
+    border: 1px #000000;
+    border-radius: 0px;
+    float: right;
+    width: 212px;
+}
+
+.contineToButton:hover {
+    background-color: #BEAC80 !important;
+    border: 1px #BEAC80;
+}
+
+.checkOutSol {
+    margin-top: 36px;
+}
+
+.checkOutSepet {
+    background-color: #F7F7F7;
+    height: 697px;
+}
+
+.adetDiv {
+    position: absolute;
+    width: 22px;
+    border-radius: 22px;
+    background-color: #8D8D91;
+    top: 37px;
+    right: -10px;
+    text-align: center;
+    color: white;
+}
+
+.Parfum {
+    padding-top: 2.875rem;
+    margin-left: 2.563rem;
+}
+
+.ParfumAdiBaslik {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: #7D7D7F;
+    margin-left: 1.313rem;
+    margin-top: 4.25rem;
+}
+
+.ParfumFiyat {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    color: #7D7D7F;
+    margin-left: 1.313rem;
+    margin-top: 4.25rem;
+}
+
+.hrMarginTop {
+    margin-top: 5.126rem;
+}
+
+.SubTotal {
+    margin-left: 2.563rem;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    color: #7D7D7F;
+    line-height: 30px;
+}
+
+.ParfumAdetTutar {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    color: #7D7D7F;
+    line-height: 30px;
+    float: right;
+}
+
+.MarginTop16 {
+    margin-top: 1rem;
+}
+
+.hrMarginTop23 {
+    margin-top: 1.438rem;
+}
+
+.Total {
+    margin-left: 2.563rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #7D7D7F;
+    line-height: 30px;
+}
+
+.ToplamTutar {
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #7D7D7F;
+    line-height: 30px;
+    float: right;
+}
+
+footer {
+    background-image: url(/img/footerbg.png);
+    background-repeat: repeat;
+    min-height: 450px;
+    margin-top: 228px;
+}
+
+.FooterBaslik {
+    margin-top: 4.938rem;
+    margin-bottom: 1.813rem;
+    font-size: 1.125rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: #B4A47E;
+}
+
+.FooterAltBasliklar {
+    font-family: 'Raleway', sans-serif;
+    color: #BDBDC1;
+    font-size: 0.875rem;
+    margin-bottom: 0.625rem;
+}
+
+.FooterCopy {
+    margin-top: 9.313rem;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.75rem;
+    color: #BDBDC1;
+}
+
+.float8 {
+    margin-left: 0.5rem;
+
+}
+
+.formlar {
+    margin-top: 1.375rem;
+    margin-bottom: 1.375rem;
+}
+
+/*Contact*/
+.BorderDiv {
+    border: 1px solid #AFAFB2;
+    border-radius: 0px;
+}
+
+.contact {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 0.875rem;
+    margin: 12px;
+    color: #7D7D7F;
+}
+
+.contactIcerik {
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.75rem;
+    margin: 12px;
+    color: #7D7D7F;
+}
+
+.BorderTopYok {
+    border-top: none;
+}
+
+.change {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 0.625rem;
+    line-height: 0.938rem;
+    color: #7D7D7F;
+    margin: 12px;
+}
+
+.ShippingBaslik {
+    margin-top: 29px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    color: #7D7D7F;
+    height: 44px;
+    line-height: 30px;
+}
+
+.Radio {
+    margin: 13px;
+
+
+}
+
+.radiobutton {
+    background-color: #7D7D7F;
+    border-color: #7D7D7F;
+}
+
+.form-check-input {
+
+    background-color: white;
+    border-color: #7D7D7F;
+}
+
+.form-check-input:checked {
+    background-color: #7D7D7F;
+    border-color: #7D7D7F;
+}
+
+.form-check-input:focus {
+    background-color: #7D7D7F;
+    border-color: #7D7D7F;
+}
+
+
+/*Payment*/
+
+.PaymentBilgi {
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.625rem;
+    line-height: 0.938rem;
+    color: #7D7D7F;
+}
+
+.Credityukseklik {
+    height: 50px;
+}
+
+.CreditBaslik {
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.875rem;
+    color: #7D7D7F;
+    margin-top: 16px;
+}
+
+.KartBilgiGirisAlani {
+    background-color: #F7F7F7;
+    height: 11.688rem;
+    border: 1px solid #AFAFB2;
+    border-top: none;
+}
+
+.KrediBilgiGiris {
+    padding: 16px 15px 0 15px;
+}
+
+.formlar2 {
+    margin-top: 1px;
+    border-top: none;
+    margin-bottom: 22px;
+}
+
+.CreditIconlar {
+    top: 8px;
+    right: 10px;
+}
+
+.CreditOdemeIconlar {
+    top: 12px;
+    left: 0px;
+}
+
+.ButtonAltiYazi {
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.625rem;
+    float: right;
+    margin-right: 45px;
+    margin-bottom: 30px;
+}
+
+.DropdownButton {
+    border-radius: 0px;
+    text-align: left;
+    background-color: white;
+    color: #7D7D7F;
+    border-color: #ced4da;
+}
+
+.DropdownButton:hover {
+    background-color: white;
+    color: #7D7D7F;
+    border-color: #ced4da;
+    background-color: white;
+}

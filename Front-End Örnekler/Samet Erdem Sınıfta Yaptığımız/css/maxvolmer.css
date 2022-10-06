@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;700&family=Raleway:wght@400;500;700&display=swap');
+a{
+    text-decoration: none; 
+}
+
+
+.NavLogoTutucu{
+    margin-top: 35px;
+    border-bottom: 0.5px solid #AFAFB2;
+    padding-bottom: 50px;
+}
+
+.HeaderIconlar{
+    position: absolute;
+    right: 40px;
+    top:0px;
+}
+.HIcon{
+    float:right;
+    margin-right:12px;
+}
+
+.mrUser{
+    margin-right: 43px;
+}
+
+.temizle{
+    clear: both;
+}
+
+/* 
+    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Raleway', sans-serif;
+*/
+
+.SayfaBaslik{
+    font-family: 'Cormorant Garamond', serif;
+    font-size:40px;
+    color:#BEAC80;
+    text-align: center;
+    margin-top:33px;
+    letter-spacing:10px;
+}
+
+.BreadLink{
+    font-family: 'Raleway', sans-serif;
+    color:#7D7D7F;
+    text-decoration: none;
+    font-size:12px;
+   }
+
+.BreadLink:hover{
+    color:black;
+}
+
+.KalinYaz{
+    font-weight: bold;
+}
+
+.ChecoutBaslik{
+    font-family: 'Raleway', sans-serif;
+    font-size:20px;
+    color:#7D7D7F;
+    margin-bottom:13px;
+}
+
+.CheckBgBaslik{
+    height: 44px;
+    padding: 12px;
+    background-color: #BEAC80;
+    font-family: 'Raleway', sans-serif;
+    font-size:14px;
+    font-weight: bold;
+    color:white;
+}
+
+.CheckOutFormTutucu{
+    margin-top:12px;
+}
+
+.CheckForm{
+    font-family: 'Raleway', sans-serif;
+    font-size:14px;
+    border-radius: 0px;
+    color:#7D7D7F;
+    height: 44px;
+    border-color: #AFAFB2 !important;
+}
+.CheckForm:active{
+    border-color: #BEAC80 !important;
+    background-color: #F7F7F7 !important;
+}
+
+.CheckForm:focus{
+    border-color: #BEAC80 !important;
+    background-color: #F7F7F7 !important;
+    box-shadow: inset 0 -1px 0 #ddd;
+}
+.ButtonlariTut{
+    margin-top:39px;
+}
+
+.BackButton{
+    font-family: 'Raleway', sans-serif;
+    font-size:12px;
+    font-weight: bold;
+    text-decoration: none;
+    color:#7D7D7F;
+}
+
+.SiyahButton{
+    border-radius: 0px;
+    height: 44px;
+    font-family: 'Raleway', sans-serif;
+    font-size:12px;
+}
+
+.BackButton:hover{
+    color:black
+}
+
+.checkOutSolBg{
+    background: #F7F7F7;
+    min-height: 625px;
+    width: 100%;
+}
+
+.SepetTutucu{
+    padding: 42px;
+}
+
+.SepetUrunAdi{
+    font-family: 'Raleway', sans-serif;
+    font-size:20px;
+    color:#7D7D7F;
+    padding-top:20px;
+    margin-left:15px;
+}
+.SepetUrunFiyat{
+    font-family: 'Raleway', sans-serif;
+    font-size:18px;
+    color:#7D7D7F;
+    padding-top:20px;
+    font-weight: bold;
+    margin-left:15px;
+}
+
+.SepetResimTutucu{
+    position: relative;
+}
+
+.SepetUrunAdet{
+   position: absolute;
+   background-color: #8D8D91;
+   color:White;
+   height: 25px;
+   width: 25px;
+   text-align: center;
+   font-family: 'Raleway', sans-serif;
+   font-size:14px;
+   border-radius:22px ;
+   right:-10px;
+   top:-10px;
+}
+
+.FiyatTut{
+    border-top: 1px solid #AFAFB2;
+    border-bottom: 1px solid #AFAFB2;
+    margin-top: 41px;
+    padding-top: 29px;
+    padding-bottom: 29px;
+}
+.Tutar{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    text-align: left;
+}
+.Fiyat{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    text-align: right;
+    font-weight: bold;
+}
+.Toplam{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+.ToplamFiyat{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: right;
+}
+
+
+.footerTutucu{
+    margin-top: 231px;
+    height: 450px;
+    
+    
+        background: url("/img/FooterBg.jpg") no-repeat center center ; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover; 
+        padding-top: 81px;
+    
+}
+.footerBaslik{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: #B4A47E;
+    margin-bottom: 32px;
+}
+.footerLink{
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    color: #BDBDC1;
+}
+.footerLink:hover{
+    color: #B4A47E;
+}
+.footerCopy{
+    margin-top: 152px;
+    font-size: 12px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    color: #BDBDC1;
+}
+.cekautborder{
+    border: 1px solid #AFAFB2;
+    padding: 13px;
+
+}
+.kargoBaslik{
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: bold ;
+    color:#7D7D7F ;
+}
+.kargoAciklama{
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+   color: #7D7D7F;
+}
+.kargoButon{
+    font-family: 'Raleway', sans-serif;
+    font-size: 10px;
+    color: #7D7D7F;
+    font-weight:bold ;
+}
+.kargoButon:hover{
+    color:black;
+}
+
+.BorderTopYok{
+    border-top:none;
+}
+.pBosluk{
+    margin-top: 14px;
+    font-size: 10px;
+    font-family: 'Raleway', sans-serif;
+
+}
+.border2{
+    border: 1px solid #AFAFB2;
+    padding: 18px;
+}
+.krediKartiBg{
+    background-color: #F7F7F7;
+    
+}
+.spanClass{
+    margin-left: 20px;
+    font-size: 12px;
+    font-family: 'Raleway', sans-serif;
+}
+.Ortala{
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 10px;
+    margin-top: 8px;
+}
+.Relative{
+    position: relative;
+}
+.Absolute{
+    position: absolute;
+}
+.kilitAbsolute{
+    right: 16px;
+    top: 12px;
+}
+.yukseklik{
+    height: 40px;
+}
+.form-check-input:checked {
+    background-color: #ced1d6;
+    border-color: #dadada;
+}

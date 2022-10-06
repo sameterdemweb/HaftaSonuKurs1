@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="tr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Maxvolmer CheckOut</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="/img/fav.png">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <!--Header Start-->
+  <header>
+    <div>
+      <div class="position-relative">
+        <div class="position-absolute menuIconlar">
+          <img src="/img/favori.svg" class="menuIconMargin" alt="">
+          <img src="/img/sepet.svg" class="menuIconMargin" alt="">
+          <img src="/img/profil.svg" class="menuIconMarginRight" alt="">
+          <img src="/img/menutre.svg" class="menuIconMargin" alt="">
+        </div>
+      </div>
+      <div class="text-center logo"><img src="/img/logo.svg" alt="" /></div>
+      <div class="container hrMarginBottom">
+        <hr />
+      </div>
+
+    </div>
+  </header>
+  <!--Header End-->
+
+  <!--Article Start-->
+  <article>
+
+    <div class="text-center chechOutBaslik">
+      <h1>CHECKOUT</h1>
+    </div>
+
+
+    <!--Breadcrumb Start-->
+    <div class="container">
+      <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item navYazilar"><a href="/cart.html" class="navYazilarHref">Cart</a></li>
+          <li class="breadcrumb-item  navYazilar" aria-current="page"><a href="/information.html"
+              class="navYazilarHref active">Information</a></li>
+          <li class="breadcrumb-item navYazilar" aria-current="page"><a href="/shipping.html"
+              class="navYazilarHref">Shipping</a></li>
+          <li class="breadcrumb-item navYazilar" aria-current="page"><a href="/payment.html"
+              class="navYazilarHref">Payment</a></li>
+          <li class="breadcrumb-item navYazilar" aria-current="page"><a href="/review.html"
+              class="navYazilarHref">Review</a></li>
+        </ol>
+      </nav>
+    </div>
+    <!--Breadcrumb End-->
+
+    <div class="container checkOutSol">
+      <div class="row">
+        <div class="col-md-6">
+          <div>
+            <h3 class="InformationBaslik">Contact Information</h3>
+          </div>
+          <div class="BlingBaslik d-flex align-items-center">Billing details</div>
+          <div>
+            <form>
+              <div class="formlar">
+                <input type="text" class="form-control textBoxlar" id="email" aria-describedby="email"
+                  placeholder="Email*">
+              </div>
+              <div class="formlar">
+                <button class="btn btn-secondary dropdown-toggle w-100 DropdownButton" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Country/Region*
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Turkey</a></li>
+                  <li><a class="dropdown-item" href="#">Germany</a></li>
+                  <li><a class="dropdown-item" href="#">England</a></li>
+                </ul>
+              </div>
+              <div class="row">
+                <div class="col-6">
+                  <div class="">
+                    <input type="text" class="form-control textBoxlar" id="fname" aria-describedby="fname"
+                      placeholder="First name*">
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="">
+                    <input type="text" class="form-control textBoxlar" id="lname" aria-describedby="lname"
+                      placeholder="Last name*">
+                  </div>
+                </div>
+              </div>
+              <div class="formlar">
+                <input type="text" class="form-control textBoxlar" id="address" aria-describedby="address"
+                  placeholder="Address*">
+              </div>
+              <div class="formlar">
+                <input type="text" class="form-control textBoxlar" id="apartment" aria-describedby="apartment"
+                  placeholder="Apartment, suite, etc. (optional)">
+              </div>
+              <div class="row">
+                <div class="col-6">
+                  <div class="">
+                    <input type="text" class="form-control textBoxlar" id="postcode" aria-describedby="postcode"
+                      placeholder="Post code / ZIP*">
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="">
+                    <input type="text" class="form-control textBoxlar" id="city" aria-describedby="city"
+                      placeholder="City*">
+                  </div>
+                </div>
+              </div>
+              <div class="formlar">
+                <input type="text" class="form-control textBoxlar" id="phone" aria-describedby="phone"
+                  placeholder="Phone*">
+              </div>
+              <div class="BlingBaslik d-flex align-items-center">
+                <div class="form-check">
+                  <input class="form-check-input" style="border-radius:0px;" type="checkbox" value=""
+                    id="flexCheckDefault">
+                  <label for="flexCheckDefault">Deliver to a different address?</label>
+                </div>
+              </div>
+            </form>
+            <div class="row">
+              <div class="col-md-6 col-sm-6 returnTo">
+                < Return to cart</div>
+                  <div class="col-md-6 col-sm-6 text-center">
+                    <button type="button" class="btn btn-primary contineToButton"><a href="/shipping.html"class="BeyazYazi"> CONTINUE TO SHIPPING</a></button>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 checkOutSepet">
+            <div class="row">
+              <div class="col-2">
+                <div class="position-relative">
+                  <div class="position-absolute Parfum">
+                    <img src="/img/jezebelmini.png" class="" alt="">
+                    <div class="adetDiv">1</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-7 ">
+                <div class="ParfumAdiBaslik">JEZEBEL 100 ml</div>
+              </div>
+              <div class="col-3 ">
+                <div class="ParfumFiyat">$125.00</div>
+              </div>
+            </div>
+            <div class="row" style="margin-top:28px;">
+              <div class="col-2">
+                <div class="position-relative">
+                  <div class="position-absolute">
+                    <div class="Parfum"> <img src="/img/savourmini.png" class="" alt=""></div>
+                    <div class="adetDiv">3</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-7">
+                <div class="ParfumAdiBaslik">SAVOUR 100 ml</div>
+              </div>
+              <div class="col-3">
+                <div class="ParfumFiyat">$375.00</div>
+              </div>
+            </div>
+            <div class="row container  ">
+              <div class="hrMarginTop">
+                <hr />
+              </div>
+              <div class="row">
+                <div class="col-6 ">
+                  <div class="SubTotal">Subtotal</div>
+                </div>
+                <div class="col-6 ">
+                  <div class="ParfumAdetTutar">$500.00</div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6 ">
+                  <div class="SubTotal MarginTop16">Shipping</div>
+                </div>
+                <div class="col-6 ">
+                  <div class="ParfumAdetTutar MarginTop16">Free</div>
+                </div>
+              </div>
+              <div class="hrMarginTop23">
+                <hr />
+              </div>
+              <div class="row">
+                <div class="col-6">
+                  <div class="Total">Total</div>
+                </div>
+                <div class="col-6">
+                  <div class="ToplamTutar">$500.00</div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+  </article>
+  <!--Article End-->
+
+  <!--Footer Start-->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="FooterBaslik">MAX VOLMER</div>
+          <div class="FooterAltBasliklar">About</div>
+          <div class="FooterAltBasliklar">Shop</div>
+          <div class="FooterAltBasliklar">Became Partner</div>
+        </div>
+        <div class="col-md-3">
+          <div class="FooterBaslik">PERFUMES</div>
+          <div class="FooterAltBasliklar">Max Volmer Pour Homme</div>
+          <div class="FooterAltBasliklar">Max Volmer Pour Femme</div>
+          <div class="FooterAltBasliklar">Jezebel</div>
+          <div class="FooterAltBasliklar">Savour</div>
+        </div>
+        <div class="col-md-3">
+          <div class="FooterBaslik">LEGAL</div>
+          <div class="FooterAltBasliklar">Terms & Conditions</div>
+          <div class="FooterAltBasliklar">Privacy Policy</div>
+          <div class="FooterAltBasliklar">Cookie Policy</div>
+        </div>
+        <div class="col-md-3">
+          <div class="FooterBaslik">FOLLOW US</div>
+          <div class="FooterAltBasliklar">for exclusive news and updates:</div>
+          <div class="FooterAltBasliklar">
+            <img src="/img/whatsapp.svg"class="" alt="">
+            <img src="/img/facebook.svg" class="float8"alt="">
+            <img src="/img/instagram.svg" class="float8"alt="">
+            <img src="/img/youtube.svg" class="float8"alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <div class="container FooterCopy text-center">Copyright © 2019 Max Volmer All rights reserved.</div>
+
+
+
+  </footer>
+  <!--Footer Start-->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

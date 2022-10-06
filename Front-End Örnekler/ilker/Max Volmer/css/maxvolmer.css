@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Playfair+Display&family=Raleway:wght@400;700&display=swap');
+
+a{
+    text-decoration: none;
+}
+a :hover{
+    color: black !important;
+}
+a :link{
+    color: black !important;
+}
+.MenuLogo{
+    text-align: center;
+    margin-top: 35px;
+}
+.HeaderBorder{
+    margin-top: 50px;
+    border: 1px solid #AFAFB2;
+    font-size: 0.5px;
+    text-align: center;
+}
+.MenuLogoTutucu{
+    position: relative;
+}
+.MenuLogolar{
+    position: relative;
+    float: right;
+}
+.Logolar{
+    margin-left: 12px;
+}
+.Menu{
+    margin-right: 43px;
+    margin-left: 43px;
+}
+
+.Checkout{
+    text-align: center;
+    color: #BEAC80;
+    font-size: 40px;
+    margin-top: 34px;
+    font-family: 'Cormorant Garamond',sans-serif;
+}
+.DetayMenu{
+    color:#7D7D7F;
+    font-size: 12px;
+    font-family: 'Raleway',sans-serif;
+}
+.DetayMenu:hover{
+    color: black;
+}
+.KalınYaz{
+    font-weight: bold;
+}
+.Contact{
+    margin-top: 39px;
+    font-size: 20px;
+    font-family: 'Raleway',sans-serif;
+    color: #7D7D7F;
+}
+.Billing{
+    background-color: #BEAC80;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Raleway',sans-serif;
+    padding: 13px;
+    color: #FFFFFF;
+    margin-top: 13px;
+}
+.FormCheck{
+    margin-top: 23px;
+    border-radius: 0px;
+    font-family: 'Raleway',sans-serif;
+    font-size: 14px;
+    color: #7D7D7F;
+    height: 44px;
+}
+.FormCheck2{
+    position: relative;
+    margin-top: 23px;
+    margin-bottom: 28px;
+    border-radius: 0px;
+    font-family: 'Raleway',sans-serif;
+    font-size: 14px;
+    color: #7D7D7F;
+    height: 44px;
+}
+.SembolKitleme{
+    position: relative;
+}
+.KrediKartiSembol{
+    position: absolute;
+    top: 10px;
+    right: 16px;
+}
+.Deliver{
+    background-color: #BEAC80;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Raleway',sans-serif;
+    padding: 13px;
+    color: #FFFFFF;
+    margin-top: 31px;
+}
+.ReturnCart{
+    color:#7D7D7F;
+    font-size: 12px;
+    font-family: 'Raleway',sans-serif;
+    font-weight: bold;
+    margin-top: 57px;
+}
+.ShippingButon{
+    margin-top: 39px;
+    margin-right: 65px;
+    border-radius: 0px;
+    padding: 15px;
+}
+.ShippingButon:hover{
+    color: white !important;
+}
+.BgResim{
+    background-image: url("/img/FooterBg.jpg");
+    height: 450px;
+    margin-top: 231px;
+}
+.FooterBaslik{
+    font-family: 'Raleway',sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #B4A47E;
+    margin-top: 81px;
+    margin-bottom: 32px;
+}
+.FooterAltBaslik{
+    font-family: 'Raleway',sans-serif;
+    font-size: 14px;
+    color: #BDBDC1;
+}
+.FooterAltBaslik:hover{
+    color: #707070;
+}
+.FooterLogo{
+    margin-right: 8px;
+}
+.Copyright{
+    text-align: center;
+    margin-top: 152px;
+    font-family: 'Raleway',sans-serif;
+    font-size: 12px;
+    color: #BDBDC1;
+}
+.SatisBg{
+    background-color: #F7F7F7;  
+}
+.UrunFoto{
+    position: relative;
+    margin-top: 46px;
+    margin-left: 41px;
+}
+.UrunDetay{
+    position: relative;
+    width: 100%;
+}
+.UrunAdet{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    border-radius: 23px;
+    font-family: 'Raleway',sans-serif;
+    font-size: 16px;
+    background-color: #8D8D91;
+    color: #FFFFFF;
+    top: -10px;
+    right: -10px;
+}
+.Urunİsim{
+    margin-top: 68px;
+    font-family: 'Playfair Display',sans-serif;
+    font-size: 20px;
+    color: #7D7D7F;
+}
+.UrunFiyat{
+    margin-top: 73px;
+    font-family: 'Raleway',sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #7D7D7F;
+}
+.Tutar{
+    font-family: 'Raleway',sans-serif;
+    font-size: 16px;
+    color: #7D7D7F;
+}
+.Fiyat{
+    font-family: 'Raleway',sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #7D7D7F;
+    margin-right: 45px;
+}
+.Fatura{
+    margin-left: 41px;
+    margin-top: 30px;
+}
+.Toplam{
+    font-family: 'Raleway',sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #7D7D7F;
+    margin-top: 31px;
+    margin-bottom: 238px;
+}
+.ToplamFiyat{
+    font-family: 'Raleway',sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #7D7D7F;
+    margin-top: 26px;
+    margin-bottom: 238px;
+    
+}
+.TutarUstBorder{
+    width: 455px;
+    text-align: center;
+    margin-top: 41px;
+    border: 1px solid #AFAFB2;
+    border-left: none;
+    border-right: none;
+    font-size: 0.5px;
+}
+.TutarAltBorder{
+    width: 455px;
+    text-align: center;
+    margin-top: 26px;
+    border: 1px solid #AFAFB2;
+    border-left: none;
+    border-right: none;
+    font-size: 0.5px;
+}
+.IletisimBorder{
+    border: 1px solid #AFAFB2;
+}
+.IletisimBorder2{
+    border: 1px solid #AFAFB2;
+    border-top: none;
+}
+.Iletisim{
+    font-family: 'Raleway',sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #7D7D7F;
+    padding: 13px;
+}
+.Adres{
+    font-family: 'Raleway',sans-serif;
+    font-size: 12px;
+    color: #7D7D7F;
+    margin-top: 13px;
+}
+.Degistir{
+    font-family: 'Raleway',sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    color: #7D7D7F;
+    padding: 17px;
+    float: right;
+}
+.Shipping{
+    margin-top: 32px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-family: 'Raleway',sans-serif;
+    color: #7D7D7F;
+}
+.StandartShipping{
+    margin: 15px;
+    font-size: 14px;
+    font-family: 'Raleway',sans-serif;
+    color: #7D7D7F;
+}
+.Kargo{
+    font-family: 'Raleway',sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #7D7D7F;
+    padding: 18px;
+    float: right;
+} 
+.Sozlesme{
+    font-family: 'Raleway',sans-serif;
+    font-size: 10px;
+    color: #7D7D7F;
+}
+.OdemeBg{
+    background-color: #F7F7F7;
+}
+.ShopPay{
+    margin-left: 20px;
+    font-family: 'Raleway',sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #7D7D7F;
+}
+.Ucretlendirme{
+    text-align: center;
+    font-family: 'Raleway',sans-serif;
+    font-size: 10px;
+    color: #7D7D7F;
+    margin-top: 8px;
+}
+.form-control:focus {
+    border-color: #7D7D7F;
+    box-shadow: 0px 1px 1px rgba(190, 172, 128, 1) inset, 0px 0px 8px rgba(190, 172, 128, 0.5);
+}
+.form-select:focus {
+    border-color: #7D7D7F;
+    box-shadow: 0px 1px 1px rgba(190, 172, 128, 1) inset, 0px 0px 8px rgba(190, 172, 128, 0.5);
+}

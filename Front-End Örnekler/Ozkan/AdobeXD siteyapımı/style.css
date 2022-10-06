@@ -1,0 +1,169 @@
+.simge {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 28px;
+}
+
+hr {
+    margin-top: 50px;
+}
+
+.ustAd {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+
+}
+
+.linkler {
+    color: #7d7d7f;
+    font-family: Raleway-Regular;
+    font-size: 12;
+    margin-top: 18.5px;
+    text-decoration: none;
+   
+
+}
+
+.baslık1 {
+    color: #7d7d7f;
+    font-family: Raleway-Regular;
+    font-size: 20;
+    padding-top: 36px;
+    
+}
+
+.row{
+    padding-left: 15%;
+}
+
+.imput0 {
+    width: 460px;
+    height: 44px;
+    background-color: #BEAC80;
+}
+
+.imput1 {
+    width: 460px;
+    height: 44px;
+    margin-top: 23px;
+}
+
+.imput2 {
+    width: 460px;
+    height: 44px;
+    margin-top: 23px;
+}
+
+.imput3 {
+    width: 460px;
+    height: 44px;
+    margin-top: 23px;
+}
+
+.imput4 {
+    width: 460px;
+    height: 44px;
+    margin-top: 23px;
+}
+
+.imput5 {
+    width: 460px;
+    height: 44px;
+    margin-top: 23px;
+}
+
+.imput6 {
+    width: 460px;
+    height: 44px;
+    margin-top: 23px;
+}
+
+
+label#checkbox span.checkbox{
+    width: 460px;
+    height: 44px;
+    background-color: #BEAC80;
+    margin-top: 23px;
+    display: block;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.container{
+   
+    margin-top: 230px;
+    text-decoration: none;
+
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type:none
+}
+
+.ul{
+    list-style: none;
+    text-decoration: none;
+    
+    
+    
+
+}
+a { text-decoration:none;
+color: #BDBDC1; }
+
+.footer{
+    background-image: url(/İmg/footback.svg);
+    margin-top: 230px;
+    text-decoration: none;
+    height: 400px;
+
+    }
+
+    .footer-col{
+        width: 25%;
+        padding: 0 15px;
+        font-weight: 410s;
+        padding-top: 80px;
+        color: #B4A47E;
+    }
+
+    .tamam{
+        position: absolute;
+        left: 15%;
+    }
+
+.tamam1{
+    position: absolute;
+    right: 55%;
+
+}
+
+.parfum1{
+font-family: Raleway-Regular;
+font-size: 22;
+padding-left: 120px;
+padding-top: 30px;
+}
+
+.sagtaraf{
+    background-color: #F7F7F7;
+    height: 550px;
+    max-width: 400px;
+padding-top: 25px;
+padding-left: 25px;
+}
+
+.fiyat1{
+    padding-right: 200px;
+}

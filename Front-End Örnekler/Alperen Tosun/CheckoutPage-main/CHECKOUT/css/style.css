@@ -1,0 +1,255 @@
+body{
+    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+
+.volmerLogo{
+    margin-top: 35px;
+    text-align: center;
+}
+.bord{
+    margin-top: 50px;
+    color: #AFAFB2;
+}
+.Baslik{
+    font-size: 40px;
+    font-family: 'Cormorant Garamond', serif;
+    margin-top: 33px;
+    text-align: center;
+    color: #BEAC80;
+    
+}
+
+.cartLink{
+    margin-left: 190px;
+    font-size: 12px;
+    font-family: 'Raleway', sans-serif;
+    color: #7D7D7F;
+}
+.ContactBaslik{
+    font-size: 20px;
+    margin-left: 190px;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 39px;
+    color: #7D7D7F;
+}
+.BillingBg{
+    padding: 12px;
+    margin-top: 13px;
+    margin-left: 190px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    color: white;
+    background-color: #BEAC80;
+    height: 44px;
+    width: 420px;
+}
+.email{
+    margin-top: 22px;
+    margin-left: 190px;
+    
+}
+
+.returnTo{
+    margin-top: 72px;
+    margin-left: 190px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+
+}
+.buton{
+    color: white;
+    background-color:black;
+    margin-top: 5px;
+    margin-left: 350px;
+    height: 44px;
+    width: 217px;
+}
+.yariYari{
+    background-color: #F7F7F7;
+}
+.parfum1{
+    margin-top: 46px;
+    margin-left: 41px;
+}
+.jezebel{
+    font-family: 'Cormorant Garamond', serif;
+    margin-top: 68px;
+    margin-left: 30px;
+    font-size: 20px;
+
+}
+.dolar{
+    font-family: 'Cormorant Garamond', serif;
+    margin-top: 73px;
+    font-size: 18px;
+
+}
+.Subtotal{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    margin-top: 29px;
+    margin-left: 43px;
+}
+.fiyat{
+    margin-top: 29px;
+    
+}
+.total{
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    margin-left: 43px;
+}
+.fiyat2{
+    font-size: 24px;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+.basliks{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #B4A47E;
+    margin-top: 81px;
+}
+.iceriks{ 
+    font-size: 14; 
+    font-family: 'Raleway', sans-serif;
+    margin-top: 32px;
+    color: #BDBDC1;
+    
+}
+footer{
+    background-image: url(/img/bg.jpg);
+    background-repeat:repeat;
+    min-height:450px;
+    margin-top:228px;
+    }
+.wpicons{
+    margin-top: 20px;
+    
+}
+.faceicons{
+    margin-top: 20px;
+    margin-left: 2px;
+}
+.instaicons{
+    margin-top: 20px;
+    margin-left: 2px;
+}
+.twicons{
+    margin-top: 20px;
+    margin-left: 2px;
+}   
+.youtubeicons{
+    margin-top: 20px;
+    margin-left: 2px;
+}
+.copyright{
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    color: #BDBDC1;
+}
+.border{
+    border-style: solid;
+    margin-top: 30px;
+    height: 135px;
+}
+.Contact{
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 13px;
+}
+.mail{
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    color: #7D7D7F;
+    margin-top: 15px;
+
+}
+.Change{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 10px;
+    margin-top: 17px;
+}
+.Shipto{
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 13px;
+}
+.adres{
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    color: #7D7D7F;
+    margin-top: 15px;
+
+
+}
+.shipMethod{
+    margin-top: 32px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    color: #7D7D7F;
+}
+.stShip{
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    color: #7D7D7F;
+    margin-left: 17px;
+    margin-top: 18px;
+}
+.freeb{
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 18px;
+}
+.radiobut{
+    margin-top: 18px;
+}
+.returnto{
+    margin-top: 48px;
+}
+.border2{
+    border-style: solid;
+    margin-top: 30px;
+    height: 167px;
+}
+.paymentBaslik{
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    margin-top: 34px;
+    color: #7D7D7F;
+}
+.altBaslik{
+    font-family: 'Raleway', sans-serif;
+    font-size: 10px;
+    color: #7D7D7F;
+    margin-top: 14px;
+}
+.border3{
+    border-style: solid;
+    margin-top: 30px;
+    height: 350px;
+}
+.radiobut2{
+    margin-top: 18px;
+    margin-left: 15px;
+    
+}
+.crediCard{
+    margin-top: 18px;
+    margin-left: 12px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    color: #7D7D7F;
+}
