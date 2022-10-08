@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+
+
+<div id="app">
+	<p> {{ title }} </p>
+	<p> {{ hello() }}</p>
+</div>
+
+
+<script type="text/javascript">
+	new Vue({
+	el : "#app",
+	data : {
+		title : "Siteye Hoşgeldiniz, ",
+		description : " Samet ERDEM"
+	},
+	methods : {
+		hello : function (){			
+			return this.title + this.description
+		}
+	}
+});
+</script>
+
+
+</body>
+</html>

@@ -19,7 +19,9 @@
     margin-right: 44px;
 }
 .SagaYasla{
-    float: right;
+    position: absolute;
+    top:20px;
+    right:30px;
 }
 .menu2{
     margin-left: 12px;

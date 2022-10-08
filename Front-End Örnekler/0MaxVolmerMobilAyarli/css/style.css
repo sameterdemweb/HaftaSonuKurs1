@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;700&family=Raleway:wght@400;500;700&display=swap');
+
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: black;
+}
+.MarkaLogo{
+    text-align: center;
+    margin-top: 35px;
+}
+.MenuLogolar{
+    position: absolute;
+    right: 40px;
+    top: 40px;
+}
+.Logolar{
+    margin-left: 12px;
+}
+.Menu{
+    margin-left: 42px;
+}
+.HeaderBorder{
+    margin-top: 50px;
+    border: 0.5px solid #AFAFB2;
+}
+.Checkout{
+    margin-top: 33px;
+    text-align: center;
+    font-family: 'Cormorant Garamond',sans-serif;
+    font-size: 40px;
+    color: #BEAC80;
+}
+.Contact{
+    font-family: 'Raleway',sans-serif;
+    font-size: 20px;
+    margin-top: 40px;
+    color: #7D7D7F;
+}
+.Billing{
+    height: 44px;
+    font-family: 'Raleway',sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #BEAC80;
+    margin-top: 13px;
+    padding: 13px;
+    color: #FFFFFF;
+}
+.FormCheck{
+    height: 44px;
+    margin-top: 22px;
+    border-radius: 0px;
+    font-family: 'Raleway',sans-serif;
+    font-size: 14px;
+    color: #7D7D7F;
+}
+.breadcrumb a{
+    font-family: 'Raleway',sans-serif;
+    font-size: 14px;
+    color: #7D7D7F;
+}
+.KalinYaz{
+    font-weight: bold;
+}
+.Devam{
+    margin-top: 39px;
+}
+.ContiuneButon{
+    height: 44px;
+    border-radius: 0px;
+}
+.SepetBg{
+    background-color: #F7F7F7;;
+    padding: 45px;
+
+}
+.UrunFotoTutucu{
+    position: relative;
+}
+.UrunFoto{
+    position: relative;
+}
+.UrunAdet{
+    position: absolute;
+    text-align: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 22px;
+    background-color: #8D8D91;
+    color: #FFFFFF;
+    font-family: 'Raleway',sans-serif;
+    font-size: 16px;
+    top: -10px;
+    right: -10px;
+}
+.UrunIsım{
+    font-family: 'Raleway',sans-serif;
+    font-size: 20px;
+    color: #7D7D7F;
+    margin-top: 20px;
+}
+.UrunFiyat{
+    font-family: 'Raleway',sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #7D7D7F;
+    margin-top: 20px;
+}
+.TutarBorder{
+    padding-top: 29px;
+    padding-bottom: 29px;
+    border-top: 1px solid #AFAFB2;
+    border-bottom: 1px solid #AFAFB2;
+}
+.TutarVeKargo{
+    font-family: 'Raleway',sans-serif;
+    font-size: 16px;
+    color: #7D7D7F;
+}
+.Fiyat{
+    font-family: 'Raleway',sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #7D7D7F; 
+}
+.Toplam{
+    font-family: 'Raleway',sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #7D7D7F; 
+}
+.ToplamFiyat{
+    font-family: 'Raleway',sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #7D7D7F;
+    float: right;
+}
+
+.SepetBilgisiGoster{
+    margin-bottom: 20px;;
+}
+
+.sepetbilgibaslik{
+ font-size:12px;
+ color:#7D7D7F;
+}
+
+.sepetToplamFiyat{
+    font-family: 'Raleway',sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #7D7D7F;
+  
+}
+
+.float-left{
+    float:left;
+}
+.float-right{
+    float:right;
+}
+.clear{
+    clear: both;
+}
+
+.MobilHeader{
+    padding-top: 30px;
+    background: url(/img/FooterBg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #8D8D91;
+    padding-bottom: 30px    ;
+}
+.MobilMarkaLogo{
+    text-align: center;
+}
+
+
+.FiyatToplamlari{
+    display: block;
+   }
+   
+
+@media (max-width: 756px) {
+    .FiyatToplamlari{
+        display: none;
+       }
+}

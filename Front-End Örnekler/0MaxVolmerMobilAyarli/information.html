@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <header class="d-none d-md-block">
+        <section>
+            <div class="MenuLogolar">
+                <img src="/img/favoriUrunLogo.svg" class="Logolar">
+                <img src="/img/sepetLogo.svg" class="Logolar">
+                <img src="/img/oturumLogo.svg" class="Logolar">
+                <img src="/img/menuLogo.svg" class="Menu">
+            </div>
+            <div class="MarkaLogo">
+                <img src="/img/markaLogo.svg">
+            </div>
+           
+        </section>
+        <div class="HeaderBorder container"></div>
+    </header>
+    <header class="d-block d-md-none MobilHeader">
+        <section>
+            <div class="MenuLogolar">
+                <img src="/img/menuLogo.svg" class="Menu">
+            </div>
+            <div class="MobilMarkaLogo">
+                <img src="/img/markaLogo.svg">
+            </div>
+        </section>
+    </header>
+
+
+    <div class="Checkout">
+        CHECKOUT
+    </div>
+    <div class="container">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Cart</a></li>
+                <li class="breadcrumb-item active KalinYaz" aria-current="page">Information</li>
+                <li class="breadcrumb-item"><a href="#">Shipping</a></li>
+                <li class="breadcrumb-item"><a href="#">Payment</a></li>
+                <li class="breadcrumb-item"><a href="#">Review</a></li>
+            </ol>
+        </nav>
+    </div>
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="Contact">
+                        Contact Information
+                    </div>
+                    <div class="Billing">
+                        Billing details
+                    </div>
+                    <form>
+                        <div class="row">
+                            <div class="col--12">
+                                <input type="email" class="form-control FormCheck" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Email*">
+                            </div>
+                            <div class="col-12">
+                                <select class="form-select FormCheck" aria-label="Default select example">
+                                    <option selected>Country/Region*</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                  </select>
+                            </div>
+                            <div class="col-6">
+                                <input type="email" class="form-control FormCheck" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="First name*">
+                            </div>
+                            <div class="col-6">
+                                <input type="email" class="form-control FormCheck" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Last name*">
+                            </div>
+                            <div class="col-12">
+                                <input type="email" class="form-control FormCheck" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Address*">
+                            </div>
+                            <div class="col-12">
+                                <input type="email" class="form-control FormCheck" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Apartment, suite, etc. (optional)">
+                            </div>
+                            <div class="col-6">
+                                <input type="email" class="form-control FormCheck" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Post code / ZIP*">
+                            </div>
+                            <div class="col-6">
+                                <input type="email" class="form-control FormCheck" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="City*">
+                            </div>
+                            <div class="col-12">
+                                <input type="email" class="form-control FormCheck" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Phone*">
+                            </div>
+                        </div>
+                    </form>
+                    <div class="Billing">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Deliver to a different address?
+                            </label>
+                          </div>
+                    </div>
+                    <div class="row Devam">
+                        <div class="col-6">
+                            <a href="#">Return to cart</a>
+                        </div>
+                        <div class="col-6">
+                            <button type="button" class="btn btn-dark ContiuneButon w-100">CONTINUE TO SHIPPING</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="SepetBg">
+                        <div class="SepetBilgisiGoster d-block d-md-none" id="ToplamFiyatGoster">
+                            <div class="float-left sepetbilgibaslik"><img src="/img/sepetLogo.svg"/ > Hide order summary</div>
+                            <div class="float-right sepetToplamFiyat">$500.00</div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="FiyatToplamlari" id="FiyatToplamlari" >
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="UrunFotoTutucu">
+                                        <div class="UrunFoto"><img src="/img/urun1.jpg" class="w-100"></div>
+                                        <div class="UrunAdet">1</div>
+                                    </div>
+                                </div>
+                                <div class="col-7">
+                                    <div class="UrunIsım">JEZEBEL 100 ml</div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="UrunFiyat">$125.00</div>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-3">
+                                    <div class="UrunFotoTutucu">
+                                        <div class="UrunFoto"><img src="/img/urun2.jpg" class="w-100"></div>
+                                        <div class="UrunAdet">1</div>
+                                    </div>
+                                </div>
+                                <div class="col-7">
+                                    <div class="UrunIsım">SAVOUR 100 ml</div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="UrunFiyat">$375.00</div>
+                                </div>
+                            </div>
+                            <div class="row mt-5 TutarBorder">
+                                <div class="col-10 mb-3">
+                                    <div class="TutarVeKargo">
+                                        Subtotal
+                                    </div>
+                                </div>
+                                <div class="col-2 mb-3">
+                                    <div class="Fiyat">
+                                        $500.00
+                                    </div>
+                                </div>
+                                <div class="col-10">
+                                    <div class="TutarVeKargo">
+                                        Shipping
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="Fiyat">
+                                        Free
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-6">
+                                    <div class="Toplam">
+                                        Total
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="ToplamFiyat">
+                                        $500.00
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </article>
+
+ 
+    <footer>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      ></script>
+
+
+        <script>
+        
+
+            var btnToplamFiyatGoster=document.getElementById("ToplamFiyatGoster");
+            btnToplamFiyatGoster.addEventListener("click",Goster);
+            
+          
+            function Goster(){
+          
+                document.getElementById("FiyatToplamlari").style.display="block";
+            }
+            
+        </script>
+</body>
+
+</html>
