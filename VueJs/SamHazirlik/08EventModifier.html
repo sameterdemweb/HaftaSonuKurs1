@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>Eventler nasıl okunur?</title>
+</head>
+<body>
+    <div id="Ulas">
+        <div v-on:mousemove="MouseBilgi">
+            Koordinatlar : {{ x }} , {{ y }}
+            <span>BU ALANDA ÇALIŞMA</span><!-- bU ALANDA MOUSEMOVE UN VARSAYILAN DAVRANIŞINI İPTAL ETMİŞ OLDUK.-->
+           <!-- <span v-on:mousemove.stop>BU ALANDA ÇALIŞMA</span> bU ALANDA MOUSEMOVE UN VARSAYILAN DAVRANIŞINI İPTAL ETMİŞ OLDUK.-->
+        </div>
+    </div>
+    <script>
+        new Vue(
+            {
+                el:"#Ulas",
+                data:{
+                    x:0,
+                    y:0
+                },
+                methods:{
+                    MouseBilgi:function(event){
+                        this.x=event.clientX;
+                        this.y=event.clientY;
+                    }
+                }
+            }
+        );
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>İçeriklere Erişim</title>
+</head>
+<body>
+    <div id="Ulas">
+        <h4>Gidilecek Link {{  sitemLink  }}</h4> 
+        <hr/>
+        <button v-on:click="LinkDegis()">Button Tıkla</button>  <!-- v-on:click >>>> @click -->
+        <hr/>
+        <a :href="sitemLink" :title="mesaj">Bana Tıkla</a> <!-- v-bind:href >>>> :href   ve v-bind:title >>>> :title -->
+
+    </div>
+
+    <script>
+        new Vue({
+            el:"#Ulas",
+            data:{
+                sitemLink:"https://www.sameterdem.com.tr",
+            },
+            methods:{
+                LinkDegis:function(){
+                    this.sitemLink="https://www.sanalyonet.com";
+                    return "Mesajın içeriği:  "+ this.sitemLink;
+                }
+            }
+        });
+    </script>
+</body>
+</html>

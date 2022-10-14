@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>Template Javascript Kodu Yazma !</title>
+</head>
+<body>
+    <div id="Ulas">
+     
+        <p>{{ MesajBilgisi }}</p>
+        <button v-on:click="sayi++">Arttır</button>  <!-- Sadece 1 satır olacak şekilde eventlarımızda JS  kullanabiliriz-->
+        <button v-on:click="sayi--">Eksilt</button>  <!-- Sadece 1 satır olacak şekilde eventlarımızda JS  kullanabiliriz-->
+        
+        <p>{{ sayi }}</p>
+        <p>{{ sayi > 10? "Sayı ondan büyüktür.":" Sayı ondan küçüktür." }}</p> <!-- Vue js ile bind ettiğimiz değeri tek satırlık javascript kodları ile yazabliriz.-->
+    </div>
+    <script>
+        new Vue(
+            {
+                el:"#Ulas",
+                data:{
+                    sayi:0
+                },
+                methods:{
+                   
+                }
+            }
+        );
+    </script>
+</body>
+</html>

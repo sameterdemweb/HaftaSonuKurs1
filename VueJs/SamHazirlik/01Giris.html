@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vue uygulama örneklerimiz.</title>
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+
+
+	<div id="YakalaDiv">
+		<p> {{ baslik }} </p> <!-- yazdırmak için ilk uygulamamızda string özel propertyleri yazdırabiliriz çift süslü parantez ile.-->
+		<p> {{ aciklama }} </p>
+	</div>
+	
+	
+	<script type="text/javascript">
+		new Vue(//Vue ile kontrol edeceğim uygulamayı başlatıyorum.
+		{   //bir obje oluşturuyoruz.
+			el : "#YakalaDiv",  //Hangi HTML Bloğuna bakacağımızı tanımladığımız alan, bunu içeriğine istediğimiz gibi erişebililiriz.
+			data : // Tanımladığımız HTML Bloğu içerisinde kullanacağımız tüm verileri içeren property (Özellelik) 
+			{  //bir obje oluşturuyoruz böylece içerisine farklı içerikler tanımlayabiliriz.
+				baslik : "Siteye Hoşgeldiniz, ", 
+				aciklama : " Samet ERDEM"
+			}
+		});
+	</script>
+
+</body>
+</html>

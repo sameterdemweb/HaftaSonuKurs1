@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>İki Yönlü Veri İletişimi</title>
+</head>
+<body>
+    <div id="Ulas">
+        <input type="text" v-model="isim"> <!-- v-model Çift tarafılı erişim sağlar ve her yerdeki değerleri otomatikdeğişir.-->
+        <p>{{ isim }}</p>
+        <h1>{{ isim }}</h1>
+    </div>
+    <script>
+        new Vue(
+            {
+                el:"#Ulas",
+                data:{
+                  isim:"Samet Erdem",
+                },
+                methods:{
+                   
+                }
+            }
+        );
+    </script>
+</body>
+</html>

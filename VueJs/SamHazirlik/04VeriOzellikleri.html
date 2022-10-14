@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>İçeriklere Erişim</title>
+</head>
+<body>
+    <div id="Ulas">
+        <h1 v-once>{{  mesaj  }}</h1> <!--  v-once bu özellik ilk randerdan sonra HTML üzerindeki veri data içerisinde neyse öyle kalması sağlanır. -->
+        <h1>{{  mesaj  }}</h1>
+        <p>{{  merhaba() }}</p>
+        <hr/>
+        <a href="{{ Link }}">Bana Tıkla</a> <!-- Hatalı kullanım buna izin vermez !-->
+        <hr/>
+        <!-- Herhangi bir attribute u bağlayabiliriz. HTML ÖZELLİKLERİ !-->
+        <a v-bind:href="sitemLink" v-bind:title="mesaj">Bana Tıkla 2</a> <!-- istediğimiz HTML Elemanına istediğimiz içeriği bağlayabiliriz.-->
+
+        <p >{{ tamLink }}</p><!--Vue js direk yazılmış HTML kodlarını çalışmaz hale getirir! String süslü parantezler içerisinde yazılmış olan veri string olarak yazar !--> 
+        <p v-html="tamLink">{{ tamLink }}</p><!-- v-html ile HTML verileri template üzerinde çıktı alınabilir.--> 
+    </div>
+
+    <script>
+        new Vue({
+            el:"#Ulas",
+            data:{
+                mesaj:"Merhaba",
+                sitemLink:"https://www.sameterdem.com.tr",
+                tamLink:"<a href='https://www.sameterdem.com.tr'>Tam Link</a>", // Vue js direk yazılmış HTML kodlarını çalışmaz hale getirir! String süslü parantezler içerisinde yazılmış olan veri string olarak yazar !
+
+            },
+            methods:{
+                merhaba:function(){
+                    this.mesaj="Samet Erdem";
+                    return "Mesajın içeriği:  "+ this.mesaj;
+                }
+            }
+        });
+    </script>
+</body>
+</html>

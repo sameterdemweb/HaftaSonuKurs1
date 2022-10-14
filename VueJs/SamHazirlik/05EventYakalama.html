@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>Eventler nasıl okunur?</title>
+</head>
+<body>
+    <div id="Ulas">
+        <button v-on:click="UyarıGoster()">Uyarı Göster</button> <!-- v-on: yazarak eventleri yakalayabiliriz. edebiliriz.-->
+        <p>{{ MesajBilgisi }}</p>
+        <button v-on:click="sayi++">Arttır</button>
+        <button v-on:click="sayi--">Eksilt</button>
+        <button v-on:click="eksiltmeFunc()">Eksilt</button>
+        <p>{{ sayi }}</p>
+    </div>
+    <script>
+        new Vue(
+            {
+                el:"#Ulas",
+                data:{
+                    MesajBilgisi:"Uyarı Bilgisi",
+                    Adet:3,
+                    sayi:0
+                },
+                methods:{
+                    UyarıGoster:function()
+                    {
+                        for(i=0;i<this.sayi;i++){
+                            alert('Merhaba');
+                        }
+                    },
+                    eksiltmeFunc:function(){
+                        this.sayi--;
+                    }
+                }
+            }
+        );
+    </script>
+</body>
+</html>

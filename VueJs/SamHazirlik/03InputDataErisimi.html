@@ -6,16 +6,16 @@
 </head>
 <body>
 
-<div id="app">
+<div id="YakalaDiv">
 	<h1> {{ title }} </h1>
 	<hr>
-	<input type="text" v-on:input="baslikDegistir">
+	<input type="text" v-on:input="baslikDegistir"> <!-- -->
 	<p> {{ description }} </p>
 </div>
 
 <script type="text/javascript">
 	new Vue({
-	el : "#app",
+	el : "#YakalaDiv",
 	data : {
 		title : "Textbox içerisinde data değiştirme",
 		description : "Mevcut Açıklama İçeriği"

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>VUE ICERIK</title>
+</head>
+<style>
+    .kutu{
+        width:100px;
+        height:100px;
+        background-color: gray;
+        display:inline-block;
+        margin-right: 10px;
+    }
+
+    .sari{
+        background-color: yellow;
+    }
+</style>
+<body>
+    <div id="Ulas">
+        <div 
+        @click="eklenecekClass = !eklenecekClass" 
+        :class="{sari: eklenecekClass}" 
+        class="kutu"></div> <!-- :class ile tru olma durumunda iligli classı ekleme işlemi gerçekleşir.-->
+        <div class="kutu"></div>
+        <div class="kutu"></div>
+    </div>
+    <script>
+        new Vue(
+            {
+                el:"#Ulas",
+                data:{
+                  eklenecekClass:false,//click olduğunda tam tersini atacağız.
+                },
+                methods:{
+                   
+                }
+            }
+        );
+    </script>
+</body>
+</html>

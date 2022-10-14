@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>Eventler nasıl okunur?</title>
+</head>
+<body>
+    <div id="Ulas">
+        <button v-on:click="UyarıGoster('Merhaba Samet')">Uyarı Göster</button> <!-- v-on: yazarak eventleri yakalayabiliriz. edebiliriz.-->
+        <button v-on:click="Arttir(1)">1,1 Attır</button> <!-- v-on: yazarak eventleri yakalayabiliriz. edebiliriz.-->
+        <button v-on:click="Arttir(2)">2,2 Attır</button> <!-- v-on: yazarak eventleri yakalayabiliriz. edebiliriz.-->
+        <button v-on:click="Arttir(3)">3,3 Attır</button> <!-- v-on: yazarak eventleri yakalayabiliriz. edebiliriz.-->
+        <button v-on:click="Eksilt(1)">1,1 Eksilt</button> <!-- v-on: yazarak eventleri yakalayabiliriz. edebiliriz.-->
+        <button v-on:click="Eksilt(2)">2,2 Eksilt</button> <!-- v-on: yazarak eventleri yakalayabiliriz. edebiliriz.-->
+        <button v-on:click="Eksilt(3)">3,3 Eksilt</button> <!-- v-on: yazarak eventleri yakalayabiliriz. edebiliriz.-->
+        <h1>{{ kacKezGoster }}</h1>
+    </div>
+    <script>
+        new Vue(
+            {
+                el:"#Ulas",
+                data:{
+                    MesajBilgisi:"Uyarı Bilgisi",
+                    kacKezGoster:2,
+                },
+                methods:{
+                    UyarıGoster:function(gelenDeger)
+                    {
+                        for(i=0;i<this.kacKezGoster;i++){
+                            alert(gelenDeger+" "+ i);
+                        }
+                    },
+                    Arttir:function(sayi){
+                        this.kacKezGoster+=sayi;
+                    },
+                    Eksilt:function(sayi){
+                        this.kacKezGoster-=sayi;
+                    },
+                }
+            }
+        );
+    </script>
+</body>
+</html>

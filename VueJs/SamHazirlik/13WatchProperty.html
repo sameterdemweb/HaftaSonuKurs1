@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>Watch ile Method arasındaki farklar!</title>
+</head>
+<body>
+    <div id="Ulas">
+        <button v-on:click="Eksilt">Eksilt</button>
+        <button v-on:click="Arttir">Arttır</button>
+        <button v-on:click="Arttiryeni">Arttır YENİİ</button>
+        <p>{{ sayi }}</p>
+        <p>{{ sayiyeni }}</p>
+        <p>{{ sonuc }}</p>
+        <p>{{ sonucbu }}</p><!--  Performas düşer. Nesne her build edildiğinde çalışır ! -->
+    </div>
+    <script>
+        new Vue(
+            {
+                el:"#Ulas",
+                data:{
+                  sayi:0,
+                  sayiyeni:0,
+                  sonuc:"",
+                },
+                methods:{
+                    /* KOOD TEKRARI YAPTIK. Bu bir hata. */
+                    Arttir:function(){
+                        this.sayi++;
+                        this.sonuc=this.sayi>10?"Sayı Ondan Büyüktür.":"Sayı Ondan Küçüktür.";
+                    },  
+                    Arttiryeni:function(){
+                        this.sayiyeni++;
+                    },
+                    Eksilt:function(){
+                        this.sayi--;
+                        this.sonuc=this.sayi>10?"Sayı Ondan Büyüktür.":"Sayı Ondan Küçüktür.";
+                    },
+                    sonucFunction:function(){ //İKİ DEFA KOD YAZMAKTAN KURATARIR AMA PERFORMANS GEREKSİZ ÇALIŞIR.
+                        console.log("Method Çalıştı");
+                        return this.sayi>10?"Sayı Ondan Büyüktür.":"Sayı Ondan Küçüktür.";
+                    }
+                },
+                computed:
+                { //Fonksiyoon gibi davranır kodu analiz eder ve kodun içerisinde ihtiyacımız olan değişken değişmiş ise çalışır ! 
+                    sonucbu:function()
+                    {
+                        console.log("computed Çalıştı");
+                        return this.sayi>10?"Sayı Ondan Büyüktür.":"Sayı Ondan Küçüktür.";
+                    }
+                },
+                watch:{//Data içindeki nesneleri izler. Senkron çalışır. 
+                    sayi:function(value){//Sayı değişirse işleme alıancak function.
+                        console.log(value);
+                    },
+                    sayiyeni:function(value){//Sayı değişirse işleme alıancak function.
+                        vm=this; // this bir süre sonra çalışacağı için vm değerine atıyoruz. Böylece 1,5 saniye sonra çalıştığında da aktif oluyor.
+                        setTimeout(function(){ //Bir süre sonra sıfırlamak için setTimeout kullanacağız.
+                            vm.sayiyeni=0;
+                        },1500)
+                    }
+                }
+            }
+        );
+    </script>
+</body>
+</html>
