@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>VUE ICERIK</title>
+</head>
+<body>
+    <div id="UlasBana">
+       <button v-on:click="Azalt"> Azalt Function kullanım örneği </button>
+       <button v-on:click="sayiBilgisi++"> Azalt JS kullanım örneği </button>
+        <button v-on:click="SuKadarAzalt(2)"> Azalt 2 Adet</button>
+        <button v-on:click="SuKadarAzalt(4)"> Azalt 4 Adet</button>
+        <hr/>
+        <button  v-on:click="Sifirla">Sayıyı Sıfırla</button>
+        <hr/>
+        <button v-on:click="Arttir"> Arttır Function kullanım örneği</button>
+        <button v-on:click="sayiBilgisi=sayiBilgisi+25"> Arttır JS kullanım örneği</button>
+        <button v-on:click="SuKadarArttir(2)"> Arttır 2 Adet</button>
+        <button v-on:click="SuKadarArttir(4)"> Arttır 4 Adet</button>
+        <hr/>
+        <h1>Sayımız {{ sayiBilgisi }} </h1>
+        <hr/>
+        <button  v-on:click="UyariVer">UYARI VER</button>
+        <button  v-on:click="EkranaYaz">Ekrana Yaz</button>
+        <p v-html="ekranaYazilacakMesaj"></p>
+    </div>
+    <script>
+            new Vue({
+                el:"#UlasBana",
+                data:{
+                  sayiBilgisi:0,
+                  isim:"Samet Erdem",
+                  ekranaYazilacakMesaj:"",
+                },
+                methods:{
+                  Arttir:function(){
+                    this.sayiBilgisi++;
+                  },
+                  Azalt:function(){
+                    this.sayiBilgisi--;
+                  },
+                  Sifirla:function(){
+                    this.sayiBilgisi=0;
+                  },
+                  UyariVer:function(){
+                    if(this.sayiBilgisi>0){
+                            alert('Merhaba, Ekrana '+this.sayiBilgisi +' defa '+ this.isim + ' Yazacak.' );
+                    }
+                  },
+                  EkranaYaz:function(){
+                    for(i=0;i<this.sayiBilgisi;i++){
+                        this.ekranaYazilacakMesaj+= "<br/>"+ this.isim;
+                    }
+                  },
+                  SuKadarArttir:function(sayi){
+                    this.sayiBilgisi+=sayi;
+                  },
+                  SuKadarAzalt: function(sayi){
+                    this.sayiBilgisi-=sayi;
+                  }
+                  
+
+                }
+            });
+
+    </script>
+</body>
+</html>

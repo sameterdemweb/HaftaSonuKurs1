@@ -11,9 +11,9 @@
     <div id="Ulas">
         <h4>Gidilecek Link {{  sitemLink  }}</h4> 
         <hr/>
-        <button v-on:click="LinkDegis()">Button Tıkla</button>  <!-- v-on:click >>>> @click -->
+        <button @click="LinkDegis()">Button Tıkla</button>  <!-- v-on:click >>>> @click -->
         <hr/>
-        <a :href="sitemLink" :title="mesaj">Bana Tıkla</a> <!-- v-bind:href >>>> :href   ve v-bind:title >>>> :title -->
+        <a :href="sitemLink" :alt="mesaj" :title="mesaj">Bana Tıkla</a> <!-- v-bind:href >>>> :href   ve v-bind:title >>>> :title -->
 
     </div>
 
@@ -22,6 +22,7 @@
             el:"#Ulas",
             data:{
                 sitemLink:"https://www.sameterdem.com.tr",
+                mesaj:"Linke tıklayabilirsiniz."
             },
             methods:{
                 LinkDegis:function(){

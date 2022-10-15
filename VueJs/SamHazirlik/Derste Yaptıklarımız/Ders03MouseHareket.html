@@ -9,21 +9,27 @@
 </head>
 <body>
     <div id="UlasBana">
-        <h1>{{ Mesaj }}</h1>
+        <div v-on:mousemove="MouseBilgi" style="background-color: aqua;">
+            Koordinatlar: {{ x }}, {{ y }}
+            <span style="background:#ccc;" v-on:mousemove.stop> Burada Çalışmasın</span>
+        </div>
     </div>
-    
     <script>
             new Vue({
                 el:"#UlasBana",
                 data:{
-                    Mesaj:"Merhaba Dünya",
+                    x:0,
+                    y:0,
                 },
                 methods:{
-                   
+                    MouseBilgi:function(event){
+                        this.y=event.clientY;
+                        if(event.clientX>=100){
+                            this.x=event.clientX;
+                        }
+                    }
                 }
             });
-
-
     </script>
 </body>
 </html>

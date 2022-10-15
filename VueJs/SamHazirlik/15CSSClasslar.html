@@ -18,16 +18,20 @@
 
     .sari{
         background-color: yellow;
+        border-radius: 50px;
     }
+ 
+
 </style>
 <body>
     <div id="Ulas">
         <div 
         @click="eklenecekClass = !eklenecekClass" 
-        :class="{sari: eklenecekClass}" 
+        :class="{sari : eklenecekClass}" 
         class="kutu"></div> <!-- :class ile tru olma durumunda iligli classı ekleme işlemi gerçekleşir.-->
+        <div  class="kutu"></div>
         <div class="kutu"></div>
-        <div class="kutu"></div>
+        <p>{{ eklenecekClass }}</p>
     </div>
     <script>
         new Vue(

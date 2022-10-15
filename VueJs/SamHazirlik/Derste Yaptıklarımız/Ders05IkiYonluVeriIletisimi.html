@@ -9,14 +9,15 @@
 </head>
 <body>
     <div id="UlasBana">
-        <h1>{{ Mesaj }}</h1>
+        <input type="text" v-model="isim" >
+        <h1 v-once>{{ isim }}</h1>
     </div>
     
     <script>
             new Vue({
                 el:"#UlasBana",
                 data:{
-                    Mesaj:"Merhaba Dünya",
+                    isim:"Samet Erdem",
                 },
                 methods:{
                    

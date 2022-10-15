@@ -9,14 +9,23 @@
 </head>
 <body>
     <div id="UlasBana">
-        <h1>{{ Mesaj }}</h1>
+            <p v-if="durumBilgisi">Göster butonuna basıldı ve ben artık gözüküyorum</p>
+            <p v-else>Artık göremezsin!</p>
+            <button @click="durumBilgisi=!durumBilgisi">Göster/Gizle</button>
+
+
+            <div v-if="sayi<10">Sayı ondan küçüktür</div>
+            <div v-else-if="sayi>10">Sayı ondan büyüktür</div>
+            <div v-else>Sayı ondur.</div>
+
     </div>
     
     <script>
             new Vue({
                 el:"#UlasBana",
                 data:{
-                    Mesaj:"Merhaba Dünya",
+                  durumBilgisi:false,
+                  sayi:10,
                 },
                 methods:{
                    

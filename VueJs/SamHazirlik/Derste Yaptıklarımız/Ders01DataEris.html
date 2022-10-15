@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>VUE ICERIK</title>
+</head>
+<body>
+    <div id="UlasBana">
+        <h1 v-once>{{ mesaj }}</h1>
+        <p>{{ aciklama }}</p>
+        <a v-bind:href="link" v-bind:title="mesaj">
+            <h2>{{ mesaj }}</h2>
+        </a>
+        {{ DegerDegis() }}
+        <div >{{ TamLink }}</div>
+        <hr/>
+        <div v-html="TamLink"></div>
+
+    </div>
+    
+    <script>
+            new Vue({
+                el:"#UlasBana",
+                data:{
+                    TamLink:"<a href='https://www.google.com.tr/' target='_blank'>Tam Link Bu</a>",
+                    link:"https://www.sameterdem.com.tr",
+                    mesaj:"Merhaba Dünya",
+                    aciklama:"Web sitemize hoş geldiniz."
+                },
+                methods:{
+                   DegerDegis:function(){
+                        this.mesaj="Merhaba Samet Erdem";
+                   }
+                }
+            });
+
+    </script>
+</body>
+</html>
