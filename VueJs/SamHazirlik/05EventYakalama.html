@@ -9,7 +9,7 @@
 </head>
 <body>
     <div id="Ulas">
-        <button v-on:click="UyarıGoster()">Uyarı Göster</button> <!-- v-on: yazarak eventleri yakalayabiliriz. edebiliriz.-->
+        <button v-on:click="UyariGoster()">Uyarı Göster</button> <!-- v-on: yazarak eventleri yakalayabiliriz. edebiliriz.-->
         <p>{{ MesajBilgisi }}</p>
         <button v-on:click="sayi++">Arttır</button>
         <button v-on:click="sayi--">Eksilt</button>
@@ -21,12 +21,12 @@
             {
                 el:"#Ulas",
                 data:{
-                    MesajBilgisi:"Uyarı Bilgisi",
+                    MesajBilgisi:"Uyarı Mesajı",
                     Adet:3,
                     sayi:0
                 },
                 methods:{
-                    UyarıGoster:function()
+                    UyariGoster:function()
                     {
                         for(i=0;i<this.sayi;i++){
                             alert('Merhaba');

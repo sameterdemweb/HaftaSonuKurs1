@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <title>Bootstrap Üye Bilgileri</title>
+</head>
+
+<body>
+    <div id="UlasBana" class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="text-success mt-2">Lütfen Bilgilerinizi Giriniz</h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="adisoyadi" class="form-label">Adı Soyadı</label>
+                        <input type="text" class="form-control" v-model="KullaniciData.adiSoyadi" id="adisoyadi"> <!-- v-model="" -->
+                    </div>
+                    <div class="mb-3">
+                        <div class="form-check">
+                            <input class="form-check-input" v-model="KullaniciData.cinsiyet" checked name="cinsiyet" value="Erkek" type="radio"
+                                id="erkek"><!-- v-model="" -->
+                            <label class="form-check-label" for="erkek">
+                                Erkek
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input"  v-model="KullaniciData.cinsiyet" name="cinsiyet" value="Kadın" type="radio" id="kadin"><!-- v-model="" -->
+                            <label class="form-check-label" for="kadin">
+                                Kadın
+                            </label>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="Telefon" class="form-label">Telefon</label>
+                        <input type="text" v-model.lazy="KullaniciData.telefon" class="form-control" id="Telefon"> <!-- v-model.lazy=""  Lazy yazma işleminin tamamı bittikten sonra çalışmasını sağlar. -->
+                    </div>
+                    <div class="mb-3">
+                        <label for="yas" class="form-label">Yaş</label>
+                        <input type="number" v-model.number.trim="KullaniciData.yas" class="form-control" id="yas"> <!-- v-model.number.trim="" number değişken tipinin sayı olduğunu ve trip ise boşlukları silmek için kullanılır. -->
+                    </div>
+                    <div class="mb-3">
+                        <label for="mesaj" class="form-label">Mesajınız</label>
+                        <textarea class="form-control" v-model="KullaniciData.mesaj" id="mesaj"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="sehir" class="form-label">Şehir Seçiniz</label><!-- v-model="" -->
+                        <select id="sehir" v-model="KullaniciData.secilenSehir" class="form-select">
+                            mevcut şehirleri döndürür.
+                            <option :selected="sehir=='Tekirdağ'" v-for="sehir in KullaniciData.sehirler">{{ sehir }}</option>
+                        </select>
+
+                            <!--  :selected="sehir=='Tekirdağ'" bu alan bize tekirdağ şehrini otomatik olarak seçili gelmesi durumunda seçiili gelmesini sağlar.   v-for="sehir in KullaniciData.sehir" for döngüsü ile dizi değişken içerisindeki alanları döngü haline sokarak ekrana yazdırmamızı sağlar.  -->
+                    </div>
+                    <div class="mb-3">
+                        <div class="form-check">
+                            <input class="form-check-input"  v-model="KullaniciData.ilgiAlanlari" value="Donanım" type="checkbox" id="donanim">
+                            <label class="form-check-label" for="donanim">
+                                Donanım
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input"  v-model="KullaniciData.ilgiAlanlari" value="Yazılım" type="checkbox" id="yazilim">
+                            <label class="form-check-label" for="yazilim">
+                                Yazılım
+                            </label>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+            <div class="col-md-6">
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col" colspan="4">
+                                <h2 class="text-danger">Kişi Bilgileri</h2>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="width:30%">Adı Soyadı</td>
+                            <td>{{ KullaniciData.adiSoyadi }}</td>
+                        </tr>
+                        <tr>
+                            <td>Cinsiyet</td>
+                            <td>{{ KullaniciData.cinsiyet }}</td>
+                        </tr>
+                        <tr>
+                            <td>Telefon</td>
+                            <td>{{ KullaniciData.telefon }}</td>
+                        </tr>
+                        <tr>
+                            <td>Yaş</td>
+                            <td>{{ KullaniciData.yas }}</td>
+                        </tr>
+                        <tr>
+                            <td>Mesaj</td>
+                            <td>{{ KullaniciData.mesaj }}</td>
+                        </tr>
+                        <tr>
+                            <td>Şehir</td>
+                            <td>{{ KullaniciData.secilenSehir }}</td>
+                        </tr>
+                        <tr>
+                            <td>İlgi Alanları</td>
+                       
+                            <td>
+                                <ul>
+                                    <li v-for="ilgiAlani in KullaniciData.ilgiAlanlari ">{{ ilgiAlani }}</li>     
+                                    <!--  v-for="ilgiAlani in KullaniciData.ilgiAlanlari" Seçilen ilgi alanlarını çağırıp dizi değişken içerisindeki değer sayısı kadar döndürüyor ve  ilgiAlanı değişkenine yazdırıyoruz. -->
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script>
+        new Vue({
+            el: "#UlasBana",
+            data: {
+                KullaniciData: {
+                    adiSoyadi: '',
+                    cinsiyet: 'Erkek',
+                    telefon: '',
+                    yas: 30,
+                    mesaj: '',
+                    sehirler: ["İstanbul", "Ankara", "İzmir", "Tekirdağ", "Manisa"],
+                    secilenSehir:'Tekirdağ',
+                    ilgiAlanlari: [],
+                },
+                sayi1:0,
+                sayi2:0,
+                ToplamaSonuc:0,
+            },
+            methods: {
+
+            }
+        });
+    </script>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>
