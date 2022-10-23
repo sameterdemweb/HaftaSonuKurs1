@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <title>Bootstrap Üye Bilgileri</title>
+</head>
+
+<body>
+    <div id="UlasBana" class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="text-success mt-2">Lütfen Bilgilerinizi Giriniz</h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="sayi1" class="form-label">Sayı 1</label>
+                        <input type="number" class="form-control" v-on:input="hesapla" v-model.number.trim="sayi1" id="sayi1"><!-- v-model.number.trim="" number değişken tipinin sayı olduğunu ve trip ise boşlukları silmek için kullanılır. -->
+                    </div>
+                   
+                    <div class="mb-3">
+                        <label for="sayi2" class="form-label">Sayı 2</label>
+                        <input type="number" v-on:input="hesapla" v-model.number.trim="sayi2" class="form-control" id="sayi2"> <!-- v-model.number.trim="" number değişken tipinin sayı olduğunu ve trip ise boşlukları silmek için kullanılır. -->
+                    </div>
+                  
+                   
+                </form>
+            </div>
+            <div class="col-md-6">
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col" colspan="4">
+                                <h2 class="text-danger">İşlem Bilgileri</h2>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="width:30%">Toplama Sonucu</td>
+                            <td>{{ toplamSonuc }}</td>
+                        </tr>
+                        <tr>
+                            <td>Çıkartma Sonucu</td>
+                            <td>{{ cikartmaSonuc}}</td>
+                        </tr>
+                        <tr>
+                            <td>Çarpma Sonucu</td>
+                            <td>{{ carpmaSonuc }}</td>
+                        </tr>
+                        <tr>
+                            <td>Bölme Sonucu</td>
+                            <td>{{ bolmeSonuc }}</td>
+                        </tr>
+                       
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script>
+        new Vue({
+            el: "#UlasBana",
+            data: {
+                sayi1:1,
+                sayi2:1,
+                toplamSonuc:0,
+                cikartmaSonuc:0,
+                carpmaSonuc:0,
+                bolmeSonuc:0
+            },
+            methods: {
+                hesapla:function(){
+                    this.toplamSonuc=this.sayi1+this.sayi2;
+                    this.cikartmaSonuc=this.sayi1-this.sayi2;
+                    this.carpmaSonuc=this.sayi1*this.sayi2;
+                    this.bolmeSonuc=this.sayi1/this.sayi2;
+                }
+
+            }
+        });
+    </script>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>
