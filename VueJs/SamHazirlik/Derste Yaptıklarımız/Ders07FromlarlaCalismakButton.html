@@ -19,7 +19,7 @@
                 <form>
                     <div class="mb-3">
                         <label for="sayi1" class="form-label">Sayı 1</label>
-                        <input type="number" class="form-control"v-model.number.trim="sayi1" id="sayi1"><!-- v-model.number.trim="" number değişken tipinin sayı olduğunu ve trip ise boşlukları silmek için kullanılır. -->
+                        <input type="number" class="form-control"  v-model.number.trim="sayi1" id="sayi1"><!-- v-model.number.trim="" number değişken tipinin sayı olduğunu ve trip ise boşlukları silmek için kullanılır. -->
                     </div>
                    
                     <div class="mb-3">
@@ -27,6 +27,9 @@
                         <input type="number"  v-model.number.trim="sayi2" class="form-control" id="sayi2"> <!-- v-model.number.trim="" number değişken tipinin sayı olduğunu ve trip ise boşlukları silmek için kullanılır. -->
                     </div>
                   
+                    <div class="mb-3">
+                        <input type="button"  @click="hesapyap" class="btn btn-success" value="Sonuc Göster">
+                    </div>
                    
                 </form>
             </div>
@@ -75,8 +78,21 @@
                 bolmeSonuc:0
             },
             methods: {
-              
-            }
+              hesapyap:function(){
+                    this.toplamSonuc=this.sayi1+this.sayi2;
+                    this.cikartmaSonuc=this.sayi1-this.sayi2;
+                    this.carpmaSonuc=this.sayi1*this.sayi2;
+                    this.bolmeSonuc=this.sayi1/this.sayi2;
+              }
+            },
+          /*  watch:{
+                sayi1:function(){
+                    this.hesapyap();
+                },
+                sayi2:function(){
+                    this.hesapyap();
+                }
+            }*/
         });
     </script>
 </body>

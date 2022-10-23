@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <title>Bootstrap Üye Bilgileri</title>
+</head>
+
+<body>
+    <div id="UlasBana" class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="text-success mt-2">Lütfen Bilgileri Giriniz</h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="kitapAdi" class="form-label">Kitap Adı</label>
+                        <input type="text" class="form-control" v-on:input="hesapyap"  v-model="kitapAdi" id="kitapAdi"><!-- v-model.number.trim="" number değişken tipinin sayı olduğunu ve trip ise boşlukları silmek için kullanılır. -->
+                    </div>
+                   
+                    <div class="mb-3">
+                        <label for="sayfa" class="form-label">Sayfa</label>
+                        <input type="number"  v-model.number.trim="sayfa" v-on:input="hesapyap"  class="form-control" id="sayfa"> <!-- v-model.number.trim="" number değişken tipinin sayı olduğunu ve trip ise boşlukları silmek için kullanılır. -->
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="ilkGunOkunan" class="form-label">İlk Gün Okunan</label>
+                        <input type="number"  v-model.number.trim="ilkGunOkunan" v-on:input="hesapyap"  class="form-control" id="ilkGunOkunan"> <!-- v-model.number.trim="" number değişken tipinin sayı olduğunu ve trip ise boşlukları silmek için kullanılır. -->
+                    </div>
+
+                    
+                    <div class="mb-3">
+                        <label for="hergunOkunan" class="form-label">Her Gün Okunan</label>
+                        <input type="number"  v-model.number.trim="hergunOkunan" v-on:input="hesapyap"  class="form-control" id="hergunOkunan"> <!-- v-model.number.trim="" number değişken tipinin sayı olduğunu ve trip ise boşlukları silmek için kullanılır. -->
+                    </div>
+
+                    
+
+                    
+                   
+                </form>
+            </div>
+            <div class="col-md-6">
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col" colspan="4">
+                                <h2 class="text-danger">Çıktı Bilgileri</h2>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="width:30%">Kitap Adı</td>
+                            <td>{{ kitapAdi }}</td>
+                        </tr>
+                        <tr>
+                            <td>Toplam Sayfa</td>
+                            <td>{{ sayfa }}</td>
+                        </tr>
+                        <tr>
+                            <td>İlk Gün Okunan</td>
+                            <td>{{ ilkGunOkunan }}</td>
+                        </tr>
+                        <tr>
+                            <td>İlk Gün Sonrası Kalan Sayfa</td>
+                            <td>{{ kalanSayfa }}</td>
+                        </tr>
+                        <tr>
+                            <td>Her Gün Okunan Sayfa Sayısı</td>
+                            <td>{{ hergunOkunan }}</td>
+                        </tr>
+                        <tr>
+                            <td>Kaç Günde kitap bitecek? </td>
+                            <td>{{ kacGundeBitecegi }}</td>
+                        </tr>
+                       
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script>
+        new Vue({
+            el: "#UlasBana",
+            data: {
+                kitapAdi:"",
+                sayfa:0,
+                ilkGunOkunan:0,
+                kalanSayfa:0,
+                hergunOkunan:0,
+                kacGundeBitecegi:0,
+            },
+            methods: {
+              hesapyap:function(){
+                this.kalanSayfa=this.sayfa-this.ilkGunOkunan;
+            this.kacGundeBitecegi=this.kalanSayfa/this.hergunOkunan;
+
+            
+                  
+              }
+            }
+        });
+    </script>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>

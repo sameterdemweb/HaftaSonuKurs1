@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <title>Bootstrap Üye Bilgileri</title>
+</head>
+
+<body>
+    <div id="UlasBana" class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="text-success mt-2">Lütfen Bilgileri Giriniz</h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="urunAdi" class="form-label">Ürün Adı</label>
+                        <input type="text" class="form-control" v-on:input="hesapyap"  v-model="urunAdi" id="urunAdi"><!-- v-model.number.trim="" number değişken tipinin sayı olduğunu ve trip ise boşlukları silmek için kullanılır. -->
+                    </div>
+                   
+                    <div class="mb-3">
+                        <label for="adet" class="form-label">Adet</label>
+                        <input type="number"  v-model.number.trim="adet" v-on:input="hesapyap"  class="form-control" id="adet"> <!-- v-model.number.trim="" number değişken tipinin sayı olduğunu ve trip ise boşlukları silmek için kullanılır. -->
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="fiyat" class="form-label">Fiyat</label>
+                        <input type="number"  v-model.number.trim="fiyat" v-on:input="hesapyap"  class="form-control" id="fiyat"> <!-- v-model.number.trim="" number değişken tipinin sayı olduğunu ve trip ise boşlukları silmek için kullanılır. -->
+                    </div>
+
+                    
+                    <div class="mb-3">
+                        <label for="kdv" class="form-label">KDV</label>
+                        <select id="kdv" v-model.number="kdv" @change="hesapyap"  class="form-select">
+                            mevcut şehirleri döndürür.
+                            <option value="1">1</option>
+                            <option value="5">5</option>
+                            <option value="8">8</option>
+                            <option value="18" selected>18</option>
+                        </select>
+                    </div>
+                  
+                    
+                   
+                </form>
+            </div>
+            <div class="col-md-6">
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col" colspan="4">
+                                <h2 class="text-danger">Ürün Bilgileri</h2>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="width:30%">Ürün Adı</td>
+                            <td>{{ urunAdi }}</td>
+                        </tr>
+                        <tr>
+                            <td>Ürün Fiyat</td>
+                            <td>{{ fiyat }}</td>
+                        </tr>
+                        <tr>
+                            <td>Ürün Adet</td>
+                            <td>{{ adet }}</td>
+                        </tr>
+                        <tr>
+                            <td>Ara Toplam</td>
+                            <td>{{ araToplam }}</td>
+                        </tr>
+                        <tr>
+                            <td>Ürün Kdv Tutar</td>
+                            <td>{{ kdvFiyat }}</td>
+                        </tr>
+                        <tr>
+                            <td>Genel Toplam</td>
+                            <td>{{ geneToplam }}</td>
+                        </tr>
+                       
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script>
+        new Vue({
+            el: "#UlasBana",
+            data: {
+                urunAdi:'',
+                fiyat:0,
+                adet:1,
+                kdv:18,
+                araToplam:0,
+                kdvFiyat:0,
+                geneToplam:0,
+               
+            },
+            methods: {
+              hesapyap:function(){
+                    this.araToplam=this.adet*this.fiyat;
+                    this.kdvFiyat=(this.araToplam/100)*this.kdv;
+                    this.geneToplam=this.kdvFiyat+this.araToplam;
+              }
+            }
+        });
+    </script>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>

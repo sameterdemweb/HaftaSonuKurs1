@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <title>Bootstrap Üye Bilgileri</title>
+</head>
+
+<body>
+    <div id="UlasBana" class="container">
+        <div class="row">
+            <div class="col-12 mb-4 mt-4">
+                Soru: Doğum Yılı, Doğum günü ve çalışma günlerini giren bir kişinin bilgileri kullanılarak. Emeklilik süresinin hesaplanması.<br/><br/>
+                - 2002 yılı öncesi işe başlamış ise emeklilik şartları: 4500 gün ve 56 yaşını geçmiş olması,<br/>
+                - 2002 yılı ve sonrası çalışmaya başlamış ise emeklilik şartları: 6500 gün ve 60 yaşını geçmiş olması.
+
+
+
+            </div>
+            <div class="col-md-6">
+                <h2 class="text-success mt-2">Lütfen Bilgileri Giriniz</h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="adiSoyadi" class="form-label">Adı Soyadı</label>
+                        <input type="text" class="form-control"  v-model="adiSoyadi" id="adiSoyadi"><!-- v-model.number.trim="" number değişken tipinin sayı olduğunu ve trip ise boşlukları silmek için kullanılır. -->
+                    </div>
+                   
+                    <div class="mb-3">
+                        <label for="dogumYili" class="form-label">Doğum Yılı</label>
+                        <input type="number"  v-model.number.trim="dogumYili" v-on:input="hesapyap"  class="form-control" id="dogumYili"> <!-- v-model.number.trim="" number değişken tipinin sayı olduğunu ve trip ise boşlukları silmek için kullanılır. -->
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="iseBaslamaYili" class="form-label">İşe Başlama Yılı</label>
+                        <input type="number"  v-model.number.trim="iseBaslamaYili" v-on:input="hesapyap"  class="form-control" id="iseBaslamaYili"> <!-- v-model.number.trim="" number değişken tipinin sayı olduğunu ve trip ise boşlukları silmek için kullanılır. -->
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="calismaGunSayisi" class="form-label">Çalışma Gün Sayısı</label>
+                        <input type="number"  v-model.number.trim="calismaGunSayisi" v-on:input="hesapyap"  class="form-control" id="calismaGunSayisi"> <!-- v-model.number.trim="" number değişken tipinin sayı olduğunu ve trip ise boşlukları silmek için kullanılır. -->
+                    </div>
+
+                    
+                    
+                   
+                </form>
+            </div>
+            <div class="col-md-6">
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col" colspan="4">
+                                <h2 class="text-danger">Çıktı Bilgileri</h2>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="width:30%">Yaş</td>
+                            <td>{{ adiSoyadi }}</td>
+                        </tr>
+                        <tr>
+                            <td>Doğum Yılı</td>
+                            <td>{{ dogumYili }}</td>
+                        </tr>
+                        <tr>
+                            <td>Mevcut Yaş</td>
+                            <td>{{ mevcutYas }}</td>
+                        </tr>
+                        <tr>
+                            <td>İşe Giriş Yılı</td>
+                            <td>{{ iseBaslamaYili }}</td>
+                        </tr>
+                        <tr>
+                            <td>Toplam Çalışma Günü</td>
+                            <td>{{ calismaGunSayisi }}</td>
+                        </tr>
+                        <tr>
+                            <td>Emeklilik Bilgisi</td>
+                            <td><h2>{{ EmeklilikBilgisi }}</h2></td>
+                        </tr>
+                      
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script>
+        new Vue({
+            el: "#UlasBana",
+            data: {
+                adiSoyadi:'',
+                dogumYili:0,
+                iseBaslamaYili:0,
+                calismaGunSayisi:0,
+                EmeklilikBilgisi:'',
+                mevcutYas:0,
+                zorunluYas:56,
+                zorunluGun:4500,
+                kalanGun:0,
+                kalanYil:0
+            },
+            methods: {
+              hesapyap:function(){
+                    this.zorunluGun=4500;
+                    this.zorunluYas=56;
+                    if(this.iseBaslamaYili>=2002){
+                        this.zorunluGun=6500;
+                        this.zorunluYas=60;
+                    }
+
+                    this.mevcutYas=2022-this.dogumYili;
+                    this.kalanGun=this.zorunluGun-this.calismaGunSayisi;
+                    this.kalanYil=this.zorunluYas-this.mevcutYas;
+
+                    if(this.zorunluYas<= this.mevcutYas && this.zorunluGun <=this.calismaGunSayisi){
+                        this.EmeklilikBilgisi="Mevcut çalışma günü ve mevcut yaşınız ile bu günkü şartlarda emekli olabilirsiniz.";
+                    }else{
+                        if(this.kalanGun<0){ this.kalanGun=0;}
+                        if(this.kalanYil<0){ this.kalanYil=0;}
+                        this.EmeklilikBilgisi="Mevcut bilgiler hesaplandığında çalışmanız gereken gün sayısı: "+ this.kalanGun + " ve almanız gereken yaş sayısı: " + this.kalanYil;
+                    }
+              }
+            }
+        });
+    </script>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>
