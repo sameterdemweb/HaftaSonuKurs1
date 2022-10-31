@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>VUE ICERIK</title>
+</head>
+
+<body>
+    <div id="UlasBana" class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <label for="urunAdi">Ürün Adı:</label>
+                <br>
+                <input type="text" v-model="urunAdi" id="urunAdi" placeholder="Ürün Adı Giriniz">
+                <hr>
+
+                <label for="urunFiyat">Ürün Fiyatı:</label>
+                <br>
+                <input type="number" v-model.number.trim="urunFiyat" id="urunFiyat"
+                    placeholder="Ürün Fiyatını Giriniz">
+                <hr>
+
+
+                <label for="adet">Adet:</label>
+                <br>
+                <input type="number" v-model.number.trim="adet" id="adet"
+                    placeholder="Ürün Adetini Giriniz">
+                <hr>
+
+
+                <label for="kacGunBekledi">Vergi:</label>
+                <br>
+                <select name="" v-model.number="vergi" id="vergi">
+                    <option value="1">1</option>
+                    <option value="8">8</option>
+                    <option value="18">18</option>
+                </select>
+                <hr>
+                <label for="dolarAnlikDeger">Dolar Kuru:</label>
+                <br>
+                <input type="number" v-model.number.trim="dolarAnlikDeger" id="dolarAnlikDeger"
+                    placeholder="Dolar Kuru">
+                <hr>
+
+                <label for="euroAnlikDeger">Euro:</label>
+                <br>
+                <input type="number" v-model.number.trim="euroAnlikDeger" id="euroAnlikDeger"
+                    placeholder="Euro ">
+                <hr>
+                <button @click="fiyatHesapla" class="btn btn-success">Hesapla</button>
+
+            </div>
+            <div class="col-md-6">
+                Ürün Adı : {{ urunAdi }}<br/><br/>
+                Ürün Adet : {{ adet }}<br/><br/>
+                Ürün Fiyat : {{ urunFiyat }}<br/><br/>
+                Ürün Vergi Oranı : {{ vergi }}<br/><br/>
+                Ürün Ara Toplam : {{ araToplam }}<br/><br/>
+                Vergi Toplamı : {{ vergiToplam }}<br/><br/>
+                Genel Toplam (TL): {{ genelToplam }}<br/><br/>
+                Genel Toplam (Dolar) : {{ genelToplamDolarFiyat }}<br/><br/>
+                Genel Toplam (Euro) : {{ genelToplamEuroFiyat }}
+            </div>
+           
+        </div>
+
+
+
+        
+
+
+
+    </div>
+
+    <script>
+        new Vue({
+            el: "#UlasBana",
+            data: {
+                urunAdi: '',
+                urunFiyat: 0,
+                adet: 0,
+                vergi: 18,
+                dolarAnlikDeger: 18.58,
+                euroAnlikDeger: 18.52,
+                sonuc:'',
+                araToplam:0,
+                vergiToplam:0,
+                genelToplam:0,
+                genelToplamDolarFiyat:0,
+                genelToplamEuroFiyat:0,
+            },
+            methods: {
+
+                fiyatHesapla : function(){
+                        this.araToplam=this.urunFiyat*this.adet;
+                        this.vergiToplam=(this.araToplam*this.vergi)/100;
+                        this.genelToplam=this.araToplam+this.vergiToplam;
+
+                        this.genelToplamDolarFiyat=this.genelToplam/this.dolarAnlikDeger
+                        this.genelToplamEuroFiyat=this.genelToplam/this.euroAnlikDeger
+                        
+
+                    }
+
+            }
+        });
+    </script>
+</body>
+
+</html>

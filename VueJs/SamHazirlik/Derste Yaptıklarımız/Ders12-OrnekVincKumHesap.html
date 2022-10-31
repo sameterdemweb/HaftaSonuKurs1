@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>VUE ICERIK</title>
+</head>
+<body>
+    <div id="UlasBana">
+        <label for="yuklenenKumKg">Yüklenen Kum Miktarı:</label>
+        <input type="number"v-model.number.trim="yuklenenKumKg" id="yuklenenKumKg"placeholder="Birinci Değeri Giriniz">
+        <label for="yukseklik">Çıkarılacak Yükseklik:</label>
+        <input type="number"v-model.number.trim="yukseklik" id="yukseklik"placeholder="İkinci Değeri Giriniz">
+        <label for="herMetredeKayip">Her Metrede Kayıp:</label>
+        <input type="number"v-model.number.trim="herMetredeKayip" id="herMetredeKayip"placeholder="Üçüncü Değeri Giriniz">
+        <button @click="hesapYap">Kalan Kum Miktarı KG Hesabı</button>
+        <button @click="hesapYap2">Kalan Kum Miktarı Yüzde Hesabı</button>
+        <h1>{{ sonuc}}</h1>
+    </div>
+    
+    <script>
+            new Vue({
+                el:"#UlasBana",
+                data:{
+                    ilkYuklenenKumKg:0,
+                    yuklenenKumKg:0,
+                    yukseklik:0,
+                    herMetredeKayip:0,
+                    toplamKayip:0,
+                    kalanKumMiktari:0,
+                    sonuc:"",  
+                },
+                methods:{
+                    hesapYap:function(){
+                        this.toplamKayip=this.herMetredeKayip*this.yukseklik;
+                        this.kalanKumMiktari=this.yuklenenKumKg-this.toplamKayip;
+                        this.sonuc="Bu vince "+this.yuklenenKumKg+" KG kum yüklenip "+this.yukseklik+" metreye çıkarıldığında her metre "+this.herMetredeKayip+" KG kum azalacağı için toplamda "+this.kalanKumMiktari+" Kg kum kalacaktır";
+                    },
+                    hesapYap2:function(){
+                        this.ilkYuklenenKumKg=this.yuklenenKumKg;
+                        for(i=0;i<this.yukseklik;i++){
+                            this.ilkYuklenenKumKg=this.ilkYuklenenKumKg-((this.ilkYuklenenKumKg*this.herMetredeKayip)/100);
+                        }
+                        this.sonuc="Bu vince "+this.yuklenenKumKg+" KG kum yüklenip "+this.yukseklik+" metreye çıkarıldığında her metre "+this.herMetredeKayip+" yüzdelik kum azalacağı için toplamda "+this.ilkYuklenenKumKg+" Kg kum kalacaktır";
+                    }
+                }
+            });
+
+    </script>
+</body>
+</html>

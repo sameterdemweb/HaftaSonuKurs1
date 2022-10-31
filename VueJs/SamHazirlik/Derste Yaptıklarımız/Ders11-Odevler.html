@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>VUE ICERIK</title>
+</head>
+<body>
+    <div id="UlasBana">
+        <label for="sayi1">Birinci Değeri Giriniz:</label>
+        <input type="number"v-model.number.trim="sayi1" id="sayi1"placeholder="Birinci Değeri Giriniz">
+        <label for="sayi2">İkinci Değeri Giriniz:</label>
+        <input type="number"v-model.number.trim="sayi2" id="sayi2"placeholder="İkinci Değeri Giriniz">
+        <label for="sayi3">Üçüncü Değeri Giriniz:</label>
+        <input type="number"v-model.number.trim="sayi3" id="sayi3"placeholder="Üçüncü Değeri Giriniz">
+        <h1>{{ sonuc}}</h1>
+        <br>
+        <h1>{{ KucukSonuc }}</h1>
+        <button @click="carpimlar">İki Değer Arasındaki TamSayıların Çarpımını Göster</button>
+        <br>
+        <button @click="PuanHesapla">Sınav Sonuç Göster</button>
+        <br>
+        <button @click="KucukBul">Uc deger arasındaki en kücük sayi</button>
+        
+
+
+
+    </div>
+    
+    <script>
+            new Vue({
+                el:"#UlasBana",
+                data:{
+                    sayi1:0,
+                    sayi2:0,
+                    sayi3:0,
+                    carpim:1,
+                    sonuc:"",
+                    ortalama:0,
+                    enKucukSayi:0,
+                    KucukSonuc:"",
+                    
+                },
+                methods:{
+                    carpimlar:function(){
+                        for(i=this.sayi1;i<=this.sayi2;i++){
+                            this.carpim*=i;
+                        }
+                        this.sonuc="Girdiğiniz Birinci Sayı: "+this.sayi1+" Girdiğiniz İkinci Sayı: "+this.sayi2+ " Aralarındaki carpımların toplamı: "+this.carpim;
+
+                    },
+                    PuanHesapla : function(){
+                        this.ortalama=(this.sayi1+this.sayi2)/2;
+
+                        if(this.ortalama>=70){
+                            this.sonuc="Ortalamanız: "+this.ortalama+" Durumu: Geçti";
+                        }
+                        else if(this.ortalama<50){
+                            this.sonuc="Ortalamanız: "+this.ortalama+" Durumu: Kaldı";
+                        }
+                        else{
+                            this.sonuc="Ortalamanız: "+this.ortalama+" Durumu: Büte Kaldı";
+                        }
+                    },
+                    KucukBul:function(){
+                        if(this.sayi1<this.sayi2 && this.sayi1<this.sayi3){
+                            this.KucukSonuc="En kücük sayi "+this.sayi1+" dir."
+                        }
+                        else if(this.sayi2<this.sayi1 && this.sayi2<this.sayi3){
+                            this.KucukSonuc="En kücük sayi "+this.sayi2+" dir."
+                        }
+                        else if(this.sayi3<this.sayi1 && this.sayi3<this.sayi2){
+                            this.KucukSonuc="En kücük sayi "+this.sayi3+" dir."
+                        }
+                        else{
+                            this.KucukSonuc="";
+                        }
+                         this.BuyukBul()
+                        
+                            
+                        
+                    },
+                    BuyukBul:function(){
+                        if(this.sayi1>this.sayi2 && this.sayi1>this.sayi3){
+                            this.sonuc="En buyuk sayi "+this.sayi1+" dir."
+                        }
+                        else if(this.sayi2>this.sayi1 && this.sayi2>this.sayi3){
+                            this.sonuc="En buyuk sayi "+this.sayi2+" dir."
+                        }
+                        else if(this.sayi3>this.sayi1 && this.sayi3>this.sayi2){
+                            this.sonuc="En buyuk sayi "+this.sayi3+" dir."
+                        }
+                        else{
+                            this.sonuc="Sayılar Eşittir";
+                        }
+                        this.KucukBul()
+                    }
+
+                 
+                }
+            });
+
+    </script>
+</body>
+</html>

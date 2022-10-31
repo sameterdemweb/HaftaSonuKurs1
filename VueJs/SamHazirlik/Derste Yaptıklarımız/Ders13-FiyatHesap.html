@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>VUE ICERIK</title>
+</head>
+<body>
+    <div id="UlasBana">
+      <p>Soru:Kaç gün kaldığı girilen konteyner bekleme gün sayısını alıp eğer 3 güne kadar kaldıysa gün başına 10$, 7 güne kadar kaldıysa 15$, 15 güne kadar kaldıysa 20$, 15 gün ve fazlası gün başına 32$ üzerinden toplam bekleme fiyatını bulan program</p>
+
+      <label for="kacGunBekledi">Kaç Gün Bekledi:</label>
+        <input type="number"v-model.number.trim="kacGunBekledi" id="kacGunBekledi"placeholder="Birinci Değeri Giriniz">
+        <label for="konteynerNumarasi">Konteyner No:</label>
+        <input type="text"v-model="konteynerNumarasi" id="konteynerNumarasi"placeholder="İkinci Değeri Giriniz"><br/>
+        <select name="" id="boyut"v-model.number.trim="boyut">
+            <option value="0">3 x5 Boyutta Konteyner</option>
+            <option value="3">3 x7 Boyutta Konteyner</option>
+            <option value="5">3 x8 Boyutta Konteyner</option>
+        </select>
+        <button @click="fiyatHesapla">Hesapla</button>
+    <h1> {{ sonuc }}</h1>
+  
+    
+
+    </div>
+    
+    <script>
+            new Vue({
+                el:"#UlasBana",
+                data:{
+                    kacGunBekledi:0,
+                    konteynerNumarasi:"",
+                    toplamFiyat:0,
+                    gunlukFiyat:0,
+                    sonuc:"",
+                    boyut:0,
+                    yenigunlukfiyat:0,
+                   
+                },
+                methods:{fiyatHesapla:function(){
+                    if(this.kacGunBekledi<3){
+                        this.gunlukFiyat=10;
+                    }
+                    else if(this.kacGunBekledi<7){
+                        this.gunlukFiyat=15;
+                    }
+
+                    else if(this.kacGunBekledi<15){
+                        this.gunlukFiyat=20;
+                    }
+                    else{
+                        this.gunlukFiyat=32;
+                    }
+                    this.yenigunlukfiyat= this.gunlukFiyat+this.boyut;
+                    this.toplamFiyat=this.yenigunlukfiyat*this.kacGunBekledi;
+                    this.sonuc="konteyner Numarası:"+this.konteynerNumarasi+" Olan Konteynerın "+this.kacGunBekledi+" Gün Beklemesi İçin , "+this.gunlukFiyat+" $ günlük, boyuttan dolayı:"+this.boyut+" $ eklenerek Yeni Günlük Fiyatınız: "+this.yenigunlukfiyat+" $ ödeme ile Yapılması gereken toplam ödeme miktarı: "+this.toplamFiyat+"$";
+                }
+            
+                    
+                  
+                }
+            });
+
+    </script>
+</body>
+</html>
