@@ -1,0 +1,15 @@
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\01VeriTipleri\bin\Debug\net6.0\01VeriTipleri.exe
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\01VeriTipleri\bin\Debug\net6.0\01VeriTipleri.deps.json
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\01VeriTipleri\bin\Debug\net6.0\01VeriTipleri.runtimeconfig.json
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\01VeriTipleri\bin\Debug\net6.0\01VeriTipleri.dll
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\01VeriTipleri\bin\Debug\net6.0\01VeriTipleri.pdb
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\01VeriTipleri\obj\Debug\net6.0\01VeriTipleri.csproj.AssemblyReference.cache
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\01VeriTipleri\obj\Debug\net6.0\01VeriTipleri.GeneratedMSBuildEditorConfig.editorconfig
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\01VeriTipleri\obj\Debug\net6.0\01VeriTipleri.AssemblyInfoInputs.cache
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\01VeriTipleri\obj\Debug\net6.0\01VeriTipleri.AssemblyInfo.cs
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\01VeriTipleri\obj\Debug\net6.0\01VeriTipleri.csproj.CoreCompileInputs.cache
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\01VeriTipleri\obj\Debug\net6.0\01VeriTipleri.dll
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\01VeriTipleri\obj\Debug\net6.0\refint\01VeriTipleri.dll
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\01VeriTipleri\obj\Debug\net6.0\01VeriTipleri.pdb
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\01VeriTipleri\obj\Debug\net6.0\01VeriTipleri.genruntimeconfig.cache
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\01VeriTipleri\obj\Debug\net6.0\ref\01VeriTipleri.dll

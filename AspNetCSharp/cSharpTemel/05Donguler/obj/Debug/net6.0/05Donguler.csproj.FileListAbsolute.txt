@@ -1,0 +1,15 @@
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\05Donguler\bin\Debug\net6.0\05Donguler.exe
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\05Donguler\bin\Debug\net6.0\05Donguler.deps.json
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\05Donguler\bin\Debug\net6.0\05Donguler.runtimeconfig.json
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\05Donguler\bin\Debug\net6.0\05Donguler.dll
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\05Donguler\bin\Debug\net6.0\05Donguler.pdb
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\05Donguler\obj\Debug\net6.0\05Donguler.csproj.AssemblyReference.cache
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\05Donguler\obj\Debug\net6.0\05Donguler.GeneratedMSBuildEditorConfig.editorconfig
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\05Donguler\obj\Debug\net6.0\05Donguler.AssemblyInfoInputs.cache
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\05Donguler\obj\Debug\net6.0\05Donguler.AssemblyInfo.cs
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\05Donguler\obj\Debug\net6.0\05Donguler.csproj.CoreCompileInputs.cache
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\05Donguler\obj\Debug\net6.0\05Donguler.dll
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\05Donguler\obj\Debug\net6.0\refint\05Donguler.dll
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\05Donguler\obj\Debug\net6.0\05Donguler.pdb
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\05Donguler\obj\Debug\net6.0\05Donguler.genruntimeconfig.cache
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\05Donguler\obj\Debug\net6.0\ref\05Donguler.dll

@@ -1,0 +1,15 @@
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\03Methods\bin\Debug\net6.0\03Methods.exe
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\03Methods\bin\Debug\net6.0\03Methods.deps.json
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\03Methods\bin\Debug\net6.0\03Methods.runtimeconfig.json
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\03Methods\bin\Debug\net6.0\03Methods.dll
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\03Methods\bin\Debug\net6.0\03Methods.pdb
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\03Methods\obj\Debug\net6.0\03Methods.csproj.AssemblyReference.cache
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\03Methods\obj\Debug\net6.0\03Methods.GeneratedMSBuildEditorConfig.editorconfig
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\03Methods\obj\Debug\net6.0\03Methods.AssemblyInfoInputs.cache
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\03Methods\obj\Debug\net6.0\03Methods.AssemblyInfo.cs
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\03Methods\obj\Debug\net6.0\03Methods.csproj.CoreCompileInputs.cache
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\03Methods\obj\Debug\net6.0\03Methods.dll
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\03Methods\obj\Debug\net6.0\refint\03Methods.dll
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\03Methods\obj\Debug\net6.0\03Methods.pdb
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\03Methods\obj\Debug\net6.0\03Methods.genruntimeconfig.cache
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\03Methods\obj\Debug\net6.0\ref\03Methods.dll

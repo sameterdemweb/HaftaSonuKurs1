@@ -1,0 +1,15 @@
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\02SartBloklari\bin\Debug\net6.0\02SartBloklari.exe
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\02SartBloklari\bin\Debug\net6.0\02SartBloklari.deps.json
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\02SartBloklari\bin\Debug\net6.0\02SartBloklari.runtimeconfig.json
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\02SartBloklari\bin\Debug\net6.0\02SartBloklari.dll
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\02SartBloklari\bin\Debug\net6.0\02SartBloklari.pdb
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\02SartBloklari\obj\Debug\net6.0\02SartBloklari.csproj.AssemblyReference.cache
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\02SartBloklari\obj\Debug\net6.0\02SartBloklari.GeneratedMSBuildEditorConfig.editorconfig
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\02SartBloklari\obj\Debug\net6.0\02SartBloklari.AssemblyInfoInputs.cache
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\02SartBloklari\obj\Debug\net6.0\02SartBloklari.AssemblyInfo.cs
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\02SartBloklari\obj\Debug\net6.0\02SartBloklari.csproj.CoreCompileInputs.cache
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\02SartBloklari\obj\Debug\net6.0\02SartBloklari.dll
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\02SartBloklari\obj\Debug\net6.0\refint\02SartBloklari.dll
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\02SartBloklari\obj\Debug\net6.0\02SartBloklari.pdb
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\02SartBloklari\obj\Debug\net6.0\02SartBloklari.genruntimeconfig.cache
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\02SartBloklari\obj\Debug\net6.0\ref\02SartBloklari.dll
