@@ -33,9 +33,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\AspNet\\egitim\\HaftaSonuKurs\\AspNetCSharp\\cSharpTemel\\07ClasslarNesneOlusturma\\07ClasslarNesneOlusturma.csproj",
-      "projectName": "07ClasslarNesneOlusturma",
-      "projectPath": "E:\\AspNet\\egitim\\HaftaSonuKurs\\AspNetCSharp\\cSharpTemel\\07ClasslarNesneOlusturma\\07ClasslarNesneOlusturma.csproj",
+      "projectUniqueName": "E:\\AspNet\\egitim\\HaftaSonuKurs\\AspNetCSharp\\cSharpTemel\\07ClasslarNesneOlusturma\\08ClasslarNesneOlusturma.csproj",
+      "projectName": "08ClasslarNesneOlusturma",
+      "projectPath": "E:\\AspNet\\egitim\\HaftaSonuKurs\\AspNetCSharp\\cSharpTemel\\07ClasslarNesneOlusturma\\08ClasslarNesneOlusturma.csproj",
       "packagesPath": "C:\\Users\\Notebook\\.nuget\\packages\\",
       "outputPath": "E:\\AspNet\\egitim\\HaftaSonuKurs\\AspNetCSharp\\cSharpTemel\\07ClasslarNesneOlusturma\\obj\\",
       "projectStyle": "PackageReference",

@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "08ClasslarNesneOlusturma/1.0.0": {
+        "dependencies": {
+          "07Classlar": "1.0.0"
+        },
+        "runtime": {
+          "08ClasslarNesneOlusturma.dll": {}
+        }
+      },
+      "07Classlar/1.0.0": {
+        "runtime": {
+          "07Classlar.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "08ClasslarNesneOlusturma/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "07Classlar/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

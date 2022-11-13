@@ -7,7 +7,7 @@
         {
           
             AletCantam aletCantam = new AletCantam();
-         
+
             string cumle = "Merhaba, Bu gün hava çooğğğğ güzel..";
             string yeniCumle = aletCantam.BuyukHarfCevir(cumle);
              yeniCumle = aletCantam.TurkceKarakterleriYokEt(yeniCumle);
@@ -32,7 +32,6 @@
             int sonucToplama = matematikselIslemler.Toplama(deger1, deger2);
             int sonucCikartma = matematikselIslemler.Cikartma(deger1, deger2);
             Console.WriteLine(sonucToplama + " "+ sonucCikartma);
-
 
 
         }

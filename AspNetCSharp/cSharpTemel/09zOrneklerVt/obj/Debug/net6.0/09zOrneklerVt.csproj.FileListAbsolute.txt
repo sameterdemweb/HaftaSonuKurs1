@@ -1,0 +1,15 @@
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\09zOrneklerVt\bin\Debug\net6.0\09zOrneklerVt.exe
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\09zOrneklerVt\bin\Debug\net6.0\09zOrneklerVt.deps.json
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\09zOrneklerVt\bin\Debug\net6.0\09zOrneklerVt.runtimeconfig.json
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\09zOrneklerVt\bin\Debug\net6.0\09zOrneklerVt.dll
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\09zOrneklerVt\bin\Debug\net6.0\09zOrneklerVt.pdb
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\09zOrneklerVt\obj\Debug\net6.0\09zOrneklerVt.csproj.AssemblyReference.cache
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\09zOrneklerVt\obj\Debug\net6.0\09zOrneklerVt.GeneratedMSBuildEditorConfig.editorconfig
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\09zOrneklerVt\obj\Debug\net6.0\09zOrneklerVt.AssemblyInfoInputs.cache
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\09zOrneklerVt\obj\Debug\net6.0\09zOrneklerVt.AssemblyInfo.cs
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\09zOrneklerVt\obj\Debug\net6.0\09zOrneklerVt.csproj.CoreCompileInputs.cache
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\09zOrneklerVt\obj\Debug\net6.0\09zOrneklerVt.dll
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\09zOrneklerVt\obj\Debug\net6.0\refint\09zOrneklerVt.dll
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\09zOrneklerVt\obj\Debug\net6.0\09zOrneklerVt.pdb
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\09zOrneklerVt\obj\Debug\net6.0\09zOrneklerVt.genruntimeconfig.cache
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\09zOrneklerVt\obj\Debug\net6.0\ref\09zOrneklerVt.dll

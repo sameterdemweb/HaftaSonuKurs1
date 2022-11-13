@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace _07ClasslarNesneOlusturma
 {
+
+    // 08ClasslarNesneOlusturma
     class Musteri
     {
         public int Id { get; set; }  //"prop" yazıp 2 kere tıklarsak biz bir Müşterinin özelliklerini kullanmak için tuttuğumuz nesne
@@ -20,4 +22,6 @@ namespace _07ClasslarNesneOlusturma
         public string Sehir { get; set; }
 
     }
+
+
 }

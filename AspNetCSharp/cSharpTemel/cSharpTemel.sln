@@ -15,11 +15,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05Donguler", "05Donguler\05
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05.1Ornekler", "05.1Ornekler\05.1Ornekler.csproj", "{9B8DAF22-0B0B-4808-B6D8-A076D0B423FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06StringMethods", "06StringMethods\06StringMethods.csproj", "{6D5CB0F5-EFD1-434A-BD45-A1356C528DC0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06StringMethods", "06StringMethods\06StringMethods.csproj", "{6D5CB0F5-EFD1-434A-BD45-A1356C528DC0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07Classlar", "07Classlar\07Classlar.csproj", "{84D23C7F-9DDA-494B-B7FB-2937583C4852}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07Classlar", "07Classlar\07Classlar.csproj", "{84D23C7F-9DDA-494B-B7FB-2937583C4852}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07ClasslarNesneOlusturma", "07ClasslarNesneOlusturma\07ClasslarNesneOlusturma.csproj", "{A76831C4-193B-4C50-91CF-49971D426C53}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08ClasslarNesneOlusturma", "07ClasslarNesneOlusturma\08ClasslarNesneOlusturma.csproj", "{A76831C4-193B-4C50-91CF-49971D426C53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08zOrnekler", "08zOrnekler\08zOrnekler.csproj", "{FD738FEE-7AC4-49CF-A5C9-636F59247439}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09InterfaceClasslar", "09InterfaceClasslar\09InterfaceClasslar.csproj", "{CD6200CB-AE05-4F26-96CC-0703DD89127F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09zOrnekler", "09zOrnekler\09zOrnekler.csproj", "{54DCB35E-B362-49DE-A8D0-076A85F12573}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09zOrneklerVt", "09zOrneklerVt\09zOrneklerVt.csproj", "{8E397543-F550-43A9-AAC7-D44FBC6A8B55}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +71,22 @@ Global
 		{A76831C4-193B-4C50-91CF-49971D426C53}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A76831C4-193B-4C50-91CF-49971D426C53}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A76831C4-193B-4C50-91CF-49971D426C53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD738FEE-7AC4-49CF-A5C9-636F59247439}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD738FEE-7AC4-49CF-A5C9-636F59247439}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD738FEE-7AC4-49CF-A5C9-636F59247439}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD738FEE-7AC4-49CF-A5C9-636F59247439}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD6200CB-AE05-4F26-96CC-0703DD89127F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD6200CB-AE05-4F26-96CC-0703DD89127F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD6200CB-AE05-4F26-96CC-0703DD89127F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD6200CB-AE05-4F26-96CC-0703DD89127F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54DCB35E-B362-49DE-A8D0-076A85F12573}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54DCB35E-B362-49DE-A8D0-076A85F12573}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54DCB35E-B362-49DE-A8D0-076A85F12573}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54DCB35E-B362-49DE-A8D0-076A85F12573}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E397543-F550-43A9-AAC7-D44FBC6A8B55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E397543-F550-43A9-AAC7-D44FBC6A8B55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E397543-F550-43A9-AAC7-D44FBC6A8B55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E397543-F550-43A9-AAC7-D44FBC6A8B55}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
