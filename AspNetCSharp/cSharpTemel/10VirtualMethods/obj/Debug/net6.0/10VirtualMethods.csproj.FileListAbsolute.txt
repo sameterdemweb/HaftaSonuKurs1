@@ -1,0 +1,15 @@
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\10VirtualMethods\bin\Debug\net6.0\10VirtualMethods.exe
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\10VirtualMethods\bin\Debug\net6.0\10VirtualMethods.deps.json
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\10VirtualMethods\bin\Debug\net6.0\10VirtualMethods.runtimeconfig.json
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\10VirtualMethods\bin\Debug\net6.0\10VirtualMethods.dll
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\10VirtualMethods\bin\Debug\net6.0\10VirtualMethods.pdb
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\10VirtualMethods\obj\Debug\net6.0\10VirtualMethods.csproj.AssemblyReference.cache
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\10VirtualMethods\obj\Debug\net6.0\10VirtualMethods.GeneratedMSBuildEditorConfig.editorconfig
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\10VirtualMethods\obj\Debug\net6.0\10VirtualMethods.AssemblyInfoInputs.cache
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\10VirtualMethods\obj\Debug\net6.0\10VirtualMethods.AssemblyInfo.cs
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\10VirtualMethods\obj\Debug\net6.0\10VirtualMethods.csproj.CoreCompileInputs.cache
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\10VirtualMethods\obj\Debug\net6.0\10VirtualMethods.dll
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\10VirtualMethods\obj\Debug\net6.0\refint\10VirtualMethods.dll
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\10VirtualMethods\obj\Debug\net6.0\10VirtualMethods.pdb
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\10VirtualMethods\obj\Debug\net6.0\10VirtualMethods.genruntimeconfig.cache
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\10VirtualMethods\obj\Debug\net6.0\ref\10VirtualMethods.dll

@@ -1,0 +1,15 @@
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\12zYapiciBlokOrnek\bin\Debug\net6.0\12zYapiciBlokOrnek.exe
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\12zYapiciBlokOrnek\bin\Debug\net6.0\12zYapiciBlokOrnek.deps.json
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\12zYapiciBlokOrnek\bin\Debug\net6.0\12zYapiciBlokOrnek.runtimeconfig.json
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\12zYapiciBlokOrnek\bin\Debug\net6.0\12zYapiciBlokOrnek.dll
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\12zYapiciBlokOrnek\bin\Debug\net6.0\12zYapiciBlokOrnek.pdb
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\12zYapiciBlokOrnek\obj\Debug\net6.0\12zYapiciBlokOrnek.csproj.AssemblyReference.cache
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\12zYapiciBlokOrnek\obj\Debug\net6.0\12zYapiciBlokOrnek.GeneratedMSBuildEditorConfig.editorconfig
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\12zYapiciBlokOrnek\obj\Debug\net6.0\12zYapiciBlokOrnek.AssemblyInfoInputs.cache
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\12zYapiciBlokOrnek\obj\Debug\net6.0\12zYapiciBlokOrnek.AssemblyInfo.cs
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\12zYapiciBlokOrnek\obj\Debug\net6.0\12zYapiciBlokOrnek.csproj.CoreCompileInputs.cache
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\12zYapiciBlokOrnek\obj\Debug\net6.0\12zYapiciBlokOrnek.dll
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\12zYapiciBlokOrnek\obj\Debug\net6.0\refint\12zYapiciBlokOrnek.dll
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\12zYapiciBlokOrnek\obj\Debug\net6.0\12zYapiciBlokOrnek.pdb
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\12zYapiciBlokOrnek\obj\Debug\net6.0\12zYapiciBlokOrnek.genruntimeconfig.cache
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\12zYapiciBlokOrnek\obj\Debug\net6.0\ref\12zYapiciBlokOrnek.dll

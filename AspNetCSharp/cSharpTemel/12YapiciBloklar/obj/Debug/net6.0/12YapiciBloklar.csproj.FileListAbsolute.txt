@@ -1,0 +1,15 @@
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\12YapiciBloklar\bin\Debug\net6.0\12YapiciBloklar.exe
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\12YapiciBloklar\bin\Debug\net6.0\12YapiciBloklar.deps.json
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\12YapiciBloklar\bin\Debug\net6.0\12YapiciBloklar.runtimeconfig.json
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\12YapiciBloklar\bin\Debug\net6.0\12YapiciBloklar.dll
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\12YapiciBloklar\bin\Debug\net6.0\12YapiciBloklar.pdb
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\12YapiciBloklar\obj\Debug\net6.0\12YapiciBloklar.csproj.AssemblyReference.cache
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\12YapiciBloklar\obj\Debug\net6.0\12YapiciBloklar.GeneratedMSBuildEditorConfig.editorconfig
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\12YapiciBloklar\obj\Debug\net6.0\12YapiciBloklar.AssemblyInfoInputs.cache
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\12YapiciBloklar\obj\Debug\net6.0\12YapiciBloklar.AssemblyInfo.cs
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\12YapiciBloklar\obj\Debug\net6.0\12YapiciBloklar.csproj.CoreCompileInputs.cache
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\12YapiciBloklar\obj\Debug\net6.0\12YapiciBloklar.dll
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\12YapiciBloklar\obj\Debug\net6.0\refint\12YapiciBloklar.dll
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\12YapiciBloklar\obj\Debug\net6.0\12YapiciBloklar.pdb
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\12YapiciBloklar\obj\Debug\net6.0\12YapiciBloklar.genruntimeconfig.cache
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\12YapiciBloklar\obj\Debug\net6.0\ref\12YapiciBloklar.dll

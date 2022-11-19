@@ -1,0 +1,15 @@
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\14Koleksiyonlar\bin\Debug\net6.0\14Koleksiyonlar.exe
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\14Koleksiyonlar\bin\Debug\net6.0\14Koleksiyonlar.deps.json
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\14Koleksiyonlar\bin\Debug\net6.0\14Koleksiyonlar.runtimeconfig.json
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\14Koleksiyonlar\bin\Debug\net6.0\14Koleksiyonlar.dll
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\14Koleksiyonlar\bin\Debug\net6.0\14Koleksiyonlar.pdb
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\14Koleksiyonlar\obj\Debug\net6.0\14Koleksiyonlar.csproj.AssemblyReference.cache
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\14Koleksiyonlar\obj\Debug\net6.0\14Koleksiyonlar.GeneratedMSBuildEditorConfig.editorconfig
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\14Koleksiyonlar\obj\Debug\net6.0\14Koleksiyonlar.AssemblyInfoInputs.cache
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\14Koleksiyonlar\obj\Debug\net6.0\14Koleksiyonlar.AssemblyInfo.cs
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\14Koleksiyonlar\obj\Debug\net6.0\14Koleksiyonlar.csproj.CoreCompileInputs.cache
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\14Koleksiyonlar\obj\Debug\net6.0\14Koleksiyonlar.dll
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\14Koleksiyonlar\obj\Debug\net6.0\refint\14Koleksiyonlar.dll
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\14Koleksiyonlar\obj\Debug\net6.0\14Koleksiyonlar.pdb
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\14Koleksiyonlar\obj\Debug\net6.0\14Koleksiyonlar.genruntimeconfig.cache
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\14Koleksiyonlar\obj\Debug\net6.0\ref\14Koleksiyonlar.dll

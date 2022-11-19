@@ -1,0 +1,15 @@
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\13StaticClassveMethodlar\bin\Debug\net6.0\13StaticClassveMethodlar.exe
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\13StaticClassveMethodlar\bin\Debug\net6.0\13StaticClassveMethodlar.deps.json
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\13StaticClassveMethodlar\bin\Debug\net6.0\13StaticClassveMethodlar.runtimeconfig.json
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\13StaticClassveMethodlar\bin\Debug\net6.0\13StaticClassveMethodlar.dll
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\13StaticClassveMethodlar\bin\Debug\net6.0\13StaticClassveMethodlar.pdb
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\13StaticClassveMethodlar\obj\Debug\net6.0\13StaticClassveMethodlar.csproj.AssemblyReference.cache
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\13StaticClassveMethodlar\obj\Debug\net6.0\13StaticClassveMethodlar.GeneratedMSBuildEditorConfig.editorconfig
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\13StaticClassveMethodlar\obj\Debug\net6.0\13StaticClassveMethodlar.AssemblyInfoInputs.cache
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\13StaticClassveMethodlar\obj\Debug\net6.0\13StaticClassveMethodlar.AssemblyInfo.cs
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\13StaticClassveMethodlar\obj\Debug\net6.0\13StaticClassveMethodlar.csproj.CoreCompileInputs.cache
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\13StaticClassveMethodlar\obj\Debug\net6.0\13StaticClassveMethodlar.dll
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\13StaticClassveMethodlar\obj\Debug\net6.0\refint\13StaticClassveMethodlar.dll
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\13StaticClassveMethodlar\obj\Debug\net6.0\13StaticClassveMethodlar.pdb
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\13StaticClassveMethodlar\obj\Debug\net6.0\13StaticClassveMethodlar.genruntimeconfig.cache
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\13StaticClassveMethodlar\obj\Debug\net6.0\ref\13StaticClassveMethodlar.dll
