@@ -1,0 +1,15 @@
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\16HataAyiklama\bin\Debug\net6.0\16HataAyiklama.exe
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\16HataAyiklama\bin\Debug\net6.0\16HataAyiklama.deps.json
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\16HataAyiklama\bin\Debug\net6.0\16HataAyiklama.runtimeconfig.json
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\16HataAyiklama\bin\Debug\net6.0\16HataAyiklama.dll
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\16HataAyiklama\bin\Debug\net6.0\16HataAyiklama.pdb
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\16HataAyiklama\obj\Debug\net6.0\16HataAyiklama.csproj.AssemblyReference.cache
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\16HataAyiklama\obj\Debug\net6.0\16HataAyiklama.GeneratedMSBuildEditorConfig.editorconfig
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\16HataAyiklama\obj\Debug\net6.0\16HataAyiklama.AssemblyInfoInputs.cache
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\16HataAyiklama\obj\Debug\net6.0\16HataAyiklama.AssemblyInfo.cs
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\16HataAyiklama\obj\Debug\net6.0\16HataAyiklama.csproj.CoreCompileInputs.cache
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\16HataAyiklama\obj\Debug\net6.0\16HataAyiklama.dll
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\16HataAyiklama\obj\Debug\net6.0\refint\16HataAyiklama.dll
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\16HataAyiklama\obj\Debug\net6.0\16HataAyiklama.pdb
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\16HataAyiklama\obj\Debug\net6.0\16HataAyiklama.genruntimeconfig.cache
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\16HataAyiklama\obj\Debug\net6.0\ref\16HataAyiklama.dll

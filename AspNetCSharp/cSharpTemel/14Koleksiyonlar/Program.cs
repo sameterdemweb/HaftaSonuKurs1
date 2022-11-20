@@ -6,76 +6,34 @@ namespace _14Koleksiyonlar
     {
         static void Main(string[] args)
         {
+            // ArrayListKullanim();
 
-            //Collection Array List Kullanımı
-            ArrayList Sehirler = new ArrayList();  //Sınır yok
-            Sehirler.Add("Ankara");
-            Sehirler.Add("İstanbul");
-            Sehirler.Add("Tekirdağ"); //Object türünde herangi bir şey gönderilebilir.
-            foreach (string sehir in Sehirler)
-            {
-                Console.WriteLine(sehir);
-            }
+           TipGuvenliListelerleCalisma();
+   
+            MusteriDegerleri musteriBilgisi = new MusteriDegerleri();
+            musteriBilgisi.Id = 1;
+            musteriBilgisi.AdiSoyadi = "Erce AKMAN";
 
-            Sehirler.Add(5);// foreach içerisine alırsak hata verir çünkü string değil
-            Console.WriteLine(Sehirler[3]);
-            Console.ReadLine();
-            // ########## Tip güvenli Collectionlar ile çalışmalıyız!
+            MusteriDegerleri musteribilgim = new MusteriDegerleri { Id = 0, AdiSoyadi = "Mehmet ULUSOY" };
 
+            MusteriDegerleri mus = new MusteriDegerleri { Id = 2, AdiSoyadi = "Samet Erdem" };
 
-
-
-            //// TipGuvenliListlerleCalisma();
-
-            //List<MusteriDegerleri> musteriler = new List<MusteriDegerleri>();  //1. yöntem tanımlayıp tek tek eklemek
-            //musteriler.Add(new MusteriDegerleri { Id = 1, AdiSoyadi = "Samet Erdem" });
-            //musteriler.Add(new MusteriDegerleri { Id = 2, AdiSoyadi = "Özge Ulusoy Erdem" });
-            //musteriler.Add(new MusteriDegerleri { Id = 3, AdiSoyadi = "Ege Ali Erdem" });
-
-            //List<MusteriDegerleri> musteriler2 = new List<MusteriDegerleri> //1. yöntem tanımlarken toplu eklemek
-            //    {
-            //        new MusteriDegerleri{Id=1,AdiSoyadi="Ferhat Falan" },
-            //        new MusteriDegerleri{Id=2,AdiSoyadi="Samet Falan" },
-            //        new MusteriDegerleri{Id=3,AdiSoyadi="Ahmet Falan" },
-            //        new MusteriDegerleri{Id=4,AdiSoyadi="Furkan Falan" },
-            //        new MusteriDegerleri{Id=5,AdiSoyadi="Mehmet Falan" },
-            //        new MusteriDegerleri{Id=5,AdiSoyadi="Gamze Falan" }
-            //    };
-
-            //foreach (MusteriDegerleri m in musteriler)
-            //{
-            //    Console.WriteLine("Müşteri id:{0} Adı ve Soyadı: {1}", m.Id, m.AdiSoyadi);
-            //}
-            //Console.ReadLine();
-
-            //foreach (MusteriDegerleri m in musteriler2)
-            //{
-            //    Console.WriteLine("Müşteri id:{0} Adı ve Soyadı: {1}", m.Id, m.AdiSoyadi);
-            //}
-            //Console.ReadLine();
-
-
-            // ProfesyonelCalismaNesneOlusturma();
-
-        }
-
-        private static void ProfesyonelCalismaNesneOlusturma()
-        {
             List<MusteriDegerleri> musteriler = new List<MusteriDegerleri>();  //1. yöntem tanımlayıp tek tek eklemek
-            musteriler.Add(new MusteriDegerleri { Id = 1, AdiSoyadi = "Samet Erdem" });
-            musteriler.Add(new MusteriDegerleri { Id = 2, AdiSoyadi = "Özge Ulusoy Erdem" });
-            musteriler.Add(new MusteriDegerleri { Id = 3, AdiSoyadi = "Ege Ali Erdem" });
+            musteriler.Add(musteriBilgisi);
+            musteriler.Add(mus);
+            musteriler.Add(musteribilgim);
+            musteriler.Add(new MusteriDegerleri { Id = 3, AdiSoyadi = "Özge Ulusoy Erdem" });
+            musteriler.Add(new MusteriDegerleri { Id = 4, AdiSoyadi = "Ege Ali Erdem" });
 
-
-            //List<MusteriDegerleri> musteriler2 = new List<MusteriDegerleri> //1. yöntem tanımlarken toplu eklemek
-            //    {
-            //        new MusteriDegerleri{Id=1,AdiSoyadi="Ferhat Falan" },
-            //        new MusteriDegerleri{Id=2,AdiSoyadi="Samet Falan" },
-            //        new MusteriDegerleri{Id=3,AdiSoyadi="Ahmet Falan" },
-            //        new MusteriDegerleri{Id=4,AdiSoyadi="Furkan Falan" },
-            //        new MusteriDegerleri{Id=5,AdiSoyadi="Mehmet Falan" },
-            //        new MusteriDegerleri{Id=5,AdiSoyadi="Gamze Falan" }
-            //    };
+            List<MusteriDegerleri> musteriler2 = new List<MusteriDegerleri> //1. yöntem tanımlarken toplu eklemek
+                {
+                    new MusteriDegerleri{Id=1,AdiSoyadi="Ferhat Falan" },
+                    new MusteriDegerleri{Id=2,AdiSoyadi="Samet Falan" },
+                    new MusteriDegerleri{Id=3,AdiSoyadi="Ahmet Falan" },
+                    new MusteriDegerleri{Id=4,AdiSoyadi="Furkan Falan" },
+                    new MusteriDegerleri{Id=5,AdiSoyadi="Mehmet Falan" },
+                    new MusteriDegerleri{Id=5,AdiSoyadi="Gamze Falan" }
+                };
 
             foreach (MusteriDegerleri m in musteriler)
             {
@@ -83,17 +41,17 @@ namespace _14Koleksiyonlar
             }
             Console.ReadLine();
 
-            //foreach (MusteriDegerleri m in musteriler2)
-            //{
-            //    Console.WriteLine("Müşteri id:{0} Adı ve Soyadı: {1}", m.Id, m.AdiSoyadi);
-            //}
-            //Console.ReadLine();
+            foreach (MusteriDegerleri m in musteriler2)
+            {
+                Console.WriteLine("Müşteri id:{0} Adı ve Soyadı: {1}", m.Id, m.AdiSoyadi);
+            }
+            Console.ReadLine();
+
 
 
         }
 
-
-        private static void TipGuvenliListlerleCalisma()
+        private static void TipGuvenliListelerleCalisma()
         {
             List<string> sehirIsimleri = new List<string>();  // Liste nesnesini kullanmak istiyorum string tipinde newle!
             sehirIsimleri.Add("Tekirdağ");
@@ -110,6 +68,25 @@ namespace _14Koleksiyonlar
             Console.ReadLine();
         }
 
+        private static void ArrayListKullanim()
+        {
+            //Collection Array List Kullanımı
+            ArrayList Sehirler = new ArrayList();  //Sınır yok
+            Sehirler.Add("Ankara");
+            Sehirler.Add("İstanbul");
+            Sehirler.Add("Tekirdağ"); //Object türünde herangi bir şey gönderilebilir.
+            foreach (string sehir in Sehirler)
+            {
+                Console.WriteLine(sehir);
+            }
+
+            Sehirler.Add(5);// foreach içerisine alırsak hata verir çünkü string değil
+            Console.WriteLine(Sehirler[3]);
+            Console.ReadLine();
+            // ########## Tip güvenli Collectionlar ile çalışmalıyız!
+        }
+
+       
      
     }
 
@@ -119,7 +96,6 @@ namespace _14Koleksiyonlar
     {
         public int Id { get; set; }
         public string AdiSoyadi { get; set; }
-
-
+    
     }
 }

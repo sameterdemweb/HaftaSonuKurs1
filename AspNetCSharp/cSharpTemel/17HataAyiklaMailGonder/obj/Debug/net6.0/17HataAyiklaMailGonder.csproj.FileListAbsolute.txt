@@ -1,0 +1,15 @@
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\17HataAyiklaMailGonder\bin\Debug\net6.0\17HataAyiklaMailGonder.exe
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\17HataAyiklaMailGonder\bin\Debug\net6.0\17HataAyiklaMailGonder.deps.json
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\17HataAyiklaMailGonder\bin\Debug\net6.0\17HataAyiklaMailGonder.runtimeconfig.json
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\17HataAyiklaMailGonder\bin\Debug\net6.0\17HataAyiklaMailGonder.dll
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\17HataAyiklaMailGonder\bin\Debug\net6.0\17HataAyiklaMailGonder.pdb
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\17HataAyiklaMailGonder\obj\Debug\net6.0\17HataAyiklaMailGonder.csproj.AssemblyReference.cache
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\17HataAyiklaMailGonder\obj\Debug\net6.0\17HataAyiklaMailGonder.GeneratedMSBuildEditorConfig.editorconfig
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\17HataAyiklaMailGonder\obj\Debug\net6.0\17HataAyiklaMailGonder.AssemblyInfoInputs.cache
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\17HataAyiklaMailGonder\obj\Debug\net6.0\17HataAyiklaMailGonder.AssemblyInfo.cs
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\17HataAyiklaMailGonder\obj\Debug\net6.0\17HataAyiklaMailGonder.csproj.CoreCompileInputs.cache
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\17HataAyiklaMailGonder\obj\Debug\net6.0\17HataAyiklaMailGonder.dll
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\17HataAyiklaMailGonder\obj\Debug\net6.0\refint\17HataAyiklaMailGonder.dll
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\17HataAyiklaMailGonder\obj\Debug\net6.0\17HataAyiklaMailGonder.pdb
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\17HataAyiklaMailGonder\obj\Debug\net6.0\17HataAyiklaMailGonder.genruntimeconfig.cache
+E:\AspNet\egitim\HaftaSonuKurs\AspNetCSharp\cSharpTemel\17HataAyiklaMailGonder\obj\Debug\net6.0\ref\17HataAyiklaMailGonder.dll
