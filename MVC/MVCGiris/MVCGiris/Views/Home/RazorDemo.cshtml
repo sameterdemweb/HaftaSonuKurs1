@@ -1,0 +1,106 @@
+﻿
+@{
+    ViewData["Title"] = "RazorDemo";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>RazorDemo</h1>
+
+@{
+    string adSoyad = "Samet ERDEM";
+}
+
+<h2>Web sitemize hoş geldiniz; @adSoyad </h2>
+
+<div>FOR -  Web Site İçerik Sayfa Sayısı</div>
+@{
+    int sayi = 12;
+
+    for (var i = 1; i <= sayi; i++)
+    {
+        <li>@i</li>
+    }
+}
+
+<div>While -  Web Site İçerik Sayfa Sayısı</div>
+@{
+    sayi = 1;
+
+    while (sayi <= 12)
+    {
+        <li>@sayi</li>
+         sayi++;
+    }
+}
+
+<div>İletişim Bilgileri</div>
+
+@{
+    DateTime simdikiTarih=DateTime.Now;
+    DateTime birAyOncekiTarih = simdikiTarih.AddMonths(-1);
+    DateTime yediGunSonrakiTarih = simdikiTarih.AddDays(+7);
+}
+
+<div>Merhaba<br />
+    Şimdiki Tarih: @simdikiTarih <br />
+    Bir Ay Önceki Tarih: @birAyOncekiTarih <br />
+    Yedi Gün Sonraki Tarih: @yediGunSonrakiTarih 
+    
+
+</div>
+<div>Mail Adresim: iletisim @@ sameterdem.com.tr </div>
+
+
+
+
+    <div><h2>Koşullar</h2></div>
+    @if (sayi < 9)
+    {
+        <p>Koşul Doğru</p>
+    }
+    else if (sayi > 11)
+    {
+        <p>Koşul :Yanlış</p>
+    }
+    else
+    {
+        <p>Sayımız 10dur.</p>
+    }
+
+
+      <div>
+        Mail Adresim: admin@@sameterdem.com.tr
+    </div>
+
+
+@{
+    DateTime tarih = DateTime.Now.AddDays(-3);
+    string yil = DateTime.Now.Year.ToString();
+}
+    <div> @DateTime.Now</div>
+    <div> 3 Gün öncesi: @tarih</div>
+    <div> Bulunduğumuz Yıl: @yil</div>
+
+   
+
+    @try
+    {
+        //Hatasız çalışan kodlarımızı çalıştırmayı dener
+    }
+    catch (Exception hataBilgisi)
+    {
+        @hataBilgisi.Message; //Hata bilgisini ekrana yazdırdık.
+        //Hata olma durumunda çalışan kısım.
+        throw;
+    }
+    finally{
+        //Hata olsada olmasada gireceği alan.
+    }
+
+
+    <!-- Bir form bloğu oluşturup kullanımını sağlarız.-->
+    @using (Html.BeginForm()){ 
+        <input type="text" id="isim" name="isim"/>
+        <input type="text" id="yas" name="yas"/>
+        <button type="submit"  >Kaydet</button>
+    }

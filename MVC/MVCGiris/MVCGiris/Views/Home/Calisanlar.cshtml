@@ -1,0 +1,23 @@
+﻿@model MVCGiris.CalisanListModel
+
+
+@{
+    ViewData["Title"] = "Calisanlar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Calisanlar</h1>
+<ul>
+@foreach (var calisan in Model.Calisanlar)
+{
+   <li>@calisan.Adi </li>
+}
+</ul>
+
+<h1>Hizmetlerimiz</h1>
+<ul>
+@foreach (var hizmet in Model.Hizmetlerimiz)
+{
+   <li>@hizmet </li>
+}
+</ul>

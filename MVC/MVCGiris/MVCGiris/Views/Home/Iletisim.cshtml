@@ -1,0 +1,52 @@
+﻿@{
+    ViewData["Title"] = "Iletisim";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Iletisim</h1>
+
+<div class="container">
+    <div class="row">
+       
+         
+        <div class="col-md-6 mb-3">
+            <input class="form-control" type="text" placeholder="Adınızı Giriniz" aria-label="default input example">
+        </div>
+        <div class="col-md-6 mb-3">
+            <input class="form-control" type="text" placeholder="Soyadınızı Giriniz" aria-label="default input example">
+        </div>
+        <div>
+           <select class="form-select mb-3" aria-label="Default select example">
+  <option selected>Konu Seçiniz</option>
+  <option value="1">Şikayet</option>
+  <option value="2">Öneri</option>
+  <option value="3">Bilgi</option>
+</select>
+        </div>
+        <div>
+            <div class="form-check">
+                <label>Cinsiyet Seçiniz</label>
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+  <label class="form-check-label" for="flexRadioDefault1">
+    Erkek
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+  <label class="form-check-label" for="flexRadioDefault2">
+    Kadın
+  </label>
+</div>
+
+        </div>
+    </div>
+    <div class="form-floating mt-3">
+  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+  <label for="floatingTextarea">Açıklama Giriniz</label>
+</div>
+<div class="mt-3 text-center">
+    <button type="button" class="btn-sm btn-primary ">Gönder</button>
+    <button type="button" class="btn-sm btn-danger ">İptal</button>
+   </div>
+
+</div>
