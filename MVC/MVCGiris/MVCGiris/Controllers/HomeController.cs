@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using MVCGiris.Entites;
+using MVCGiris.Entities;
 using MVCGiris.Models;
 using System.Diagnostics;
 

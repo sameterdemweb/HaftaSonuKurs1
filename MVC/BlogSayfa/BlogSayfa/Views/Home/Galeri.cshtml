@@ -1,0 +1,16 @@
+﻿@model BlogSayfa.HomeGaleriViewModel
+@{
+    ViewData["Title"] = "Galeri";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1 class="text-center">Galeri</h1>
+<div class="row">
+    @foreach (var galeri in Model.galeriResimleri)
+    {
+        <div class="col-md-4 mb-3">
+            <img src="@galeri.Resim" class="w-100" />
+        </div>
+    }
+</div>
+

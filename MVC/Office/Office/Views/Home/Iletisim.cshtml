@@ -1,0 +1,105 @@
+﻿
+@{
+    ViewData["Title"] = "Iletisim";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+ <!-- Header Banner -->
+    <div class="banner-header section-padding valign bg-img bg-fixed" data-overlay-dark="3" data-background="/img/slider/5.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-left caption mt-90">
+                    <h5>Platform Office</h5>
+                    <h1>Bize Ulaşın</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact -->
+    <section class="contact section-padding">
+        <div class="container">
+            <div class="row mb-90">
+                <div class="col-md-6 mb-60">
+                    <h3>Platform Office</h3>
+                    <p>Size özel avantajlarımız ve ön kiralama fiyatlarımızdan yararlanmak için bize ulaşabilir, Platform Office’in ayrıcalıklarla dolu dünyasında yerinizi alabilirsiniz.</p>
+                    <div class="reservations mb-30" >
+                        <div class="icon"><span class="flaticon-call"></span></div>
+                        <div class="text">
+                            <p>İletişim</p> <a href="#tel:">0212 706 18 05</a>
+                        </div>
+                    </div>
+                    <div class="reservations mb-30">
+                        <div class="icon"><span class="flaticon-envelope"></span></div>
+                        <div class="text">
+                            <p>Email</p> <a href="#mailto:">info@platformoffice.co</a>
+                        </div>
+                    </div>
+                    <div class="reservations">
+                        <div class="icon"><span class="flaticon-location-pin"></span></div>
+                        <div class="text">
+                            <p>Adres</p> Vadipark Seyrantepe No:10, 34408 <br/>Kağıthane/İstanbul
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 mb-30 offset-md-1">
+                    <h3>Iletişime Geçin</h3>
+                    <form method="post" class="contact__form" action="">
+                        <!-- form message -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="alert alert-success contact__msg" style="display: none" role="alert"> Your message was sent successfully. </div>
+                            </div>
+                        </div>
+                        <!-- form elements -->
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                <input name="name" type="text" placeholder="Adınız Soyadınız *" required>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <input name="email" type="email" placeholder="E-Mail *" required>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <input name="phone" type="text" placeholder="Telefon *" required>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <input name="subject" type="text" placeholder="Konu *" required>
+                            </div>
+                            <div class="col-md-12 form-group">
+                                <textarea name="message" id="message" cols="30" rows="4" placeholder="Mesajınız *" required></textarea>
+                            </div>
+                            <div class="col-md-12">
+                                <button class="butn-dark"><a href="#0"><span>Mesaj Gönder</span></a></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- Map Section -->
+            <div class="row">
+                <div class="col-md-12 map animate-box" data-animate-effect="fadeInUp">
+                    <iframe src="https://www.google.com/maps/d/embed?mid=1e7Ug63MgApmBNRMYLLtTreBXVoj74yk&ehbc=2E312F" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <!-- Clients -->
+    <section class="clients" style="display:none;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 owl-carousel owl-theme">
+                    <div class="clients-logo">
+                        <a href="##0"><img src="/img/clients/1.png" alt=""></a>
+                    </div>
+                    <div class="clients-logo">
+                        <a href="##0"><img src="/img/clients/2.png" alt=""></a>
+                    </div>
+                  
+                    <div class="clients-logo">
+                        <a href="##0"><img src="/img/clients/5.png" alt=""></a>
+                    </div>
+                  
+                </div>
+            </div>
+        </div>
+    </section>

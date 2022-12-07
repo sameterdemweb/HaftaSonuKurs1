@@ -1,4 +1,4 @@
-﻿using MVCGiris.Entites;
+﻿using MVCGiris.Entities;
 
 namespace MVCGiris
 {

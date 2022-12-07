@@ -1,0 +1,136 @@
+﻿@using Office.Services
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Office</title>
+
+
+    <link rel="shortcut icon" href="/img/favicon.png" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow&amp;family=Barlow+Condensed&amp;family=Gilda+Display&amp;display=swap">
+    <link rel="stylesheet" href="~/css/plugins.css" />
+    <link rel="stylesheet" href="~/css/style.css" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script src="https://kit.fontawesome.com/5536b331ea.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader-bg"></div>
+    <div id="preloader">
+        <div id="preloader-status">
+            <div class="preloader-position loader"> <span></span> </div>
+        </div>
+    </div>
+    <!-- Progress scroll totop -->
+    <div class="progress-wrap cursor-pointer">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <!-- Logo -->
+            <div class="logo-wrapper navbar-brand valign">
+                <a href="index.html">
+                    <div class="logo">
+                        <img src="/img/platform.png" class="logo-img" alt="">
+                    </div>
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="icon-bar"><i class="ti-line-double"></i></span> </button>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"> <a class="nav-link @Html.LinkAktifMi(controllers:"Home",actions:"Index")" asp-controller="Home"asp-action="Index"> ANA SAYFA</a>  </li>
+                    <li class="nav-item"><a class="nav-link  @Html.LinkAktifMi(controllers:"Home",actions:"Hakkimizda")" asp-controller="Home"asp-action="Hakkimizda">HAKKIMIZDA</a></li>
+                    <li class="nav-item"><a class="nav-link  @Html.LinkAktifMi(controllers:"Home",actions:"Ofisler")" asp-controller="Home"asp-action="Ofisler"> OFİSLER</a></li>
+                    <li class="nav-item"><a class="nav-link  @Html.LinkAktifMi(controllers:"Home",actions:"ToplantiOdalari")" asp-controller="Home"asp-action="ToplantiOdalari">TOPLANTI ODALARI</a></li>
+                    <li class="nav-item"><a class="nav-link  @Html.LinkAktifMi(controllers:"Home",actions:"Iletisim")"asp-controller="Home"asp-action="Iletisim">İLETİŞİM</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    @RenderBody()
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="footer-column footer-about">
+                            <h3 class="footer-title">Platform Office</h3>
+                            <p class="footer-about-text">Kurumsal firmaların ihtiyaçları doğrultusunda, temel operasyonel giderleri dahil, dekorasyonu hazır şekilde teslim edilecek A+ ofisler.</p>
+
+                        </div>
+                    </div>
+                    <div class="col-md-3 offset-md-1">
+                        <div class="footer-column footer-explore clearfix">
+                            <h3 class="footer-title">Hızlı Menü</h3>
+                            <ul class="footer-explore-list list-unstyled">
+                                <li><a asp-controller="Home"asp-action="Index">ANA SAYFA</a></li>
+                                <li><a asp-controller="Home"asp-action="Hakkimizda">HAKKIMIZDA</a></li>
+                                <li><a asp-controller="Home"asp-action="Ofisler">OFİSLER</a></li>
+                                <li><a asp-controller="Home"asp-action="ToplantiOdalari">TOPLANTI ODALARI</a></li>
+                                <li><a asp-controller="Home"asp-action="Iletisim">İLETİŞİM</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footer-column footer-contact">
+                            <h3 class="footer-title">İletişim</h3>
+                            <p class="footer-contact-text">Vadipark Seyrantepe No:10, 34408 Kağıthane</p>
+                            <div class="footer-contact-info" >
+                                <p class="footer-contact-phone" ><span class="flaticon-call"></span>0212 706 18 05</p>
+                                <p class="footer-contact-mail">info@platformoffice.co</p>
+                            </div>
+                            <div class="footer-about-social-list">
+                                <a href="https://www.instagram.com/platformoffice/?hl=tr" target="_blank"><i class="ti-instagram"></i></a>
+                                <a href="https://www.linkedin.com/company/platformofis/" target="_blank"><i class="ti-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="footer-bottom-inner">
+                            <p class="footer-bottom-copy-right">© Copyright 2022. Hiçbir içerik izinsiz kopyalanamaz ve alınamaz.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- jQuery -->
+    <script src="~/js/jquery-3.6.0.min.js"></script>
+    <script src="~/js/jquery-migrate-3.0.0.min.js"></script>
+    <script src="~/js/modernizr-2.6.2.min.js"></script>
+    <script src="~/js/imagesloaded.pkgd.min.js"></script>
+    <script src="~/js/jquery.isotope.v3.0.2.js"></script>
+    <script src="~/js/pace.js"></script>
+    <script src="~/js/popper.min.js"></script>
+    <script src="~/js/bootstrap.min.js"></script>
+    <script src="~/js/scrollIt.min.js"></script>
+    <script src="~/js/jquery.waypoints.min.js"></script>
+    <script src="~/js/owl.carousel.min.js"></script>
+    <script src="~/js/jquery.stellar.min.js"></script>
+    <script src="~/js/jquery.magnific-popup.js"></script>
+    <script src="~/js/YouTubePopUp.js"></script>
+    <script src="~/js/select2.js"></script>
+    <script src="~/js/datepicker.js"></script>
+    <script src="~/js/smooth-scroll.min.js"></script>
+    <script src="~/js/custom.js"></script>
+
+
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
