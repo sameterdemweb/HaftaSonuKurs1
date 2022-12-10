@@ -1,0 +1,123 @@
+﻿@model Office.Entities.UrunlerForm
+@{
+    ViewData["Title"] = "Urunler";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Header Banner -->
+<div class="banner-header section-padding valign bg-img bg-fixed" data-overlay-dark="3" data-background="/img/slider/5.jpg">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-left caption mt-90">
+                <h5>Platform Office</h5>
+                <h1>Fiyat Hesapla</h1>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Contact -->
+<section class="contact section-padding">
+    <div class="container">
+        <div class="row mb-90">
+            <div class="col-md-6 mb-60">
+                <h3>Ürün Bilgileri</h3>
+                <p>Sağdaki tabloda girmiş olduğunuz ürünün bilgileri aşağıda listelenmektedir.</p>
+                @{
+                    if (Model.UrunAdi != null) { 
+                        <div><p>Ürün Adı:@Model.UrunAdi; </p></div>
+                    }
+                }
+                  @{
+                    if (Model.UrunFiyat != null) { 
+                       <div><p>Ürün Ürün Fiyat:@Model.UrunFiyat</p></div>
+                    }
+                }
+                  @{
+                    if (Model.UrunVergi != null) { 
+                        <div><p>Ürün Vergi : % @Model.UrunVergi</p></div>
+                    }
+                       @{
+                    if (Model.UrunVergiFiyat != null) { 
+                        <div><p>Ürün Vergi Fiyatı :@Model.UrunVergiFiyat</p></div>
+                    }
+                }
+                  @{
+                    if (Model.GenelToplam != null) { 
+                        <div><p>GenelToplamFiyat:@Model.GenelToplam</p></div>
+                    }
+                }
+
+            </div>
+            <div class="col-md-5 mb-30 offset-md-1">
+                <h3>Iletişime Geçin</h3>
+                @{
+                    if (ViewBag.UrunlerForm != null && ViewBag.UrunlerForm == true)
+                    {
+                            <h1>Mail Başarı ile Gönderildi. Size En yakın sürede dönüş sağlayacağız.</h1>
+                    }
+                    else
+                    {
+                           <form asp-action="Urunler">
+                            <!-- form message -->
+                            <div class="row">
+                                <div class="col-12 ">
+                                    <div class="alert alert-success contact__msg" asp-validation-summary="ModelOnly">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- form elements -->
+                            <div class="row">
+                                <div class="col-md-6 form-group">
+                                    <input asp-for="UrunAdi" type="text" placeholder="Urun Adı  *" required>
+                                </div>
+                                <div class="col-md-6 form-group">
+                                    <input asp-for="UrunAdet" type="text"value="1" placeholder="Urun Adet *" required>
+                                </div>
+                                <div class="col-md-6 form-group">
+                                    <input asp-for="UrunVergi"value="18"   type="text" placeholder="Urun Vergi *" required>
+                                </div>
+                                    <div class="col-md-6 form-group">
+                                    <input asp-for="UrunFiyat"   type="text" placeholder="Urun Fiyatı *" required>
+                                </div>
+                                <div class="col-md-12">
+                                    <button class="butn-dark"type="submit"><a href="#0"><span>Fiyat Hesapla</span></a></button>
+                                </div>
+                            </div>
+                        </form> 
+
+                    }
+
+                    
+                    }
+                    
+                </div>
+            </div>
+            <!-- Map Section -->
+            <div class="row">
+                <div class="col-md-12 map animate-box" data-animate-effect="fadeInUp">
+                    <iframe src="https://www.google.com/maps/d/embed?mid=1e7Ug63MgApmBNRMYLLtTreBXVoj74yk&ehbc=2E312F" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <!-- Clients -->
+    <section class="clients" style="display:none;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 owl-carousel owl-theme">
+                    <div class="clients-logo">
+                        <a href="##0"><img src="/img/clients/1.png" alt=""></a>
+                    </div>
+                    <div class="clients-logo">
+                        <a href="##0"><img src="/img/clients/2.png" alt=""></a>
+                    </div>
+                  
+                    <div class="clients-logo">
+                        <a href="##0"><img src="/img/clients/5.png" alt=""></a>
+                    </div>
+                  
+                </div>
+            </div>
+        </div>
+    </section>
