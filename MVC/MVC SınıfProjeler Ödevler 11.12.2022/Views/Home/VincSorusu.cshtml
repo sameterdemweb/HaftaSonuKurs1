@@ -1,0 +1,95 @@
+﻿@model MvcOdev.Entities.VinctasimaForm
+@{
+    ViewData["Title"] = "VincSorusu";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div id="ABdev_header_spacer"></div>
+
+<div class="bannerpages">
+	<div class="container clearfix">
+		<div class="floatleft">
+			<h1>İletişim</h1>
+		</div>
+		<div class="floatright">
+			<div class="breadcrumbs"><a asp-controller="Home" asp-action="Index">Home</a>  <span class="current">- Kitap Sayfa</span></div>
+		</div>
+	</div>
+</div>
+<section class="dnd_section_dd section_with_header">
+	<header>
+		<div class="dnd_container">
+			<h1 class="text-center">Soru 2</h1>
+		</div>
+	</header>
+
+		@{
+		if (Model.VincAdi != null){
+		<div class="row">
+			<div class="col-12">Girmiş olduğunuz Taşıma Bilgileri Aşağıdaki Gibidir.</div>
+
+					<div>Vinc Adi:@Model.VincAdi</div>
+	
+		
+					<div>Vinc Her Metrede Kayıp Kg:@Model.HerMetredeKayipKg</div>
+	
+					<div>Taşıma Sonrası vinçte Kalan Kg:@Model.KalanKg</div>
+	
+
+		</div>
+			}else{
+
+				
+	<div class="dnd_section_content">
+		<div class="dnd_container">
+			<div class="dnd_column_dd_span12 ">
+				<div class="wpcf7" id="wpcf7-f2038-p2035-o1" lang="en-US" dir="ltr">
+					<div class="screen-reader-response">
+					</div>
+
+					<form asp-action="VincSorusu">
+						<div asp-validation-summary="ModelOnly"></div>
+						<div class="row">
+							<div class="col-12">Aşağıdaki Formu Vinç Değerlerine uygun şekilde doldurunuz.</div>
+							<div class="col-md-4">
+								<label>Vinç Adını Giriniz</label>
+								<span class="wpcf7-form-control-wrap your-name">
+									<input asp-for="VincAdi" type="text"  placeholder="Vinç Adını Giriniz">
+								</span>
+							</div>
+							<div class="col-md-4">
+								<label>Vinç Kaç Metre Gidecek Giriniz</label>
+								<span class="wpcf7-form-control-wrap your-name">
+									<input asp-for="KacMetreGidecek" type="text" required placeholder="Vinç Kaç Metre Gidecek Giriniz">
+								</span>
+							</div>
+							<div class="col-md-4">
+								<label>Her Metrede Ne Kadar Kayıp Kg Giriniz</label>
+								<span class="wpcf7-form-control-wrap your-name">
+									<input asp-for="HerMetredeKayipKg" type="text"required placeholder="Her Metrede Ne Kadar Kayıp Kg Giriniz">
+								</span>
+							</div>
+
+							<div class="col-md-4">
+								<label>Yüklenen Kg Giriniz</label>
+								<span class="wpcf7-form-control-wrap your-name">
+									<input asp-for="YuklenenKg" type="text" required placeholder="Yüklenen Kg Giriniz">
+								</span>
+							</div>
+						</div>
+						<div class="row">
+							<input type="submit" value="Submit">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+			}
+		
+
+
+	}
+
+</section>

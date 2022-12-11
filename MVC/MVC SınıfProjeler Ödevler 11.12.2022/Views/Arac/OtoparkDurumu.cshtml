@@ -1,0 +1,45 @@
+﻿@model MvcOdev.Entities.Otopark
+
+@{
+    ViewData["Title"] = "OtoparkDurumu";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div id="ABdev_header_spacer"></div>
+
+<div class="bannerpages">
+	<div class="container clearfix">
+		<div class="floatleft">
+			<h1>Otopark</h1>
+		</div>
+		<div class="floatright">
+			<div class="breadcrumbs"><a asp-controller="Arac" asp-action="Index">Tekrar Hesapla</a>  <span class="current">- Otopark Bilgi</span></div>
+		</div>
+	</div>
+</div>
+<section class="dnd_section_dd section_with_header">
+	<header>
+		<div class="dnd_container">
+			<h1 class="text-center">Soru 5</h1>
+		</div>
+	</header>
+	
+<div class="row">
+	<div class="col-12">Girmiş olduğunuz Otopark Bilgileri Aşağıdaki Gibidir.</div>
+
+			<img src="https://www.cumhuriyet.com.tr/Archive/2021/11/29/1888598/kapak_112247.jpg" class="w-100"/>
+			<div>Giren Araç Sayısı:@Model.GirenArac</div>
+	
+			<div>Çıkan Araç Sayısı:@Model.CikanArac</div>
+		
+			<div>Mevcut Araç Sayısı:@Model.MevcutArac</div>
+	
+			<div>Çalışma Saati :@Model.Saat</div>
+
+			<div>Kalan Araç Sayısı:@Model.KalanArac</div>
+
+</div>
+	
+
+</section>

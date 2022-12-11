@@ -1,0 +1,89 @@
+﻿@model MvcOdev.Entities.BakimSorusu
+@{
+    ViewData["Title"] = "BakimMaliyetHesabi";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div id="ABdev_header_spacer"></div>
+
+<div class="bannerpages">
+	<div class="container clearfix">
+		<div class="floatleft">
+			<h1>Bakım</h1>
+		</div>
+		<div class="floatright">
+			<div class="breadcrumbs"><a asp-controller="Home" asp-action="Index">Home</a>  <span class="current">Bakım Maliyet Hesapla</span></div>
+		</div>
+	</div>
+</div>
+<section class="dnd_section_dd section_with_header">
+	<header>
+		<div class="dnd_container">
+			<h1 class="text-center">Soru 3</h1>
+		</div>
+	</header>
+		@{
+		if (Model.CalismaSuresi != 0)
+		{
+<div class="row">
+	<div class="col-12">Girmiş olduğunuz Bakım Bilgileri Aşağıdaki Gibidir.</div>
+
+			<div>Çalışma Süresi:@Model.CalismaSuresi</div>
+	
+			<div>Bakım Gün Aralığı:@Model.BakimGunAraligi</div>
+		
+			<div>Bakım Maliyeti:@Model.BakimMaliyeti</div>
+	
+			<div>Toplam bakım sayısı:@Model.ToplamBakimSayisi</div>
+
+			<div>Toplam bakım Maliyeti:@Model.ToplamBakimMaliyeti</div>
+
+</div>
+		}else{
+
+			
+	<div class="dnd_section_content">
+		<div class="dnd_container">
+			<div class="dnd_column_dd_span12 ">
+				<div class="wpcf7" id="wpcf7-f2038-p2035-o1" lang="en-US" dir="ltr">
+					<div class="screen-reader-response">
+					</div>
+					<form  asp-action="BakimMaliyetHesabi">
+						<div asp-validation-summary="ModelOnly"></div>
+						<div class="row">
+							<div class="col-12 mb-3">Aşağıdaki Bakıma uygun şekilde doldurunuz.</div>
+							<div class="col-md-4">
+								<label>Çalışma Süresi</label>
+								<span class="wpcf7-form-control-wrap your-name">
+									<input asp-for="CalismaSuresi" type="text" placeholder="Çalışma Süresi Giriniz">
+								</span>
+							</div>
+							<div class="col-md-4">
+								<label>Bakım Gün Aralığı</label>
+								<span class="wpcf7-form-control-wrap your-name">
+									<input asp-for="BakimGunAraligi" type="text" placeholder="Bakım Gün Aralığı">
+								</span>
+							</div>
+							<div class="col-md-4">
+								<label>Bakim Maliyeti</label>
+								<span class="wpcf7-form-control-wrap your-name">
+									<input asp-for="BakimMaliyeti"  type="text" placeholder="Bakim Maliyeti Giriniz">
+								</span>
+							</div>
+						</div>
+						<div class="row">
+							<input type="submit" value="Submit">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+		}
+	}
+
+</section>
+
+

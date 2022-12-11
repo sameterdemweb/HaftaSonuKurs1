@@ -1,0 +1,68 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = MvcOdev
+build_property.RootNamespace = MvcOdev
+build_property.ProjectDir = D:\MVCProje\MvcOdev\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\MVCProje\MvcOdev
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/MVCProje/MvcOdev/Views/Arac/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJhY1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MVCProje/MvcOdev/Views/Arac/OtoparkDurumu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJhY1xPdG9wYXJrRHVydW11LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MVCProje/MvcOdev/Views/Home/BakimMaliyetHesabi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxCYWtpbU1hbGl5ZXRIZXNhYmkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MVCProje/MvcOdev/Views/Home/Iletisim.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbGV0aXNpbS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MVCProje/MvcOdev/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MVCProje/MvcOdev/Views/Home/KitapSayfa.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxLaXRhcFNheWZhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MVCProje/MvcOdev/Views/Home/SinavNotOrtalamasi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTaW5hdk5vdE9ydGFsYW1hc2kuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MVCProje/MvcOdev/Views/Home/VincSorusu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxWaW5jU29ydXN1LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MVCProje/MvcOdev/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MVCProje/MvcOdev/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MVCProje/MvcOdev/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MVCProje/MvcOdev/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MVCProje/MvcOdev/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-u214looidq

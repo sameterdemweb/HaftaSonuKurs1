@@ -1,0 +1,87 @@
+﻿@model MvcOdev.Entities.NotHesaplama
+@{
+    ViewData["Title"] = "SinavNotOrtalamasi";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div id="ABdev_header_spacer"></div>
+
+<div class="bannerpages">
+	<div class="container clearfix">
+		<div class="floatleft">
+			<h1>Not Hesaplama</h1>
+		</div>
+		<div class="floatright">
+			<div class="breadcrumbs"><a asp-controller="Home" asp-action="Index">Home</a>  <span class="current">Not Hesapla</span></div>
+		</div>
+	</div>
+</div>
+<section class="dnd_section_dd section_with_header">
+	<header>
+		<div class="dnd_container">
+			<h1 class="text-center">Soru 4</h1>
+		</div>
+	</header>
+		@{
+		if (Model.Durum!=null)
+		{
+<div class="row">
+	<div class="col-12">Girmiş olduğunuz Not Bilgileri Aşağıdaki Gibidir.</div>
+
+			<div>Vize Notu:@Model.Vize</div>
+	
+			<div>Final Notu:@Model.Final</div>
+		
+			<div>Final Yüzdesi:@Model.YüzdeFinal</div>
+	
+			<div>Ortalama:@Model.Ortalama</div>
+
+			<div>Durum:@Model.Durum</div>
+
+</div>
+		}else{
+
+			
+	<div class="dnd_section_content">
+		<div class="dnd_container">
+			<div class="dnd_column_dd_span12 ">
+				<div class="wpcf7" id="wpcf7-f2038-p2035-o1" lang="en-US" dir="ltr">
+					<div class="screen-reader-response">
+					</div>
+					<form  asp-action="SinavNotOrtalamasi">
+						<div asp-validation-summary="ModelOnly"></div>
+						<div class="row">
+							<div class="col-12 mb-3">Aşağıdaki Bakıma uygun şekilde doldurunuz.</div>
+							<div class="col-md-4">
+								<label>Vize Notu</label>
+								<span class="wpcf7-form-control-wrap your-name">
+									<input asp-for="Vize" type="text" placeholder="Vize Giriniz">
+								</span>
+							</div>
+							<div class="col-md-4">
+								<label>Final Notu</label>
+								<span class="wpcf7-form-control-wrap your-name">
+									<input asp-for="Final" type="text" placeholder="Final Aralığı">
+								</span>
+							</div>
+							<div class="col-md-4">
+								<label>Final Yüzdesi</label>
+								<span class="wpcf7-form-control-wrap your-name">
+									<input asp-for="YüzdeFinal"  type="text" placeholder="Yüzde ">
+								</span>
+							</div>
+						</div>
+						<div class="row">
+							<input type="submit" value="Submit">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+		}
+	}
+
+</section>
+
