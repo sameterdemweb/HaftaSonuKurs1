@@ -1,0 +1,73 @@
+﻿@using UrunOrnek.Services;
+@model IEnumerable<UrunOrnek.Entities.Urun>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Adi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BirimFiyat)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Adet)
+            </th>
+            <th>
+                ToplamFiyat
+            </th>
+            <th>
+                Kâr
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Marka)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Adi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BirimFiyat)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Adet)
+            </td>
+            <td>
+                    @{
+                        double fiyat = item.Adet * item.BirimFiyat;
+                    }
+                    @fiyat
+            </td>
+                <td>
+                    @{
+                        double kar = KarHesapServices.KarHesap(item.BirimFiyat,item.Adet);
+                    }
+                    @kar
+                </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Marka)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
