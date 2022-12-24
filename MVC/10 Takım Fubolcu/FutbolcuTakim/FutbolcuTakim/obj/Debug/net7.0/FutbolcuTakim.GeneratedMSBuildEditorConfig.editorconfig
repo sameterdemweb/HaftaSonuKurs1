@@ -1,0 +1,85 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = FutbolcuTakim
+build_property.RootNamespace = FutbolcuTakim
+build_property.ProjectDir = E:\AspNet\egitim\HaftaSonuKurs\MVC\10 Takım Fubolcu\FutbolcuTakim\FutbolcuTakim\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = E:\AspNet\egitim\HaftaSonuKurs\MVC\10 Takım Fubolcu\FutbolcuTakim\FutbolcuTakim
+build_property._RazorSourceGeneratorDebug = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/10 Takım Fubolcu/FutbolcuTakim/FutbolcuTakim/Views/Futbolcular/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnV0Ym9sY3VsYXJcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/10 Takım Fubolcu/FutbolcuTakim/FutbolcuTakim/Views/Futbolcular/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnV0Ym9sY3VsYXJcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/10 Takım Fubolcu/FutbolcuTakim/FutbolcuTakim/Views/Futbolcular/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnV0Ym9sY3VsYXJcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/10 Takım Fubolcu/FutbolcuTakim/FutbolcuTakim/Views/Futbolcular/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnV0Ym9sY3VsYXJcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/10 Takım Fubolcu/FutbolcuTakim/FutbolcuTakim/Views/Futbolcular/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnV0Ym9sY3VsYXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/10 Takım Fubolcu/FutbolcuTakim/FutbolcuTakim/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/10 Takım Fubolcu/FutbolcuTakim/FutbolcuTakim/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/10 Takım Fubolcu/FutbolcuTakim/FutbolcuTakim/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/10 Takım Fubolcu/FutbolcuTakim/FutbolcuTakim/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/10 Takım Fubolcu/FutbolcuTakim/FutbolcuTakim/Views/Takimlar/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFraW1sYXJcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/10 Takım Fubolcu/FutbolcuTakim/FutbolcuTakim/Views/Takimlar/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFraW1sYXJcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/10 Takım Fubolcu/FutbolcuTakim/FutbolcuTakim/Views/Takimlar/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFraW1sYXJcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/10 Takım Fubolcu/FutbolcuTakim/FutbolcuTakim/Views/Takimlar/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFraW1sYXJcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/10 Takım Fubolcu/FutbolcuTakim/FutbolcuTakim/Views/Takimlar/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFraW1sYXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/10 Takım Fubolcu/FutbolcuTakim/FutbolcuTakim/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/10 Takım Fubolcu/FutbolcuTakim/FutbolcuTakim/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/10 Takım Fubolcu/FutbolcuTakim/FutbolcuTakim/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-vwxl8rtpgv
