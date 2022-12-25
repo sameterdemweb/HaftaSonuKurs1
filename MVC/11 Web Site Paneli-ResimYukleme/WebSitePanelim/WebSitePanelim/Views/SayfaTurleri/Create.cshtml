@@ -1,0 +1,75 @@
+﻿@model WebSitePanelim.Entities.SayfaTuru
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>General Form</h1>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active">General Form</li>
+                </ol>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+    <div class="row">
+        <div class="col-6 form-group">
+          
+        </div>
+        <div class="col-6 form-group text-right">
+            <a asp-action="Index" class="btn btn-warning">Geri Dön</a>
+        </div>
+    </div>
+</section>
+
+
+<!-- Main content -->
+<section class="content">
+    <div class="container-fluid">
+       
+        <div class="row">
+            <!-- left column -->
+           
+            <div class="col-12">
+                <!-- general form elements -->
+                <div class="card card-primary">
+                    <div class="card-header">
+                        <h3 class="card-title">Sayfa Ekleme</h3>
+                    </div>
+                    
+                    <form asp-action="Create">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label asp-for="Adi">Sayfa Adı</label>
+                                <input asp-for="Adi"  type="text" class="form-control" placeholder="Sayfa Adı Giriniz">
+                                <span asp-validation-for="Adi" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Durum">Durum</label>
+                                <input  asp-for="Durum" type="text" class="form-control" placeholder="Durum No Giriniz">
+                                <span asp-validation-for="Durum" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <button type="submit" class="btn btn-primary">Kaydet</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
