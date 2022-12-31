@@ -1,0 +1,91 @@
+﻿@model WebSitePanelim.Entities.Icerik
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>İçerik Düzenle</h1>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">Ana Sayfa</a></li>
+                    <li class="breadcrumb-item active">İçerik Düzenle</li>
+                </ol>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+    <div class="row">
+        <div class="col-6 form-group">
+        </div>
+        <div class="col-6 form-group text-right">
+            <a asp-action="Index" class="btn btn-warning">Geri Dön</a>
+        </div>
+    </div>
+</section>
+
+<!-- Main content -->
+<section class="content">
+    <div class="container-fluid">
+
+        <div class="row">
+            <!-- left column -->
+
+            <div class="col-12">
+                <!-- general form elements -->
+                <div class="card card-primary">
+                    <div class="card-header">
+                        <h3 class="card-title">İçerik Düzenle</h3>
+                    </div>
+
+                    <form asp-action="Edit" enctype="multipart/form-data">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label asp-for="Baslik">Başlık</label>
+                                <input asp-for="Baslik" type="text" class="form-control" placeholder="İçerik Başlığı Giriniz">
+                                <span asp-validation-for="Baslik" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="KisaAciklama">Kısa Açıklama</label>
+                                <input asp-for="KisaAciklama" type="text" class="form-control" placeholder="Kısa Açıklama Giriniz">
+                                <span asp-validation-for="KisaAciklama" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Aciklama">Açıklama</label>
+                                <input asp-for="Aciklama" type="text" class="form-control" placeholder="Açıklama Giriniz">
+                                <span asp-validation-for="Aciklama" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="ResimDosya">Resim Ekleme</label>
+                                <input asp-for="ResimDosya" accept="Image/*" class="form-control" placeholder="Resim Ekleyiniz">
+                                <img src="/Upload/@Model.Resim" width="200px"/>
+                                <span asp-validation-for="ResimDosya" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Tarih">Tarih</label>
+                                <input asp-for="Tarih" type="datetime" class="form-control" placeholder="Resim Ekleyiniz">
+                                <span asp-validation-for="Tarih" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="TurId" class="control-label"></label>
+                                <select asp-for="TurId" class="form-control" asp-items="ViewBag.TurId"></select>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <button type="submit" class="btn btn-primary">Kaydet</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

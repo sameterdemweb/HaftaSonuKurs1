@@ -1,0 +1,105 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = WebSitePanelim
+build_property.RootNamespace = WebSitePanelim
+build_property.ProjectDir = C:\Users\Notebook\Desktop\WebSitePanelim\WebSitePanelim\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Notebook\Desktop\WebSitePanelim\WebSitePanelim
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Notebook/Desktop/WebSitePanelim/WebSitePanelim/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Notebook/Desktop/WebSitePanelim/WebSitePanelim/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Notebook/Desktop/WebSitePanelim/WebSitePanelim/Views/Icerikler/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWNlcmlrbGVyXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Notebook/Desktop/WebSitePanelim/WebSitePanelim/Views/Icerikler/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWNlcmlrbGVyXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Notebook/Desktop/WebSitePanelim/WebSitePanelim/Views/Icerikler/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWNlcmlrbGVyXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Notebook/Desktop/WebSitePanelim/WebSitePanelim/Views/Icerikler/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWNlcmlrbGVyXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Notebook/Desktop/WebSitePanelim/WebSitePanelim/Views/Icerikler/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWNlcmlrbGVyXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Notebook/Desktop/WebSitePanelim/WebSitePanelim/Views/Referanslar/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVmZXJhbnNsYXJcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Notebook/Desktop/WebSitePanelim/WebSitePanelim/Views/Referanslar/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVmZXJhbnNsYXJcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Notebook/Desktop/WebSitePanelim/WebSitePanelim/Views/Referanslar/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVmZXJhbnNsYXJcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Notebook/Desktop/WebSitePanelim/WebSitePanelim/Views/Referanslar/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVmZXJhbnNsYXJcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Notebook/Desktop/WebSitePanelim/WebSitePanelim/Views/Referanslar/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVmZXJhbnNsYXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Notebook/Desktop/WebSitePanelim/WebSitePanelim/Views/SayfaTuruler/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2F5ZmFUdXJ1bGVyXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Notebook/Desktop/WebSitePanelim/WebSitePanelim/Views/SayfaTuruler/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2F5ZmFUdXJ1bGVyXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Notebook/Desktop/WebSitePanelim/WebSitePanelim/Views/SayfaTuruler/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2F5ZmFUdXJ1bGVyXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Notebook/Desktop/WebSitePanelim/WebSitePanelim/Views/SayfaTuruler/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2F5ZmFUdXJ1bGVyXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Notebook/Desktop/WebSitePanelim/WebSitePanelim/Views/SayfaTuruler/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2F5ZmFUdXJ1bGVyXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Notebook/Desktop/WebSitePanelim/WebSitePanelim/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Notebook/Desktop/WebSitePanelim/WebSitePanelim/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Notebook/Desktop/WebSitePanelim/WebSitePanelim/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Notebook/Desktop/WebSitePanelim/WebSitePanelim/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Notebook/Desktop/WebSitePanelim/WebSitePanelim/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-msu2l7f2kw
