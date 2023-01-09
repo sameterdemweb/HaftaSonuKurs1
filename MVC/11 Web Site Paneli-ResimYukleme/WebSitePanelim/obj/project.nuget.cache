@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dxnOIL1oFEDbnzZKgo1fGW98d3U9mq/PtEBjfLlTQKSaNjOIdOh+X6wwDdLwk1skrS422uxl7NeOZ3uu03vndQ==",
+  "dgSpecHash": "9i48fHhLu73ArkPxNzfWM1OsWSZUXFNusUXxgEUBAjeS6nuo+D7xwB93+8oYpJNb8/D2zrqdWqvs4mM+snB4LA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Notebook\\Desktop\\WebSitePanelim\\WebSitePanelim\\WebSitePanelim.csproj",
+  "projectFilePath": "E:\\AspNet\\egitim\\HaftaSonuKurs\\MVC\\11 Web Site Paneli-ResimYukleme\\WebSitePanelim\\WebSitePanelim.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Notebook\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Notebook\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

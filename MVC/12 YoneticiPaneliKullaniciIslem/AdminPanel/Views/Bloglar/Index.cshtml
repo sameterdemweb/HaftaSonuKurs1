@@ -1,0 +1,99 @@
+﻿@model IEnumerable<AdminPanel.Entities.Bloglar>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0">Bloglar</h1>
+                </div><!-- /.col -->
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a href="/">Anasayfa</a></li>
+                        <li class="breadcrumb-item active">Bloglar</li>
+                    </ol>
+                </div><!-- /.col -->
+                <div>
+                      <a class="btn btn-sm btn-block btn-outline-primary  mt-3" href="/Bloglar/Create">Yeni Blog Ekle</a>
+                </div>
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+    <section class="content">
+        <div class="container-fluid">
+            <!-- Small boxes (Stat box) -->
+           
+            <div class="row">
+
+
+                <div class="card col-12">
+                    <div class="card-header">
+                        <h3 class="card-title">Blog Listeleme</h3>
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body">
+                        <table id="example1" class="table table-bordered table-striped">
+
+                            <thead>
+                                <tr>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.Durum)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.Baslik)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.Resim)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.KisaAciklama)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.BlogKategori)
+                                    </th>
+                                    <th>İşlemler</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model) {
+                                    <tr>
+                                        <td>
+                                             @(item.Durum==1?"Yayında":"Pasif")
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Baslik)
+                                        </td>
+                                        <td>
+                                            <img width="100px" src="~/yuklenenResimler/@item.Resim" alt="" />
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.KisaAciklama)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.BlogKategori.KategoriAdi)
+                                        </td>
+                                        <td>
+                                            <a asp-action="Edit" asp-route-id="@item.Id">Düzenle</a> |
+                                            <a asp-action="Delete" asp-route-id="@item.Id">Sil</a>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+
+                        </table>
+                    </div>
+                    <!-- /.card-body -->
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+    </section>
+

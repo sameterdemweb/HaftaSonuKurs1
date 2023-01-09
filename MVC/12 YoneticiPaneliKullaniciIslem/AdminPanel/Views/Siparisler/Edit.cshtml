@@ -1,0 +1,142 @@
+﻿@model SiparisDetayViewModel
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1 class="m-0">Bloglar</h1>
+            </div><!-- /.col -->
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a asp-controller="Home" asp-action="">Anasayfa</a></li>
+                    <li class="breadcrumb-item active">Bloglar</li>
+
+                </ol>
+            </div><!-- /.col -->
+        </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+</div>
+<!-- /.content-header -->
+<!-- Main content -->
+<section class="content">
+    <div class="container-fluid">
+        <!-- Small boxes (Stat box) -->
+
+        <div class="row">
+
+
+            <div class="col-md-12">
+                <div class="card card-primary">
+                    <div class="card-header">
+                        <h3 class="card-title">Blog Düzenle</h3>
+                    </div>
+                    <!-- /.card-header -->
+                    <!-- form start -->
+                    <div class="card-body">
+                        <form asp-action="Edit">
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                            <input type="hidden" asp-for="@Model.SiparisBilgi.Id" />
+
+                            <div class="form-group">
+                                Sipariş Veren Müşteri Adı: <strong>@Model.SiparisBilgi.User.AdSoyad</strong>
+                            </div>
+                            <div class="form-group">
+                                Sipariş Tarihi:&nbsp;<strong>@Model.SiparisBilgi.SiparisTarihi</strong>
+                            </div>
+                            <div class="form-group">
+                                Sipariş Tutarı:&nbsp;<strong>  €  @Model.SiparisBilgi.SiparisTutari</strong>
+                            </div>
+                          <!--
+                            <div class="form-group">
+                                Adres Id:&nbsp;<strong>@Model.SiparisBilgi.AdresId</strong>
+                            </div>-->
+                            <div class="form-group">
+                                Adres Başlık:&nbsp;<strong>@Model.SiparisBilgi.AdresBaslik</strong>
+                            </div>
+                            <div class="form-group">
+                                Adres:&nbsp;<strong>@Model.SiparisBilgi.Address</strong>
+                            </div>
+                            <div class="form-group">
+                                Posta Kodu:&nbsp;<strong>@Model.SiparisBilgi.PostaKodu</strong>
+                            </div>
+                            <div class="form-group">
+                                Telefon:&nbsp;<strong>@Model.SiparisBilgi.Telefon</strong>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+
+                                    <div class="col-md-3"><strong>Ürün Adı</strong></div>
+                                    <div class="col-md-3"><strong>Ürün Fiyat</strong></div>
+                                    <div class="col-md-3"><strong>Ürün Adet</strong></div>
+                                    <div class="col-md-3"><strong>Toplam Fiyat</strong></div>
+
+                                    @foreach (var urunBilgi in Model.SiparisDetay)
+                                    {
+                                        <div class="col-md-3">@urunBilgi.Urun.Baslik</div>
+                                        <div class="col-md-3">@urunBilgi.Fiyat</div>
+                                        <div class="col-md-3">@urunBilgi.Adet</div>
+                                        <div class="col-md-3">
+                                            @{
+                                                double yenifiyat = Convert.ToDouble(urunBilgi.Fiyat * urunBilgi.Adet);
+                                            }
+                                            @yenifiyat
+                                        </div>
+
+                                    }
+
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <select asp-for="@Model.SiparisBilgi.SiparisDurumu" class="form-control">
+                                    <option value="Ödeme Yapıldı">Ödeme Yapıldı</option>
+                                    <option value="Kargoda">Kargoda</option>
+                                    <option value="Tamamlandı">Tamamlandı</option>
+                                    <option value="İptal">İptal</option>
+                                </select>         
+                                <span asp-validation-for="@Model.SiparisBilgi.SiparisDurumu" class="text-danger"></span>
+                            <div class="form-group mt-3">
+                                <input type="submit" value="Save" class="btn btn-primary" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+
+            @section Scripts {
+                @{
+                    //await Html.RenderPartialAsync("_ValidationScriptsPartial");
+                            <script>
+                                $(function () {
+                                    // Summernote
+                                    $('#summernote').summernote()
+
+                                    // CodeMirror
+                                    CodeMirror.fromTextArea(document.getElementById("codeMirrorDemo"), {
+                                        mode: "htmlmixed",
+                                        theme: "monokai"
+                                    });
+                                })
+                            </script>
+                }
+            }
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+

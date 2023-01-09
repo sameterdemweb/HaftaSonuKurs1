@@ -1,0 +1,135 @@
+﻿@model AdminPanel.Entities.Urunler
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1 class="m-0">Bloglar</h1>
+            </div><!-- /.col -->
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a asp-controller="Home" asp-action="">Anasayfa</a></li>
+                    <li class="breadcrumb-item active">Bloglar</li>
+
+                </ol>
+            </div><!-- /.col -->
+        </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+</div>
+<!-- /.content-header -->
+<!-- Main content -->
+<section class="content">
+    <div class="container-fluid">
+        <!-- Small boxes (Stat box) -->
+
+        <div class="row">
+
+
+            <div class="col-md-12">
+                <div class="card card-primary">
+                    <div class="card-header">
+                        <h3 class="card-title">Blog Düzenle</h3>
+                    </div>
+                    <!-- /.card-header -->
+                    <!-- form start -->
+                    <div class="card-body">
+                        <form asp-action="Edit" enctype="multipart/form-data">
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                            <input type="hidden" asp-for="Id" />
+                            <div class="form-group">
+                                <label asp-for="KategoriId" class="control-label"></label>
+                                <select asp-for="KategoriId" class="form-control" asp-items="ViewBag.KategoriId"></select>
+                                <span asp-validation-for="KategoriId" class="text-danger"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label asp-for="Baslik" class="control-label"></label>
+                                <input asp-for="Baslik" class="form-control" />
+                                <span asp-validation-for="Baslik" class="text-danger"></span>
+                            </div>
+                                  <div class="form-group">
+                                <label asp-for="StandartAciklama" class="control-label"></label>
+                                <input asp-for="StandartAciklama" class="form-control" />
+                                <span asp-validation-for="StandartAciklama" class="text-danger"></span>
+                            </div>
+                              <div class="form-group">
+                                <label asp-for="StandartFiyat" class="control-label"></label>
+                                <input asp-for="StandartFiyat" class="form-control" />
+                                <span asp-validation-for="StandartFiyat" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="TopNote" class="control-label"></label>
+                                <input asp-for="TopNote" class="form-control" />
+                                <span asp-validation-for="TopNote" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="MiddleNote" class="control-label"></label>
+                                <input asp-for="MiddleNote" class="form-control" />
+                                <span asp-validation-for="MiddleNote" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="BaseNote" class="control-label"></label>
+                                <input asp-for="BaseNote" class="form-control" />
+                                <span asp-validation-for="BaseNote" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Resim" class="control-label"></label><br />
+                                <img src="~/yuklenenResimler/@Model.Resim" alt="" width="100px" />
+                                <input asp-for="ResimDosya" accept="Image/*" class="form-control" />
+
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="KisaAciklama" class="control-label"></label>
+                                <input asp-for="KisaAciklama" class="form-control" />
+                                <span asp-validation-for="KisaAciklama" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Icerik" class="control-label"></label>
+                                <textarea id="summernote" asp-for="Icerik"> </textarea>
+                                <span asp-validation-for="Icerik" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Durum" class="control-label"></label>
+                                <select asp-for="Durum" class="form-control">
+                                    <option value="1">Aktif</option>
+                                    <option value="0">Pasif</option>
+                                </select>
+                                <span asp-validation-for="Durum" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" value="Kaydet" class="btn btn-primary" />
+                               <a asp-action="Index" class="btn btn-warning" >İptal</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+
+            @section Scripts {
+                @{
+                    //await Html.RenderPartialAsync("_ValidationScriptsPartial");
+                    <script>
+                        $(function() {
+                            // Summernote
+                            $('#summernote').summernote()
+
+                            // CodeMirror
+                            CodeMirror.fromTextArea(document.getElementById("codeMirrorDemo"), {
+                                mode: "htmlmixed",
+                                theme: "monokai"
+                            });
+                        })
+                    </script>
+                }
+            }
+            </div>
+        </div>
+    </section>

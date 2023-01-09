@@ -10789,11 +10789,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Notebook\\Desktop\\WebSitePanelim\\WebSitePanelim\\WebSitePanelim.csproj",
+      "projectUniqueName": "E:\\AspNet\\egitim\\HaftaSonuKurs\\MVC\\11 Web Site Paneli-ResimYukleme\\WebSitePanelim\\WebSitePanelim.csproj",
       "projectName": "WebSitePanelim",
-      "projectPath": "C:\\Users\\Notebook\\Desktop\\WebSitePanelim\\WebSitePanelim\\WebSitePanelim.csproj",
+      "projectPath": "E:\\AspNet\\egitim\\HaftaSonuKurs\\MVC\\11 Web Site Paneli-ResimYukleme\\WebSitePanelim\\WebSitePanelim.csproj",
       "packagesPath": "C:\\Users\\Notebook\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Notebook\\Desktop\\WebSitePanelim\\WebSitePanelim\\obj\\",
+      "outputPath": "E:\\AspNet\\egitim\\HaftaSonuKurs\\MVC\\11 Web Site Paneli-ResimYukleme\\WebSitePanelim\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

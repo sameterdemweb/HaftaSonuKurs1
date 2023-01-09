@@ -1,0 +1,245 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = AdminPanel
+build_property.RootNamespace = AdminPanel
+build_property.ProjectDir = E:\AspNet\egitim\HaftaSonuKurs\MVC\12 YoneticiPaneliKullaniciIslem\AdminPanel\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = E:\AspNet\egitim\HaftaSonuKurs\MVC\12 YoneticiPaneliKullaniciIslem\AdminPanel
+build_property._RazorSourceGeneratorDebug = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/12 YoneticiPaneliKullaniciIslem/AdminPanel/Views/BlogKategorileri/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ0thdGVnb3JpbGVyaVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/12 YoneticiPaneliKullaniciIslem/AdminPanel/Views/BlogKategorileri/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ0thdGVnb3JpbGVyaVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/12 YoneticiPaneliKullaniciIslem/AdminPanel/Views/BlogKategorileri/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ0thdGVnb3JpbGVyaVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/12 YoneticiPaneliKullaniciIslem/AdminPanel/Views/BlogKategorileri/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ0thdGVnb3JpbGVyaVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/12 YoneticiPaneliKullaniciIslem/AdminPanel/Views/BlogKategorileri/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ0thdGVnb3JpbGVyaVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/12 YoneticiPaneliKullaniciIslem/AdminPanel/Views/Bloglar/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ2xhclxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/12 YoneticiPaneliKullaniciIslem/AdminPanel/Views/Bloglar/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ2xhclxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/12 YoneticiPaneliKullaniciIslem/AdminPanel/Views/Bloglar/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ2xhclxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/12 YoneticiPaneliKullaniciIslem/AdminPanel/Views/Bloglar/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ2xhclxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/12 YoneticiPaneliKullaniciIslem/AdminPanel/Views/Bloglar/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ2xhclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/12 YoneticiPaneliKullaniciIslem/AdminPanel/Views/Guvenlik/ErisimYetkinizYok.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3V2ZW5saWtcRXJpc2ltWWV0a2luaXpZb2suY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/12 YoneticiPaneliKullaniciIslem/AdminPanel/Views/Guvenlik/Giris.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3V2ZW5saWtcR2lyaXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/12 YoneticiPaneliKullaniciIslem/AdminPanel/Views/Guvenlik/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3V2ZW5saWtcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/12 YoneticiPaneliKullaniciIslem/AdminPanel/Views/Guvenlik/MailDogrulamaYapildi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3V2ZW5saWtcTWFpbERvZ3J1bGFtYVlhcGlsZGkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/12 YoneticiPaneliKullaniciIslem/AdminPanel/Views/Guvenlik/MailOnayla.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3V2ZW5saWtcTWFpbE9uYXlsYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/12 YoneticiPaneliKullaniciIslem/AdminPanel/Views/Guvenlik/SifremiUnuttum.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3V2ZW5saWtcU2lmcmVtaVVudXR0dW0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/12 YoneticiPaneliKullaniciIslem/AdminPanel/Views/Guvenlik/SifrenizGuncellendi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3V2ZW5saWtcU2lmcmVuaXpHdW5jZWxsZW5kaS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/12 YoneticiPaneliKullaniciIslem/AdminPanel/Views/Guvenlik/SifreSifirlamaMaileGonderildi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3V2ZW5saWtcU2lmcmVTaWZpcmxhbWFNYWlsZUdvbmRlcmlsZGkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/12 YoneticiPaneliKullaniciIslem/AdminPanel/Views/Guvenlik/SifreSifirlamaYap.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3V2ZW5saWtcU2lmcmVTaWZpcmxhbWFZYXAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/12 YoneticiPaneliKullaniciIslem/AdminPanel/Views/Guvenlik/UyelikOnaylamaYapmalisiniz.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3V2ZW5saWtcVXllbGlrT25heWxhbWFZYXBtYWxpc2luaXouY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/12 YoneticiPaneliKullaniciIslem/AdminPanel/Views/Guvenlik/UyeOl.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3V2ZW5saWtcVXllT2wuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/12 YoneticiPaneliKullaniciIslem/AdminPanel/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/12 YoneticiPaneliKullaniciIslem/AdminPanel/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/12 YoneticiPaneliKullaniciIslem/AdminPanel/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/12 YoneticiPaneliKullaniciIslem/AdminPanel/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/12 YoneticiPaneliKullaniciIslem/AdminPanel/Views/Siparisler/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2lwYXJpc2xlclxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/12 YoneticiPaneliKullaniciIslem/AdminPanel/Views/Siparisler/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2lwYXJpc2xlclxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/12 YoneticiPaneliKullaniciIslem/AdminPanel/Views/Siparisler/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2lwYXJpc2xlclxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/12 YoneticiPaneliKullaniciIslem/AdminPanel/Views/Siparisler/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2lwYXJpc2xlclxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/12 YoneticiPaneliKullaniciIslem/AdminPanel/Views/Siparisler/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2lwYXJpc2xlclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/12 YoneticiPaneliKullaniciIslem/AdminPanel/Views/Siparisler/IptalEdilen.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2lwYXJpc2xlclxJcHRhbEVkaWxlbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/12 YoneticiPaneliKullaniciIslem/AdminPanel/Views/Siparisler/Kargoda.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2lwYXJpc2xlclxLYXJnb2RhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/12 YoneticiPaneliKullaniciIslem/AdminPanel/Views/Siparisler/Tamamlanmis.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2lwYXJpc2xlclxUYW1hbWxhbm1pcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/12 YoneticiPaneliKullaniciIslem/AdminPanel/Views/Slider/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2xpZGVyXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/12 YoneticiPaneliKullaniciIslem/AdminPanel/Views/Slider/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2xpZGVyXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/12 YoneticiPaneliKullaniciIslem/AdminPanel/Views/Slider/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2xpZGVyXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/12 YoneticiPaneliKullaniciIslem/AdminPanel/Views/Slider/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2xpZGVyXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/12 YoneticiPaneliKullaniciIslem/AdminPanel/Views/Slider/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2xpZGVyXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/12 YoneticiPaneliKullaniciIslem/AdminPanel/Views/UrunKategorileri/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXJ1bkthdGVnb3JpbGVyaVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/12 YoneticiPaneliKullaniciIslem/AdminPanel/Views/UrunKategorileri/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXJ1bkthdGVnb3JpbGVyaVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/12 YoneticiPaneliKullaniciIslem/AdminPanel/Views/UrunKategorileri/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXJ1bkthdGVnb3JpbGVyaVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/12 YoneticiPaneliKullaniciIslem/AdminPanel/Views/UrunKategorileri/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXJ1bkthdGVnb3JpbGVyaVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/12 YoneticiPaneliKullaniciIslem/AdminPanel/Views/UrunKategorileri/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXJ1bkthdGVnb3JpbGVyaVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/12 YoneticiPaneliKullaniciIslem/AdminPanel/Views/Urunler/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXJ1bmxlclxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/12 YoneticiPaneliKullaniciIslem/AdminPanel/Views/Urunler/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXJ1bmxlclxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/12 YoneticiPaneliKullaniciIslem/AdminPanel/Views/Urunler/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXJ1bmxlclxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/12 YoneticiPaneliKullaniciIslem/AdminPanel/Views/Urunler/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXJ1bmxlclxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/12 YoneticiPaneliKullaniciIslem/AdminPanel/Views/Urunler/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXJ1bmxlclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/12 YoneticiPaneliKullaniciIslem/AdminPanel/Views/UrunResimleri/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXJ1blJlc2ltbGVyaVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/12 YoneticiPaneliKullaniciIslem/AdminPanel/Views/UrunResimleri/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXJ1blJlc2ltbGVyaVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/12 YoneticiPaneliKullaniciIslem/AdminPanel/Views/UrunResimleri/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXJ1blJlc2ltbGVyaVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/12 YoneticiPaneliKullaniciIslem/AdminPanel/Views/UrunResimleri/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXJ1blJlc2ltbGVyaVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/12 YoneticiPaneliKullaniciIslem/AdminPanel/Views/UrunResimleri/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXJ1blJlc2ltbGVyaVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/12 YoneticiPaneliKullaniciIslem/AdminPanel/Views/Uyeler/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXllbGVyXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/12 YoneticiPaneliKullaniciIslem/AdminPanel/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/12 YoneticiPaneliKullaniciIslem/AdminPanel/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/12 YoneticiPaneliKullaniciIslem/AdminPanel/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-cxfutip2kg

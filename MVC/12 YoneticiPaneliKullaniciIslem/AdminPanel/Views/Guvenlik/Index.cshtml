@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Üyelik İşlemlerim</h1>
+
+   <a  asp-controller="Guvenlik" asp-action="UyeOl">Üye Ol</a>   
+   <br>
+   <a  asp-controller="Guvenlik" asp-action="Giris">Giriş Yap</a>  
+      <br>
+   <a  asp-controller="Guvenlik" asp-action="Cikis">Çıkış</a>
+    <br>
+   <a  asp-controller="Guvenlik" asp-action="SifremiUnuttum">Şifremi Unuttum</a>
+
+   <br>
+   <hr/>
+   <h2>Bilgilendirme Sayfaları</h2>
+   <br>
+   <a  asp-controller="Guvenlik" asp-action="SifrenizGuncellendi">Sifreniz Guncellendi</a>
+   <br>
+   <a  asp-controller="Guvenlik" asp-action="MailDogrulamaYapildi">Mail Dogrulama Yapildi</a>
+   <br>
+   <a  asp-controller="Guvenlik" asp-action="ErisimYetkinizYok">Erişim Yetkiniz Yok</a>
+
+   

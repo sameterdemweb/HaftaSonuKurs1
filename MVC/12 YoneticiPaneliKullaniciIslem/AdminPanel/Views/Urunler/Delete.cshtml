@@ -1,0 +1,94 @@
+﻿@model AdminPanel.Entities.Urunler
+
+@{
+    ViewData["Title"] = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                </div><!-- /.col -->
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a asp-controller="Home" asp-action="">Anasayfa</a></li>
+                        <li class="breadcrumb-item active">Bloglar</li>
+                    </ol>
+                </div><!-- /.col -->
+
+            </div><!-- /.row -->
+            <div class="col-12">
+
+<h3>Silmek istediğinizden emin misiniz?</h3>
+<div>
+    <h4>Urunler</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Durum)
+        </dt>
+        <dd class = "col-sm-10">
+            @(Model.Durum==1?"Yayında":"Pasif")
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Baslik)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Baslik)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TopNote)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TopNote)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MiddleNote)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MiddleNote)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.BaseNote)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.BaseNote)
+        </dd>
+         <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Resim)
+        </dt>
+        <dd class = "col-sm-10">
+              <img src="~/yuklenenResimler/@Model.Resim" alt="" width="100px"/>              
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.KisaAciklama)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.KisaAciklama)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Icerik)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Icerik)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.UrunKategori)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.UrunKategori.KategoriAdi)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Sil" class="btn btn-danger" /> |
+         <a asp-action="Index" class="btn btn-warning" >İptal</a>
+    </form>
+</div>
+</div>
+        </div><!-- /.container-fluid -->
+    </div>
+

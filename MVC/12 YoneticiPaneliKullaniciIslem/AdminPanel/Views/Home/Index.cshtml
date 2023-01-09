@@ -1,0 +1,200 @@
+﻿@model HomeDashboardViewModel
+@{
+    ViewData["Title"] = "Dashboard";
+
+}
+
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0">ANASAYFA</h1>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a asp-controller="Home" asp-action="">Attar</a></li>
+              <li class="breadcrumb-item active">Ana Sayfa</li>
+            </ol>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <!-- Small boxes (Stat box) -->
+        <div class="row">
+          <div class="col-lg-3 col-6">
+            <!-- small box -->
+                <div class="small-box bg-danger">
+              <div class="inner">
+                <h3>@Model.SatisAdet</h3>
+
+                <p>KARGOLANMAYI BEKLEYEN</p>
+              </div>
+              <div class="icon">
+                <i class="ion ion-android-create"></i>
+              </div>
+                    <a asp-controller="Siparisler" asp-action="Index" class="small-box-footer">Daha fazla... <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+          </div>
+
+
+          <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-info">
+              <div class="inner">
+                <h3>@Model.KargodaAdet</h3>
+
+                <p>KARGODAKİ SATIŞ</p>
+              </div>
+              <div class="icon">
+                <i class="ion ion-android-create"></i>
+              </div>
+                    <a asp-controller="Siparisler" asp-action="Kargoda"  class="small-box-footer">Daha fazla... <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+          </div>
+             <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-warning">
+              <div class="inner">
+                <h3>@Model.TamamlananAdet</h3>
+                <p>TAMAMLANAN</p>
+              </div>
+              <div class="icon">
+                <i class="ion ion-android-create"></i>
+              </div>
+                    <a asp-controller="Siparisler" asp-action="Tamamlanmis"  class="small-box-footer">Daha fazla... <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+          </div>
+            <div class="col-lg-3 col-6">
+                <!-- small box -->
+                <div class="small-box bg-dark">
+                    <div class="inner">
+                        <h3>@Model.IptalAdet</h3>
+
+                        <p>İPTAL EDİLEN</p>
+                    </div>
+                    <div class="icon">
+                        <i class="ion ion-android-create"></i>
+                    </div>
+                    <a asp-controller="Siparisler" asp-action="IptalEdilen" class="small-box-footer">Daha fazla... <i class="fas fa-arrow-circle-right"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-6">
+                <!-- small box -->
+                <div class="small-box bg-info">
+                    <div class="inner">
+                        <h3>@Model.ToplamSiparis</h3>
+
+                        <p>TÜM SATIŞLAR</p>
+                    </div>
+                    <div class="icon">
+                        <i class="ion ion-android-create"></i>
+                    </div>
+                    <a asp-controller="Siparisler" asp-action="Index"  class="small-box-footer">Daha fazla... <i class="fas fa-arrow-circle-right"></i></a>
+                </div>
+            </div>
+          <!-- ./col -->
+          <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-success">
+              <div class="inner">
+                <h3>@Model.UrunAdet<sup style="font-size: 20px"></sup></h3>
+
+                <p>ÜRÜN</p>
+              </div>
+              <div class="icon">
+                <i class="ion ion-android-bookmark"></i>
+              </div>
+              <a href="Urunler/Index" class="small-box-footer">Daha fazla... <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+          </div>
+          <!-- ./col -->
+          <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-warning">
+              <div class="inner">
+                <h3>@Model.UrunFotograflari</h3>
+
+                <p>ÜRÜN FOTOĞRAFLARI</p>
+              </div>
+              <div class="icon">
+                <i class="ion ion-android-camera"></i>
+              </div>
+              <a href="Urunler/Index" class="small-box-footer">Daha fazla... <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+          </div>
+          <!-- ./col -->
+          <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-danger">
+              <div class="inner">
+                <h3>@Model.UyelerAdet</h3>
+
+                <p>KAYITLI ÜYE</p>
+              </div>
+              <div class="icon">
+                <i class="ion ion-android-contacts"></i>
+              </div>
+              <a href="Uyeler" class="small-box-footer">Daha fazla... <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+          </div>
+          <!-- ./col -->
+        </div>
+        <!-- /.row -->
+        <!-- Main row -->
+        
+        <!-- /.row (main row) -->
+      </div><!-- /.container-fluid -->
+    </section>
+    <section class="content">
+
+      <!-- Default box -->
+      <div class="card card-solid">
+        <div class="card-body pb-0">
+          <div class="row" style="display:none">
+            <div class="col-12 col-sm-6 col-md-6 d-flex align-items-stretch flex-column " >
+              <div class="card bg-light d-flex flex-fill">
+                <div class="card-header text-muted border-bottom-0">
+                  <h2>Full Stack Web Developer</h2>
+                </div>
+                <div class="card-body pt-0">
+                  <div class="row">
+                    <div class="col-7">
+                      <h2 class="lead"><b>Samet ERDEM</b></h2>
+                      <p class="text-muted text-sm"><b>Hakkında: </b> Web Designer / UX / Web tabanlı uygulama geliştirici / Kahve Aşığı </p>
+                      <ul class="ml-4 mb-0 fa-ul text-muted">
+                        <li ><span class="fa-li"><i class="fas fa-lg fa-building"></i></span> Addres: Zafer Mahallesi Adil Bey Ara sok.</li>
+                        <li class=" mt-4"><span class="fa-li"><i class="fas fa-lg fa-phone"></i></span> Tel: + 90 536 032 95 32</li>
+                        <li class=" mt-4"><span class="fa-li"><i class="fas fa-lg fa-envelope  "></i></span> Tel: admin@sameterdem.com.tr</li>
+                      </ul>
+                    </div>
+                    <div class="col-5 text-center">
+                      <img src="../../dist/img/sameterdem.jpg" alt="user-avatar" class="img-circle img-fluid">
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="text-right">
+                    <a href="https://www.sameterdem.com.tr" target="_blank" class="btn btn-sm bg-teal">
+                      <i class="fas fa-comments"></i> Web Site
+                    </a>
+                    <a href="https://www.linkedin.com/in/samet-erdem-31bb7a55/" target="_blank" class="btn btn-sm btn-primary">
+                      <i class="fas fa-user"></i> Linkedin 
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.card -->
+
+    </section>
+    <!-- /.content -->
+

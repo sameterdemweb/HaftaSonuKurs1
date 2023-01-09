@@ -1,0 +1,57 @@
+﻿@model AdminPanel.Entities.BlogKategorileri
+
+@{
+    ViewData["Title"] = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                </div><!-- /.col -->
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a asp-controller="Home" asp-action="">Anasayfa</a></li>
+                        <li class="breadcrumb-item active"><a asp-controller="BlogKategorileri" asp-action="">Blog Kategorileri</a></li>
+                        <li class="breadcrumb-item active">@Model.KategoriAdi</li>
+                    </ol>
+                </div><!-- /.col -->
+
+            </div><!-- /.row -->
+            <div class="col-12">
+
+                <h3>Silmek istediğinizden emin misiniz?</h3>
+                <div>
+                    <hr />
+                    <dl class="row">
+                        <dt class="col-sm-2">
+                            @Html.DisplayNameFor(model => model.KategoriAdi)
+                        </dt>
+                        <dd class="col-sm-10">
+                            @Html.DisplayFor(model => model.KategoriAdi)
+                        </dd>
+                        <dt class="col-sm-2">
+                            @Html.DisplayNameFor(model => model.Durum)
+                        </dt>
+                        <dd class="col-sm-10">
+                            @(Model.Durum==1?"Yayında":"Pasif")
+                        </dd>
+                        <dt class="col-sm-2">
+                            @Html.DisplayNameFor(model => model.BlogKategori)
+                        </dt>
+                        <dd class="col-sm-10">
+                            @Html.DisplayFor(model => model.BlogKategori.KategoriAdi)
+                        </dd>
+                    </dl>
+
+                    <form asp-action="Delete">
+                        <input type="hidden" asp-for="Id" />
+                        <input type="submit" value="SİL" class="btn btn-danger" /> |
+                        <a class="btn btn-info text-light" asp-action="Index">Listeye Dön</a>
+                    </form>
+                </div>
+            </div>
+        </div><!-- /.container-fluid -->
+    </div>

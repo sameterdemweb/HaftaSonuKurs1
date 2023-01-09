@@ -72,19 +72,23 @@ namespace WebSitePanelim.Controllers
         {
             if (ModelState.IsValid)
             {
-                // wwwroot/YuklenenResimler klasörüne resim yükleme işlemi
-                string wwwRootPath = _host.WebRootPath;
-                string fileName = Path.GetFileNameWithoutExtension(icerik.ResimDosya.FileName);//Dosya Adını Aldık.
-                string extension = Path.GetExtension(icerik.ResimDosya.FileName);//Yüklenen Resmin Uzantısını Aldık.
-                fileName = fileName + DateTime.Now.ToString("yymmssfff") + extension;
-                string path = Path.Combine(wwwRootPath, "Upload/", fileName);
-                using (var fileStream = new FileStream(path, FileMode.Create))
+                if (icerik.ResimDosya != null)
                 {
-                    await icerik.ResimDosya.CopyToAsync(fileStream);
+                    // wwwroot/YuklenenResimler klasörüne resim yükleme işlemi
+                    string wwwRootPath = _host.WebRootPath;
+                    string fileName = Path.GetFileNameWithoutExtension(icerik.ResimDosya.FileName);//Dosya Adını Aldık.
+                    string extension = Path.GetExtension(icerik.ResimDosya.FileName);//Yüklenen Resmin Uzantısını Aldık.
+                    fileName = fileName + DateTime.Now.ToString("yymmssfff") + extension;
+                    string path = Path.Combine(wwwRootPath, "Upload/", fileName);
+                    using (var fileStream = new FileStream(path, FileMode.Create))
+                    {
+                        await icerik.ResimDosya.CopyToAsync(fileStream);
+                    }
+
+                    icerik.Resim = fileName;
+                    // wwwroot/YuklenenResimler klasörüne resim yükleme işlemi
                 }
 
-                icerik.Resim = fileName;
-                // wwwroot/YuklenenResimler klasörüne resim yükleme işlemi
                 _context.Add(icerik);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));

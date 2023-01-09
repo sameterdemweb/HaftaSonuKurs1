@@ -68,8 +68,14 @@
                             @Html.DisplayFor(modelItem => item.Baslik)
                         </td>
                         <td>
-                          
-                            <img src="~/Upload/@item.Resim" width="100px"/>
+                            @if (item.Resim != null && item.Resim != "")
+                            {
+                                <img src="~/Upload/@item.Resim" width="100px"/>
+                            }
+                            else
+                            {
+                                <img src="~/Upload/resimYok.png" width="100px" />
+                            }
                         </td>
                         <td>
                             @Html.DisplayFor(modelItem => item.Tarih)
