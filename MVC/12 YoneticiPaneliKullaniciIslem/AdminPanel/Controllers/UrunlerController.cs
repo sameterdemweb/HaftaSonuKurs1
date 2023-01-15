@@ -11,7 +11,6 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace AdminPanel.Controllers
 {
-    [Authorize(Roles = "Admin")]// Class tepesine koyarsak bunu tüm mehodlarda kullanıcı girişi ister.
     public class UrunlerController : Controller
     {
         private readonly AdminPanelContext _context;
@@ -24,6 +23,7 @@ namespace AdminPanel.Controllers
         }
 
         // GET: Urunler
+        [Authorize]
         public async Task<IActionResult> Index()
         {
             var adminPanelContext = _context.Urunler.Include(u => u.UrunKategori);
@@ -31,6 +31,7 @@ namespace AdminPanel.Controllers
         }
 
         // GET: Urunler/Details/5
+        [Authorize(Roles = "Uye,Admin,Editör")]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.Urunler == null)
@@ -49,8 +50,9 @@ namespace AdminPanel.Controllers
             return View(urunler);
         }
 
-     
+
         // GET: Urunler/Create
+        [Authorize(Roles = "Admin")]
         public IActionResult Create()
         {
             ViewData["KategoriId"] = new SelectList(_context.UrunKategorileri, "Id", "KategoriAdi");
@@ -62,6 +64,7 @@ namespace AdminPanel.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Create([Bind("Id,KategoriId,Durum,Baslik,StandartAciklama, StandartFiyat,TopNote,MiddleNote,BaseNote,ResimDosya,KisaAciklama,Icerik")] Urunler urunler)
         {
             if (ModelState.IsValid)
@@ -93,6 +96,7 @@ namespace AdminPanel.Controllers
         }
 
         // GET: Urunler/Edit/5
+        [Authorize(Roles = "Admin,Editör")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.Urunler == null)
@@ -119,6 +123,7 @@ namespace AdminPanel.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin,Editör")]
         public async Task<IActionResult> Edit(int id, [Bind("Id,KategoriId,Durum,Baslik,StandartAciklama, StandartFiyat,TopNote,MiddleNote,BaseNote,ResimDosya,KisaAciklama,Icerik")] Urunler urunler)
         {
             if (id != urunler.Id)
@@ -173,6 +178,7 @@ namespace AdminPanel.Controllers
         }
 
         // GET: Urunler/Delete/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.Urunler == null)
@@ -194,6 +200,7 @@ namespace AdminPanel.Controllers
         // POST: Urunler/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             if (_context.Urunler == null)

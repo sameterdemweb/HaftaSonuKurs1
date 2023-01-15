@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace AdminPanel.Controllers
 {
+
     public class GuvenlikController : Controller
     {
 
@@ -22,7 +23,7 @@ namespace AdminPanel.Controllers
             _signInManager = signInManager;
         }
         #endregion
-
+        [Authorize(Roles = "Admin")]// Class tepesine koyarsak bunu tüm mehodlarda kullanıcı girişi ister.
         public IActionResult Index()
         {
             return View(_userManager.Users);
@@ -63,7 +64,7 @@ namespace AdminPanel.Controllers
                         3. Parametre Beni Hatırla
                         4. Parametre Eğer lockout yani program.cs üzerinde tanımlanan yanlış giriş yapılırsa "5" adet kadar sistemden bir süreliğine uzaklaştır işlemi tanımlanmış ise. true yaparsak sisteme giremez ve lockout işlemi aktif olur. 
                     */
-                    var sonuc = await _signInManager.PasswordSignInAsync(loginViewModel.UserName, loginViewModel.Password, false, false);
+                    var sonuc = await _signInManager.PasswordSignInAsync(loginViewModel.UserName, loginViewModel.Password, true, false);
 
                     if (sonuc.Succeeded)//Eğer kullanıcı var ise
                     {
@@ -93,7 +94,7 @@ namespace AdminPanel.Controllers
 
         #endregion
 
-        [Authorize(Roles = "Admin")]// Class tepesine koyarsak bunu tüm mehodlarda kullanıcı girişi ister.
+       [Authorize(Roles = "Admin")]// Class tepesine koyarsak bunu tüm mehodlarda kullanıcı girişi ister.
         #region Üye Olma İşlemi Register
         // Class tepesine koyarsak bunu tüm mehodlarda kullanıcı girişi ister.
         public IActionResult UyeOl()
@@ -123,7 +124,9 @@ namespace AdminPanel.Controllers
             var kullanici = new AppIdentityUser
             { // Kullanıcı için bir nesne oluşturuyoruz. modelden gelen değeri tanımladık.
                 UserName = registerViewModel.UserName,
+                AdSoyad= registerViewModel.UserName,
                 Email = registerViewModel.Email,
+                AdminMi=1
             };
        
             kullanici.EmailConfirmed = true;
@@ -154,7 +157,7 @@ namespace AdminPanel.Controllers
                 #region Email Gönderme işlemi yapıLAcak ve DonusUrl gönderilecek.
                 //Mail Gönderme! işlemi burada yapılacak.! // EMAİL SAĞLAYICI KULLANIMI GEREKLİ
 
-                    //MailIslemleri.MailGonderme(MailIcerik, "Üye Aktivasyon", kullanici.Email);
+                //MailIslemleri.MailGonderme(MailIcerik, "Üye Aktivasyon", kullanici.Email);
 
                 #endregion
 

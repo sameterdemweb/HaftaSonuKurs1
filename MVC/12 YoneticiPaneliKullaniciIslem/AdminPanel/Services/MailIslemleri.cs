@@ -16,7 +16,7 @@ namespace AdminPanel.Services
             smtp.Port = 587; // Outlook için 587
             smtp.EnableSsl = false; // Sunucu SSL kullanıyorsa True olacak
                                     // mail adresimizin kullanıcı adı ve parolasını yazıyoruz
-            smtp.Credentials = new System.Net.NetworkCredential("kurs@sanalyonet.com", "SAMETerdem202");
+            smtp.Credentials = new System.Net.NetworkCredential("kurs@sanalyonet.com", "123123112312");
 
 
             // eposta adında bir mail nesnesi oluştur
