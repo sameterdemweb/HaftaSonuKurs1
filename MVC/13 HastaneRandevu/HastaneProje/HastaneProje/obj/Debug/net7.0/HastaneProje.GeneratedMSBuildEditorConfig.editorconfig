@@ -56,12 +56,104 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9sdW1sZXJcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/13 HastaneRandevu/HastaneProje/HastaneProje/Views/HastaneKasaGelir/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFzdGFuZUthc2FHZWxpclxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/13 HastaneRandevu/HastaneProje/HastaneProje/Views/HastaneKasaGelir/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFzdGFuZUthc2FHZWxpclxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/13 HastaneRandevu/HastaneProje/HastaneProje/Views/HastaneKasaGelir/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFzdGFuZUthc2FHZWxpclxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/13 HastaneRandevu/HastaneProje/HastaneProje/Views/HastaneKasaGelir/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFzdGFuZUthc2FHZWxpclxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/13 HastaneRandevu/HastaneProje/HastaneProje/Views/HastaneKasaGelir/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFzdGFuZUthc2FHZWxpclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/13 HastaneRandevu/HastaneProje/HastaneProje/Views/HastaneKasaGider/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFzdGFuZUthc2FHaWRlclxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/13 HastaneRandevu/HastaneProje/HastaneProje/Views/HastaneKasaGider/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFzdGFuZUthc2FHaWRlclxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/13 HastaneRandevu/HastaneProje/HastaneProje/Views/HastaneKasaGider/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFzdGFuZUthc2FHaWRlclxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/13 HastaneRandevu/HastaneProje/HastaneProje/Views/HastaneKasaGider/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFzdGFuZUthc2FHaWRlclxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/13 HastaneRandevu/HastaneProje/HastaneProje/Views/HastaneKasaGider/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFzdGFuZUthc2FHaWRlclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/AspNet/egitim/HaftaSonuKurs/MVC/13 HastaneRandevu/HastaneProje/HastaneProje/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/AspNet/egitim/HaftaSonuKurs/MVC/13 HastaneRandevu/HastaneProje/HastaneProje/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/13 HastaneRandevu/HastaneProje/HastaneProje/Views/Randevular/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmFuZGV2dWxhclxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/13 HastaneRandevu/HastaneProje/HastaneProje/Views/Randevular/CreateHastaRandevu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmFuZGV2dWxhclxDcmVhdGVIYXN0YVJhbmRldnUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/13 HastaneRandevu/HastaneProje/HastaneProje/Views/Randevular/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmFuZGV2dWxhclxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/13 HastaneRandevu/HastaneProje/HastaneProje/Views/Randevular/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmFuZGV2dWxhclxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/13 HastaneRandevu/HastaneProje/HastaneProje/Views/Randevular/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmFuZGV2dWxhclxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/13 HastaneRandevu/HastaneProje/HastaneProje/Views/Randevular/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmFuZGV2dWxhclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/13 HastaneRandevu/HastaneProje/HastaneProje/Views/Randevular/RandevuOlusturuldu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmFuZGV2dWxhclxSYW5kZXZ1T2x1c3R1cnVsZHUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/13 HastaneRandevu/HastaneProje/HastaneProje/Views/Randevular/RandevuOlusturulduYetkili.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmFuZGV2dWxhclxSYW5kZXZ1T2x1c3R1cnVsZHVZZXRraWxpLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/13 HastaneRandevu/HastaneProje/HastaneProje/Views/RandevuSaatleri/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmFuZGV2dVNhYXRsZXJpXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/13 HastaneRandevu/HastaneProje/HastaneProje/Views/RandevuSaatleri/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmFuZGV2dVNhYXRsZXJpXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/13 HastaneRandevu/HastaneProje/HastaneProje/Views/RandevuSaatleri/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmFuZGV2dVNhYXRsZXJpXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/13 HastaneRandevu/HastaneProje/HastaneProje/Views/RandevuSaatleri/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmFuZGV2dVNhYXRsZXJpXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/13 HastaneRandevu/HastaneProje/HastaneProje/Views/RandevuSaatleri/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmFuZGV2dVNhYXRsZXJpXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/AspNet/egitim/HaftaSonuKurs/MVC/13 HastaneRandevu/HastaneProje/HastaneProje/Views/Roller/Create.cshtml]
@@ -90,6 +182,58 @@ build_metadata.AdditionalFiles.CssScope =
 
 [E:/AspNet/egitim/HaftaSonuKurs/MVC/13 HastaneRandevu/HastaneProje/HastaneProje/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/13 HastaneRandevu/HastaneProje/HastaneProje/Views/UyeIslemleri/DoktorEkle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXllSXNsZW1sZXJpXERva3RvckVrbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/13 HastaneRandevu/HastaneProje/HastaneProje/Views/UyeIslemleri/ErisimYetkinizYok.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXllSXNsZW1sZXJpXEVyaXNpbVlldGtpbml6WW9rLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/13 HastaneRandevu/HastaneProje/HastaneProje/Views/UyeIslemleri/Giris.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXllSXNsZW1sZXJpXEdpcmlzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/13 HastaneRandevu/HastaneProje/HastaneProje/Views/UyeIslemleri/HastaKayit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXllSXNsZW1sZXJpXEhhc3RhS2F5aXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/13 HastaneRandevu/HastaneProje/HastaneProje/Views/UyeIslemleri/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXllSXNsZW1sZXJpXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/13 HastaneRandevu/HastaneProje/HastaneProje/Views/UyeIslemleri/MailDogrulamaYapildi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXllSXNsZW1sZXJpXE1haWxEb2dydWxhbWFZYXBpbGRpLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/13 HastaneRandevu/HastaneProje/HastaneProje/Views/UyeIslemleri/SekreterEkle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXllSXNsZW1sZXJpXFNla3JldGVyRWtsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/13 HastaneRandevu/HastaneProje/HastaneProje/Views/UyeIslemleri/SifremiUnuttum.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXllSXNsZW1sZXJpXFNpZnJlbWlVbnV0dHVtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/13 HastaneRandevu/HastaneProje/HastaneProje/Views/UyeIslemleri/SifrenizGuncellendi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXllSXNsZW1sZXJpXFNpZnJlbml6R3VuY2VsbGVuZGkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/13 HastaneRandevu/HastaneProje/HastaneProje/Views/UyeIslemleri/SifreSifirlamaMaileGonderildi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXllSXNsZW1sZXJpXFNpZnJlU2lmaXJsYW1hTWFpbGVHb25kZXJpbGRpLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/13 HastaneRandevu/HastaneProje/HastaneProje/Views/UyeIslemleri/SifreSifirlamaYap.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXllSXNsZW1sZXJpXFNpZnJlU2lmaXJsYW1hWWFwLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/13 HastaneRandevu/HastaneProje/HastaneProje/Views/UyeIslemleri/UyelikOnaylamaYapmalisiniz.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXllSXNsZW1sZXJpXFV5ZWxpa09uYXlsYW1hWWFwbWFsaXNpbml6LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/13 HastaneRandevu/HastaneProje/HastaneProje/Views/UyeIslemleri/UyeOlBashekim.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXllSXNsZW1sZXJpXFV5ZU9sQmFzaGVraW0uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/AspNet/egitim/HaftaSonuKurs/MVC/13 HastaneRandevu/HastaneProje/HastaneProje/Views/_ViewImports.cshtml]

@@ -18,6 +18,8 @@ namespace HastaneProje.Identity
 
         [Display(Name = "Cinsiyet")]
         public string? Cinsiyet { get; set; }
+
+        [Display(Name = "Cinsiyet")]
         [NotMapped]
         public virtual List<Randevular>? HastaRandevulari { get; set; }
 

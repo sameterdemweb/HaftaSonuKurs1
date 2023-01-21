@@ -27,12 +27,11 @@ namespace HastaneProje.Entities
         public virtual RandevuSaatleri? RandevuSaati { get; set; }
 
         [ForeignKey("HastaId")]
-        [NotMapped]
 
+        [NotMapped]
         public virtual AppIdentityUser? IdentityUserHasta { get; set; }
 
         [ForeignKey("DoktorId")]
-
         [NotMapped]
         public virtual AppIdentityUser? IdentityUserDoktor { get; set; }
     }

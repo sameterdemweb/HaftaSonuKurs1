@@ -1,9 +1,12 @@
 ﻿using HastaneProje.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Data;
 using System.Diagnostics;
 
 namespace HastaneProje.Controllers
 {
+    [Authorize(Roles = "Başhekim,Doktorlar,Sekreter")]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;

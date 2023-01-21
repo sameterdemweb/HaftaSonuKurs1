@@ -1,0 +1,62 @@
+﻿@model HastaneProje.Entities.Randevular
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Create</title>
+</head>
+<body>
+
+<h4>Randevular</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                @if (ViewData["Hata"] != null)
+                {
+                    <div class="text-danger">@ViewData["Hata"]</div>
+                }
+            <div class="form-group">
+                <label asp-for="HastaId" class="control-label"></label>
+                <select asp-for="HastaId" class ="form-control" asp-items="ViewBag.HastaId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="DoktorId" class="control-label"></label>
+                <select asp-for="DoktorId" class ="form-control" asp-items="ViewBag.DoktorId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="SaatId" class="control-label"></label>
+                <select asp-for="SaatId" class ="form-control" asp-items="ViewBag.SaatId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Ucret" class="control-label"></label>
+                <input asp-for="Ucret" class="form-control" />
+                <span asp-validation-for="Ucret" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Aciklama" class="control-label"></label>
+                <input asp-for="Aciklama" class="form-control" />
+                <span asp-validation-for="Aciklama" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Tarih" class="control-label"></label>
+                <input asp-for="Tarih" class="form-control" />
+                <span asp-validation-for="Tarih" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+</body>
+</html>

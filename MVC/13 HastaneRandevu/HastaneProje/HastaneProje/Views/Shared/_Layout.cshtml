@@ -1,4 +1,8 @@
-﻿<!DOCTYPE html>
+﻿@using HastaneProje.Identity;
+@using Microsoft.AspNetCore.Identity;
+@inject SignInManager<AppIdentityUser> SignInManager
+@inject UserManager<AppIdentityUser> UserManager
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -7,12 +11,13 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/HastaneProje.styles.css" asp-append-version="true" />
+    <link rel="icon" type="image/png" href="https://www.sameterdem.com.tr/images/favicon.png" />
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">HastaneProje</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"> <img class="animation__shake" src="~/dist/img/loading2.gif" alt="AS" style="width:50px;"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -32,9 +37,34 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Bolumler" asp-action="Index">Bölümler</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="RandevuSaatleri" asp-action="Index">Randevu Saatleri</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="UyeIslemleri" asp-action="Index">Üyelik İşlemleri</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Randevular" asp-action="Index">Randevular</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Randevular" asp-action="CreateHastaRandevu">Kendime Randevu</a>
+                        </li>
+                             <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="HastaneKasaGelir" asp-action="Index">Gelirler</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="HastaneKasaGider" asp-action="Index">Giderler</a>
                         </li>
                     </ul>
+
+                    @if (User.Identity.IsAuthenticated) // Eğer Kullanıcı Giriş Yapmış İse
+                    {
+                        var girisYapanKullanici = await UserManager.GetUserAsync(User);
+                        <div style="float:right:font-size:20px;">
+                          Hoşgeldiniz Sayın;  @girisYapanKullanici.AdSoyad
+                        </div>
+                    }
+
+
                 </div>
             </div>
         </nav>

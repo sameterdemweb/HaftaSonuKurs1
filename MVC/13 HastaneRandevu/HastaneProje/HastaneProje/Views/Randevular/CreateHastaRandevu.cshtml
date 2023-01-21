@@ -1,0 +1,81 @@
+﻿@model HastaneProje.Entities.Randevular
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yönetim Sistemi</title>
+
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="~/plugins/fontawesome-free/css/all.min.css">
+    <!-- icheck bootstrap -->
+    <link rel="stylesheet" href="~/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="~/dist/css/adminlte.min.css">
+</head>
+<body class="hold-transition login-page">
+    <div class="login-box">
+        <!-- /.login-logo -->
+        <div class="card card-outline card-primary">
+            <div class="card-header text-center">
+                <a href="#" class="h1">
+                    <img class="animation__shake" src="~/dist/img/loading2.gif" alt="AS" style="width:200px;">
+                </a>
+            </div>
+            <div class="card-body">
+                <p class="login-box-msg">Aşağıdan randevu bilgilerini alabilirsiniz.</p>
+
+                <form asp-action="CreateHastaRandevu">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    @if (ViewData["Hata"] != null)
+                    {
+                        <div class="text-danger">@ViewData["Hata"]</div>
+                    }
+                    <div class="form-group">
+                        <label asp-for="DoktorId" class="control-label"></label>
+                        <select asp-for="DoktorId" class="form-control" asp-items="ViewBag.DoktorId"></select>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="SaatId" class="control-label"></label>
+                        <select asp-for="SaatId" class="form-control" asp-items="ViewBag.SaatId"></select>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Ucret" class="control-label"></label>
+                        <input asp-for="Ucret" class="form-control" />
+                        <span asp-validation-for="Ucret" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Aciklama" class="control-label"></label>
+                        <input asp-for="Aciklama" class="form-control" />
+                        <span asp-validation-for="Aciklama" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Tarih" class="control-label"></label>
+                        <input asp-for="Tarih" class="form-control" />
+                        <span asp-validation-for="Tarih" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Create" class="btn btn-primary" />
+                    </div>
+                </form>
+            </div>
+            <!-- /.card-body -->
+        </div>
+        <!-- /.card -->
+    </div>
+    <!-- /.login-box -->
+    <!-- jQuery -->
+    <script src="~/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="~/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="~/dist/js/adminlte.min.js"></script>
+</body>
+</html>

@@ -6,9 +6,12 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using HastaneProje.Identity;
+using Microsoft.AspNetCore.Authorization;
+using System.Data;
 
 namespace HastaneProje.Controllers
 {
+    [Authorize(Roles = "Başhekim")]
     public class RollerController : Controller
     {
         private readonly AppIdentityDbContext _context;

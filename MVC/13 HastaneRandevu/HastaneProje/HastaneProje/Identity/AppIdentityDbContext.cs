@@ -16,5 +16,7 @@ namespace HastaneProje.Identity
         public DbSet<Bolumler> Bolumler { get; set; }
         public DbSet<Randevular> Randevular { get; set; }
         public DbSet<RandevuSaatleri> RandevuSaatleri { get; set; }
+        public DbSet<HastaneKasaGelir> HastaneKasaGelir { get; set; }
+        public DbSet<HastaneKasaGider> HastaneKasaGider { get; set; }
     }
 }

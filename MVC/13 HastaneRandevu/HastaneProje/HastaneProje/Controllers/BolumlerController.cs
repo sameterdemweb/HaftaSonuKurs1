@@ -7,9 +7,12 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using HastaneProje.Entities;
 using HastaneProje.Identity;
+using Microsoft.AspNetCore.Authorization;
+using System.Data;
 
 namespace HastaneProje.Controllers
 {
+    [Authorize(Roles = "Başhekim,Doktorlar,Sekreter")]
     public class BolumlerController : Controller
     {
         private readonly AppIdentityDbContext _context;
