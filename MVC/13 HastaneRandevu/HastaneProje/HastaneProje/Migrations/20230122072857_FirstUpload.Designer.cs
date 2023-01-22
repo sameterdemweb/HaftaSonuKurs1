@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace HastaneProje.Migrations
 {
     [DbContext(typeof(AppIdentityDbContext))]
-    [Migration("20230115093556_HastaneVtOlustur")]
-    partial class HastaneVtOlustur
+    [Migration("20230122072857_FirstUpload")]
+    partial class FirstUpload
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -64,6 +64,52 @@ namespace HastaneProje.Migrations
                     b.HasIndex("BinaId");
 
                     b.ToTable("Bolumler");
+                });
+
+            modelBuilder.Entity("HastaneProje.Entities.HastaneKasaGelir", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Aciklama")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("Tarih")
+                        .HasColumnType("datetime2");
+
+                    b.Property<double>("Ucret")
+                        .HasColumnType("float");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("HastaneKasaGelir");
+                });
+
+            modelBuilder.Entity("HastaneProje.Entities.HastaneKasaGider", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Aciklama")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("Tarih")
+                        .HasColumnType("datetime2");
+
+                    b.Property<double>("Ucret")
+                        .HasColumnType("float");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("HastaneKasaGider");
                 });
 
             modelBuilder.Entity("HastaneProje.Entities.RandevuSaatleri", b =>

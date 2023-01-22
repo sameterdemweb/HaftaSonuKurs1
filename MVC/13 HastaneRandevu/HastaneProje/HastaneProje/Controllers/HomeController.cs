@@ -1,4 +1,5 @@
-﻿using HastaneProje.Models;
+﻿using HastaneProje.Identity;
+using HastaneProje.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Data;
@@ -10,15 +11,25 @@ namespace HastaneProje.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly AppIdentityDbContext _context;
 
-        public HomeController(ILogger<HomeController> logger)
+
+        public HomeController(AppIdentityDbContext context, ILogger<HomeController> logger)
         {
             _logger = logger;
+            _context = context;
         }
 
         public IActionResult Index()
         {
-            return View();
+            AnaSayfaRaporlari raporBilgi = new();
+            raporBilgi.UyeSayisi = _context.IdentityUser.Count();
+            raporBilgi.RandevuSayisi = _context.Randevular.Count();
+            raporBilgi.GelirToplam = _context.HastaneKasaGelir.Sum(g=>g.Ucret);
+            raporBilgi.GiderToplam = _context.HastaneKasaGider.Sum(g=>g.Ucret);
+            raporBilgi.KarBilgisi = raporBilgi.GelirToplam - raporBilgi.GiderToplam;
+
+            return View(raporBilgi);
         }
 
         public IActionResult Privacy()

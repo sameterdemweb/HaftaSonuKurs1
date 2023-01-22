@@ -1,7 +1,76 @@
-﻿@{
+﻿@model AnaSayfaRaporlari
+@{
     ViewData["Title"] = "Hastane Randevu Yönetim Paneli";
 }
 
+<div>
+    <div class="row gx-5">
+        <div class="col-xxl-3 col-md-6 mb-5">
+            <div class="card card-raised bg-primary text-white">
+                <div class="card-body px-4">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <div class="me-2">
+                            <div class="display-5 text-white">@Model.UyeSayisi</div>
+                            <div class="card-text">Toplam Üye</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xxl-3 col-md-6 mb-5">
+            <div class="card card-raised bg-warning text-white">
+                <div class="card-body px-4">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <div class="me-2">
+                            <div class="display-5 text-white">@Model.RandevuSayisi</div>
+                            <div class="card-text">Toplam Randevu</div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="col-xxl-3 col-md-6 mb-5">
+            <div class="card card-raised bg-secondary text-white">
+                <div class="card-body px-4">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <div class="me-2">
+                            <div class="display-5 text-white">@Model.GelirToplam</div>
+                            <div class="card-text">Toplam Gelir</div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="col-xxl-3 col-md-6 mb-5">
+            <div class="card card-raised bg-info text-white">
+                <div class="card-body px-4">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <div class="me-2">
+                            <div class="display-5 text-white">@Model.GiderToplam</div>
+                            <div class="card-text">Toplam Gider</div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xxl-3 col-md-6 mb-5">
+            <div class="card card-raised bg-success text-white">
+                <div class="card-body px-4">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <div class="me-2">
+                            <div class="display-5 text-white">@Model.KarBilgisi</div>
+                            <div class="card-text">Toplam Kâr</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
 <div class="text-center">
     <h1 class="display-4">Hoşgeldiniz.</h1>
    <div class="text-center">

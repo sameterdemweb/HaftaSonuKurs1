@@ -5,11 +5,8 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Index</h1>
+<h1>Lütfen randevu almak istediğiniz bölümü seçin.</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
 <table class="table">
     <thead>
         <tr>
@@ -26,15 +23,14 @@
 @foreach (var item in Model) {
         <tr>
             <td>
+                
                 @Html.DisplayFor(modelItem => item.BolumAdi)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Bina.BinaAdi)
             </td>
             <td>
-                    <a asp-action="Edit" asp-route-id="@item.Id" >Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                <a asp-action="DoktorGetir" class="btn btn-success" asp-route-id="@item.Id">Bölüme Randevu Al</a>
             </td>
         </tr>
 }

@@ -3,6 +3,7 @@ using HastaneProje.Models.UyeIslemleri;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Data;
 
 namespace HastaneProje.Controllers
@@ -14,10 +15,12 @@ namespace HastaneProje.Controllers
         #region UserManager ve SignInManager tanımlarının tanımlanması.
         //Injection yapmak için değişkenlerimizi ilgili tiplerde tanımlıyoruz.
         UserManager<AppIdentityUser> _userManager;
+        private readonly AppIdentityDbContext _context;
         SignInManager<AppIdentityUser> _signInManager;
 
-        public UyeIslemleriController(UserManager<AppIdentityUser> userManager, SignInManager<AppIdentityUser> signInManager)//ctor ile yapı denetim bloğu oluşturduk ve içerisinde injection edilen değerlimizi ilgili değişkenlere alıyoruz artık bu değişkenler üzerinden işlemlerimizi gerçekleştirebiliriz.
+        public UyeIslemleriController(AppIdentityDbContext context, UserManager<AppIdentityUser> userManager, SignInManager<AppIdentityUser> signInManager)//ctor ile yapı denetim bloğu oluşturduk ve içerisinde injection edilen değerlimizi ilgili değişkenlere alıyoruz artık bu değişkenler üzerinden işlemlerimizi gerçekleştirebiliriz.
         {
+            _context = context;
             _userManager = userManager;
             _signInManager = signInManager;
         }
@@ -88,7 +91,7 @@ namespace HastaneProje.Controllers
         public async Task<IActionResult> Cikis()
         {
             await _signInManager.SignOutAsync();
-            return RedirectToAction("UyeIslemleri", "Giris");
+            return RedirectToAction("Giris", "UyeIslemleri");
         }
 
         #endregion
@@ -96,14 +99,14 @@ namespace HastaneProje.Controllers
         // Authorize(Roles = "Başhekim,Doktorlar,Sekreter")
         #region Başhekim Üye Olma İşlemi Register
         // Class tepesine koyarsak bunu tüm mehodlarda kullanıcı girişi ister.
-        [Authorize(Roles = "Başhekim")]
+       [Authorize(Roles = "Başhekim")]
         public IActionResult UyeOlBashekim()
         {
 
             return View();
         }
 
-      [Authorize(Roles = "Başhekim")]
+         [Authorize(Roles = "Başhekim")]
         //Kayıt Viewinden Gönderim Sağlandığında aksiyon alacağı methodu tanımlıyoruz.
         // Class tepesine koyarsak bunu tüm mehodlarda kullanıcı girişi ister.
         [HttpPost]
@@ -173,12 +176,12 @@ namespace HastaneProje.Controllers
 
         #endregion
 
-        #region Doktor Üye Olma İşlemi Register
+        #region DOKTOR Üye Olma İşlemi Register
         // Class tepesine koyarsak bunu tüm mehodlarda kullanıcı girişi ister.
         [Authorize(Roles = "Başhekim")]
         public IActionResult DoktorEkle()
         {
-
+            ViewData["BolumId"] = new SelectList(_context.Bolumler, "Id", "BolumAdi");
             return View();
         }
 
@@ -205,6 +208,7 @@ namespace HastaneProje.Controllers
                 UserName = registerViewModel.UserName,
                 AdSoyad = registerViewModel.AdSoyad,
                 Email = registerViewModel.Email,
+                BolumId=registerViewModel.BolumId
 
             };
 
@@ -224,7 +228,7 @@ namespace HastaneProje.Controllers
 
                 #region kullanıcı yetkilendirme işlemleri
                 /* KULLANICI ROLE YETKİLENDİRME İŞLEMLERİ */
-                await _userManager.AddToRoleAsync(kullanici, "Doktor");
+                await _userManager.AddToRoleAsync(kullanici, "Doktorlar");
                 /* KULLANICI ROLE YETKİLENDİRME İŞLEMLERİ */
                 #endregion
 
@@ -239,7 +243,7 @@ namespace HastaneProje.Controllers
 
                 #endregion
 
-                return RedirectToAction("Giris", "UyeIslemleri");
+                return RedirectToAction("DoktorEkle", "UyeIslemleri");
 
             }
             else
@@ -253,7 +257,7 @@ namespace HastaneProje.Controllers
         #endregion
 
 
-        #region Doktor Üye Olma İşlemi Register
+        #region SEKRETER Üye Olma İşlemi Register
         // Class tepesine koyarsak bunu tüm mehodlarda kullanıcı girişi ister.
         [Authorize(Roles = "Başhekim")]
         public IActionResult SekreterEkle()
@@ -333,7 +337,7 @@ namespace HastaneProje.Controllers
         #endregion
 
         // Authorize(Roles = "Başhekim,Doktorlar,Sekreter")
-        #region Başhekim Üye Olma İşlemi Register
+        #region HASTA KAYIT Üye Olma İşlemi Register
         // Class tepesine koyarsak bunu tüm mehodlarda kullanıcı girişi ister.
         public IActionResult HastaKayit()
         {
@@ -383,7 +387,7 @@ namespace HastaneProje.Controllers
 
                 #region kullanıcı yetkilendirme işlemleri
                 /* KULLANICI ROLE YETKİLENDİRME İŞLEMLERİ */
-                await _userManager.AddToRoleAsync(kullanici, "Hasta");
+                await _userManager.AddToRoleAsync(kullanici, "Hastalar");
                 /* KULLANICI ROLE YETKİLENDİRME İŞLEMLERİ */
                 #endregion
 

@@ -156,6 +156,22 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmFuZGV2dVNhYXRsZXJpXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/13 HastaneRandevu/HastaneProje/HastaneProje/Views/Randevu/DoktorGetir.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmFuZGV2dVxEb2t0b3JHZXRpci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/13 HastaneRandevu/HastaneProje/HastaneProje/Views/Randevu/DoktorRandevuSaatleriGetir.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmFuZGV2dVxEb2t0b3JSYW5kZXZ1U2FhdGxlcmlHZXRpci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/13 HastaneRandevu/HastaneProje/HastaneProje/Views/Randevu/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmFuZGV2dVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/AspNet/egitim/HaftaSonuKurs/MVC/13 HastaneRandevu/HastaneProje/HastaneProje/Views/Randevu/RandevuSaatleri.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmFuZGV2dVxSYW5kZXZ1U2FhdGxlcmkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/AspNet/egitim/HaftaSonuKurs/MVC/13 HastaneRandevu/HastaneProje/HastaneProje/Views/Roller/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sbGVyXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

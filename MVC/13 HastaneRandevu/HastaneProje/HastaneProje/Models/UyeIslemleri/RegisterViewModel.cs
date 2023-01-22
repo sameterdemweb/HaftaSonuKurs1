@@ -33,5 +33,7 @@ namespace HastaneProje.Models.UyeIslemleri
         [Required] // Submit edilmesi için bu model'den geçiyor olması altındaki Field boş bırakılmadan submit edilemez.
         public string Email { get; set; }
 
+        public int? BolumId { get; set; }
+
     }
 }

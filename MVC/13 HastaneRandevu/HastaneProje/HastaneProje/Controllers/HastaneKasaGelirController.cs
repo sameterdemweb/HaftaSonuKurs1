@@ -20,7 +20,10 @@ namespace HastaneProje.Controllers
         }
 
         // GET: HastaneKasaGelir
-        public async Task<IActionResult> Index()
+
+
+   
+            public async Task<IActionResult> Index()
         {
               return _context.HastaneKasaGelir != null ? 
                           View(await _context.HastaneKasaGelir.ToListAsync()) :

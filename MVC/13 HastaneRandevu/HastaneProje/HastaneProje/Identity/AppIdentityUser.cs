@@ -28,5 +28,6 @@ namespace HastaneProje.Identity
 
         [NotMapped]
         public IFormFile? ResimDosyasi { get; set; }
+
     }
 }

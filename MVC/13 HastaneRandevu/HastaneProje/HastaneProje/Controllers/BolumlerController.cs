@@ -45,7 +45,15 @@ namespace HastaneProje.Controllers
                 return NotFound();
             }
 
-            return View(bolumler);
+            List<AppIdentityUser> doktorlar = _context.IdentityUser.Where(d=>d.BolumId==id).ToList();
+
+            BolumveDoktorViewModel bolumveDoktorBilgisiViewModel = new BolumveDoktorViewModel
+            {
+                Bolumler= bolumler,
+                Doktorlar=doktorlar
+            };
+
+            return View(bolumveDoktorBilgisiViewModel);
         }
 
         // GET: Bolumler/Create

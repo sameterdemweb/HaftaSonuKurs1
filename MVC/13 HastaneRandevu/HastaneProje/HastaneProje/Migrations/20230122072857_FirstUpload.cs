@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace HastaneProje.Migrations
 {
     /// <inheritdoc />
-    public partial class HastaneVtOlustur : Migration
+    public partial class FirstUpload : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -36,6 +36,36 @@ namespace HastaneProje.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Binalar", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "HastaneKasaGelir",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Ucret = table.Column<double>(type: "float", nullable: false),
+                    Tarih = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    Aciklama = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_HastaneKasaGelir", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "HastaneKasaGider",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Ucret = table.Column<double>(type: "float", nullable: false),
+                    Tarih = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    Aciklama = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_HastaneKasaGider", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -307,6 +337,12 @@ namespace HastaneProje.Migrations
 
             migrationBuilder.DropTable(
                 name: "AspNetUserTokens");
+
+            migrationBuilder.DropTable(
+                name: "HastaneKasaGelir");
+
+            migrationBuilder.DropTable(
+                name: "HastaneKasaGider");
 
             migrationBuilder.DropTable(
                 name: "Randevular");

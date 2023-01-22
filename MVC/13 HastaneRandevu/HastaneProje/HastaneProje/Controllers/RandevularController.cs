@@ -57,11 +57,33 @@ namespace HastaneProje.Controllers
 
         [Authorize(Roles = "Başhekim,Doktorlar,Sekreter")]// Class tepesine koyarsak bunu tüm mehodlarda kullanıcı girişi ister.
         // GET: Randevular/Create
-        public IActionResult Create()
+        public IActionResult Create(int? SaatId, string? DoktorId, string? Tarih)
         {
-            ViewData["DoktorId"] = new SelectList(_context.IdentityUser, "Id", "AdSoyad");
+            if (Tarih != null)
+            {
+                ViewData["Tarih"] = Tarih;
+            }
+            if (SaatId != null)
+            {
+                ViewData["SaatId"] = new SelectList(_context.RandevuSaatleri, "Id", "RandevuSaati", SaatId);
+            }
+            else
+            {
+                ViewData["SaatId"] = new SelectList(_context.RandevuSaatleri, "Id", "RandevuSaati");
+            }
+
+            if (DoktorId != null)
+            {
+                ViewData["DoktorId"] = new SelectList(_context.IdentityUser, "Id", "AdSoyad", DoktorId);
+            }
+            else
+            {
+                ViewData["DoktorId"] = new SelectList(_context.IdentityUser, "Id", "AdSoyad");
+            }
+           
             ViewData["HastaId"] = new SelectList(_context.IdentityUser, "Id", "AdSoyad");
-            ViewData["SaatId"] = new SelectList(_context.RandevuSaatleri, "Id", "RandevuSaati");
+            
+
             return View();
         }
 
@@ -74,7 +96,7 @@ namespace HastaneProje.Controllers
         {
             if (ModelState.IsValid)
             {
-                var randevuBilgisi = await _context.Randevular
+                Randevular randevuBilgisi = await _context.Randevular
                .Include(r => r.IdentityUserDoktor)
                .Include(r => r.IdentityUserHasta)
                .Include(r => r.RandevuSaati)
@@ -89,19 +111,21 @@ namespace HastaneProje.Controllers
                 else
                 {
                     
-                    _context.Add(randevular);
+                    _context.Randevular.Add(randevular);
                     await _context.SaveChangesAsync();
 
                     HastaneKasaGelir RandevudanGelenGelir = new HastaneKasaGelir
                     {
-                        Ucret= randevular.Ucret,
-                        Tarih= randevular.Tarih,
-                        Aciklama= randevular.HastaId + " ID'li hastanın, "+ randevular.Tarih+ " tarihli randevusundan kayıt alındı."
+                        Ucret = randevular.Ucret,
+                        Tarih = randevular.Tarih,
+                        Aciklama = randevular.HastaId + " ID'li hastanın, " + randevular.Tarih + " tarihli randevusundan kayıt alındı."
                     };
-                    _context.Add(RandevudanGelenGelir);
+                    _context.HastaneKasaGelir.Add(RandevudanGelenGelir);
                     await _context.SaveChangesAsync();
 
-                     return RedirectToAction("RandevuOlusturulduYetkili");
+
+
+                    return RedirectToAction("RandevuOlusturulduYetkili");
                 }
             }
             ViewData["DoktorId"] = new SelectList(_context.IdentityUser, "Id", "AdSoyad", randevular.DoktorId);
@@ -171,8 +195,9 @@ namespace HastaneProje.Controllers
                         Tarih = randevular.Tarih,
                         Aciklama = randevular.HastaId + " ID'li hastanın, " + randevular.Tarih + " tarihli randevusundan kayıt alındı."
                     };
-                    _context.Add(RandevudanGelenGelir);
+                    _context.HastaneKasaGelir.Add(RandevudanGelenGelir);
                     await _context.SaveChangesAsync();
+
 
                     return RedirectToAction("RandevuOlusturuldu");
                 }

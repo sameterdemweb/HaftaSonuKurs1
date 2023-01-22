@@ -28,11 +28,11 @@ namespace HastaneProje.Entities
 
         [ForeignKey("HastaId")]
 
-        [NotMapped]
+      
         public virtual AppIdentityUser? IdentityUserHasta { get; set; }
 
         [ForeignKey("DoktorId")]
-        [NotMapped]
+   
         public virtual AppIdentityUser? IdentityUserDoktor { get; set; }
     }
 }

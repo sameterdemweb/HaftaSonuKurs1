@@ -1,0 +1,36 @@
+﻿@model BolumveDoktorViewModel
+
+@{
+    ViewData["Title"] = "DoktorGetir";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>@Model.Bolumler.BolumAdi Bölümü</h1>
+<p>Bölümünde kayıtlı olan doktorlar aşağıda listelenmektedir. Randevu Almak istediğiniz Doktoru Seçiniz.</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Adı Soyadı
+            </th>
+            <th>
+                İşlem
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Doktorlar) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.AdSoyad)
+            </td>
+          
+            <td>
+               <a asp-action="RandevuSaatleri" class="btn btn-success" asp-route-id="@item.Id">DOKTOR SEÇ</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

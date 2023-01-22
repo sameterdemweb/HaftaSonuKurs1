@@ -55,13 +55,19 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="HastaneKasaGider" asp-action="Index">Giderler</a>
                         </li>
                     </ul>
-
+                      <div style="float:right:font-size:20px;">
+                        <a class="btn btn-warning" asp-area="" asp-controller="Randevu" asp-action="Index">Randevu</a>
+                     </div>
                     @if (User.Identity.IsAuthenticated) // Eğer Kullanıcı Giriş Yapmış İse
                     {
                         var girisYapanKullanici = await UserManager.GetUserAsync(User);
-                        <div style="float:right:font-size:20px;">
-                          Hoşgeldiniz Sayın;  @girisYapanKullanici.AdSoyad
-                        </div>
+                        if (girisYapanKullanici != null)
+                        {
+                            <div style="float:right:font-size:20px;">
+                                Hoşgeldiniz Sayın;  @girisYapanKullanici.AdSoyad
+                            </div>
+                        }
+                    
                     }
 
 
